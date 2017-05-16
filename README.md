@@ -10,7 +10,7 @@ Port-80-event-app  helps to navigate through  event details,If you're attending 
 * Watch events in realtime
 * Fetch the event details in the feed.
 * Instructions for onsite attendees.
-* Download Source code and presentition PPT.
+* Download Source code and presentation PPT.
 ### Features
 * Progressive web app
 * Native experience, they are responsive and work on every device.
