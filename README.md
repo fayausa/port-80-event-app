@@ -1,7 +1,6 @@
 # Port-80-event-app
 
-![Travis](https://img.shields.io/travis/rust-lang/rust.svg)   
-![David](https://img.shields.io/david/expressjs/express.svg)   ![Licence](https://img.shields.io/dub/l/vibe-d.svg)
+![Travis](https://img.shields.io/travis/rust-lang/rust.svg)  ![David](https://img.shields.io/david/expressjs/express.svg)  ![Licence](https://img.shields.io/dub/l/vibe-d.svg)
 
 Port-80-event-app  helps to navigate through  event details,If you're attending on-site or remotely.This app will:
 * Event schedule with corresponding details.
