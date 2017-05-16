@@ -26,6 +26,13 @@ Port-80-event-app  helps to navigate through  event details,If you're attending 
 * Firebase
 
 ### Installation
+#### Prerequisite
+
+```
+npm install -g yarn
+```
+#### Install
+
 ```
 git clone https://github.com/fayausa/port-80-event-app.git
 cd port-80-event-app
