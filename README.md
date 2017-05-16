@@ -6,7 +6,7 @@
 Port-80-event-app  helps to navigate through  event details,If you're attending on-site or remotely.This app will:
 * Event schedule with corresponding details.
 * Save events to google calendar.
-* Event remainders
+* Event reminders
 * Watch events in realtime
 * Fetch the event details in the feed.
 * Instructions for onsite attendees.
