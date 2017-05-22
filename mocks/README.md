@@ -18,5 +18,5 @@
 
 [Angular.io]: https://angular.io
 [Android.com]: https://www.android.com
-[Base Template]: https://github.com/fayausa/port-80-event-app/mocks/baseTemplate.png
-[Sessions]: https://github.com/fayausa/port-80-event-app/mocks/sessionsPage.png
+[Base Template]: https://github.com/fayausa/port-80-event-app/raw/master/mocks/baseTemplate.png
+[Sessions]: https://github.com/fayausa/port-80-event-app/raw/master/mocks/sessionsPage.png
