@@ -1,0 +1,193 @@
+<mockup version="1.0" skin="sketch" fontFace="Balsamiq Sans" measuredW="1018" measuredH="747" mockupW="798" mockupH="747">
+  <controls>
+    <control controlID="0" controlTypeID="com.balsamiq.mockups::BrowserWindow" x="220" y="0" w="798" h="747" measuredW="450" measuredH="400" zOrder="0" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Faya%3A80%20-%2050th%20Edition%20-%20Sessions%0Ahttp%3A//fayaport80.com/sessions</text>
+      </controlProperties>
+    </control>
+    <control controlID="1" controlTypeID="com.balsamiq.mockups::Canvas" x="220" y="71" w="798" h="51" measuredW="100" measuredH="70" zOrder="1" locked="false" isInGroup="-1">
+      <controlProperties>
+        <color>3700253</color>
+      </controlProperties>
+    </control>
+    <control controlID="2" controlTypeID="com.balsamiq.mockups::Label" x="401" y="86" w="-1" h="-1" measuredW="54" measuredH="21" zOrder="2" locked="false" isInGroup="-1">
+      <controlProperties>
+        <color>16777215</color>
+        <text>Sessions</text>
+      </controlProperties>
+    </control>
+    <control controlID="4" controlTypeID="com.balsamiq.mockups::Label" x="470" y="86" w="-1" h="-1" measuredW="48" measuredH="21" zOrder="3" locked="false" isInGroup="-1">
+      <controlProperties>
+        <color>16777215</color>
+        <text>Contact</text>
+      </controlProperties>
+    </control>
+    <control controlID="5" controlTypeID="com.balsamiq.mockups::Title" x="235" y="79" w="-1" h="-1" measuredW="111" measuredH="35" zOrder="4" locked="false" isInGroup="-1">
+      <controlProperties>
+        <color>16777215</color>
+        <size>32</size>
+        <text>Faya%3A80</text>
+      </controlProperties>
+    </control>
+    <control controlID="6" controlTypeID="com.balsamiq.mockups::Canvas" x="221" y="119" w="797" h="200" measuredW="100" measuredH="70" zOrder="5" locked="false" isInGroup="-1">
+      <controlProperties>
+        <color>9684093</color>
+      </controlProperties>
+    </control>
+    <control controlID="7" controlTypeID="com.balsamiq.mockups::Title" x="550" y="180" w="-1" h="-1" measuredW="166" measuredH="43" zOrder="6" locked="false" isInGroup="-1">
+      <controlProperties>
+        <color>16777215</color>
+        <text>Sessions</text>
+      </controlProperties>
+    </control>
+    <control controlID="8" controlTypeID="com.balsamiq.mockups::SubTitle" x="424" y="223" w="-1" h="-1" measuredW="402" measuredH="27" zOrder="7" locked="false" isInGroup="-1">
+      <controlProperties>
+        <color>15658734</color>
+        <text>Page%20for%20sessions%20and%20live%20streaming</text>
+      </controlProperties>
+    </control>
+    <control controlID="10" controlTypeID="com.balsamiq.mockups::Label" x="535" y="86" w="-1" h="-1" measuredW="72" measuredH="21" zOrder="8" locked="false" isInGroup="-1">
+      <controlProperties>
+        <color>16777215</color>
+        <text>Past%20Events</text>
+      </controlProperties>
+    </control>
+    <control controlID="12" controlTypeID="com.balsamiq.mockups::Label" x="235" y="332" w="-1" h="-1" measuredW="50" measuredH="28" zOrder="9" locked="false" isInGroup="-1">
+      <controlProperties>
+        <bold>true</bold>
+        <size>20</size>
+        <text>Day%201</text>
+        <underline>true</underline>
+      </controlProperties>
+    </control>
+    <control controlID="13" controlTypeID="com.balsamiq.mockups::Label" x="300" y="332" w="-1" h="-1" measuredW="55" measuredH="28" zOrder="10" locked="false" isInGroup="-1">
+      <controlProperties>
+        <bold>true</bold>
+        <size>20</size>
+        <text>Day%202</text>
+        <underline>false</underline>
+      </controlProperties>
+    </control>
+    <control controlID="14" controlTypeID="com.balsamiq.mockups::IconLabel" x="895" y="84" w="-1" h="-1" measuredW="108" measuredH="24" zOrder="11" locked="false" isInGroup="-1">
+      <controlProperties>
+        <color>16777215</color>
+        <icon>UserIcon%7Csmall</icon>
+        <labelPosition>left</labelPosition>
+        <text>Jeswin%20Simon</text>
+      </controlProperties>
+    </control>
+    <control controlID="15" controlTypeID="com.balsamiq.mockups::Label" x="370" y="332" w="-1" h="-1" measuredW="121" measuredH="28" zOrder="12" locked="false" isInGroup="-1">
+      <controlProperties>
+        <bold>true</bold>
+        <size>20</size>
+        <text>My%20Schedule</text>
+        <underline>false</underline>
+      </controlProperties>
+    </control>
+    <control controlID="16" controlTypeID="com.balsamiq.mockups::Icon" x="979" y="334" w="-1" h="-1" measuredW="24" measuredH="24" zOrder="13" locked="false" isInGroup="-1">
+      <controlProperties>
+        <icon>ThumbnailsIcon%7Csmall</icon>
+      </controlProperties>
+    </control>
+    <control controlID="26" controlTypeID="__group__" x="235" y="387" w="736" h="142" measuredW="736" measuredH="142" zOrder="14" locked="false" isInGroup="-1">
+      <groupChildrenDescriptors>
+        <control controlID="0" controlTypeID="com.balsamiq.mockups::Canvas" x="0" y="0" w="174" h="114" measuredW="100" measuredH="70" zOrder="0" locked="false" isInGroup="26"/>
+        <control controlID="1" controlTypeID="com.balsamiq.mockups::Label" x="189" y="21" w="-1" h="-1" measuredW="105" measuredH="36" zOrder="1" locked="false" isInGroup="26">
+          <controlProperties>
+            <size>28</size>
+            <text>Keynote</text>
+          </controlProperties>
+        </control>
+        <control controlID="2" controlTypeID="com.balsamiq.mockups::Label" x="189" y="0" w="-1" h="-1" measuredW="76" measuredH="21" zOrder="2" locked="false" isInGroup="26">
+          <controlProperties>
+            <text>0900%20-%200930</text>
+          </controlProperties>
+        </control>
+        <control controlID="3" controlTypeID="com.balsamiq.mockups::Paragraph" x="189" y="57" w="547" h="57" measuredW="275" measuredH="80" zOrder="3" locked="false" isInGroup="26">
+          <controlProperties>
+            <text>Lorem%20ipsum%20dolor%20sit%20amet%2C%20consectetur%20adipiscing%20elit.%20Phasellus%20tristique%20diam%20a%20massa%20tincidunt%2C%20et%20scelerisque%20dui%20molestie.%20Donec%20condimentum%20mi%20ante%2C%20sed%20porttitor%20orci%20mollis%20a.%20Nulla%20vel%20nibh%20dui.%20Vivamus%20posuere%20tempor%20est%20non%20consequat</text>
+          </controlProperties>
+        </control>
+        <control controlID="4" controlTypeID="com.balsamiq.mockups::Arrow" x="60" y="132" w="661" h="10" measuredW="150" measuredH="100" zOrder="4" locked="false" isInGroup="26">
+          <controlProperties>
+            <leftArrow>false</leftArrow>
+            <rightArrow>false</rightArrow>
+            <stroke>dotted</stroke>
+          </controlProperties>
+        </control>
+        <control controlID="5" controlTypeID="com.balsamiq.mockups::RoundButton" x="76" y="41" w="32" h="32" measuredW="32" measuredH="32" zOrder="5" locked="false" isInGroup="26">
+          <controlProperties>
+            <borderColor>0</borderColor>
+            <color>16777215</color>
+            <size>18</size>
+          </controlProperties>
+        </control>
+        <control controlID="6" controlTypeID="com.balsamiq.mockups::Icon" x="80" y="45" w="-1" h="-1" measuredW="24" measuredH="24" zOrder="6" locked="false" isInGroup="26">
+          <controlProperties>
+            <icon>RightTriangleIcon%7Csmall</icon>
+          </controlProperties>
+        </control>
+      </groupChildrenDescriptors>
+    </control>
+    <control controlID="37" controlTypeID="__group__" x="235" y="546" w="736" h="142" measuredW="736" measuredH="142" zOrder="15" locked="false" isInGroup="-1">
+      <groupChildrenDescriptors>
+        <control controlID="0" controlTypeID="com.balsamiq.mockups::Canvas" x="0" y="0" w="174" h="114" measuredW="100" measuredH="70" zOrder="0" locked="false" isInGroup="37"/>
+        <control controlID="1" controlTypeID="com.balsamiq.mockups::Label" x="189" y="21" w="-1" h="-1" measuredW="327" measuredH="36" zOrder="1" locked="false" isInGroup="37">
+          <controlProperties>
+            <size>28</size>
+            <text>Introduction%20to%20Blockchain</text>
+          </controlProperties>
+        </control>
+        <control controlID="2" controlTypeID="com.balsamiq.mockups::Label" x="189" y="0" w="-1" h="-1" measuredW="73" measuredH="21" zOrder="2" locked="false" isInGroup="37">
+          <controlProperties>
+            <text>0930%20-%200100</text>
+          </controlProperties>
+        </control>
+        <control controlID="3" controlTypeID="com.balsamiq.mockups::Paragraph" x="189" y="57" w="547" h="57" measuredW="275" measuredH="80" zOrder="3" locked="false" isInGroup="37">
+          <controlProperties>
+            <text>Lorem%20ipsum%20dolor%20sit%20amet%2C%20consectetur%20adipiscing%20elit.%20Phasellus%20tristique%20diam%20a%20massa%20tincidunt%2C%20et%20scelerisque%20dui%20molestie.%20Donec%20condimentum%20mi%20ante%2C%20sed%20porttitor%20orci%20mollis%20a.%20Nulla%20vel%20nibh%20dui.%20Vivamus%20posuere%20tempor%20est%20non%20consequat</text>
+          </controlProperties>
+        </control>
+        <control controlID="4" controlTypeID="com.balsamiq.mockups::Arrow" x="60" y="132" w="661" h="10" measuredW="150" measuredH="100" zOrder="4" locked="false" isInGroup="37">
+          <controlProperties>
+            <leftArrow>false</leftArrow>
+            <rightArrow>false</rightArrow>
+            <stroke>dotted</stroke>
+          </controlProperties>
+        </control>
+        <control controlID="5" controlTypeID="com.balsamiq.mockups::RoundButton" x="76" y="41" w="32" h="32" measuredW="32" measuredH="32" zOrder="5" locked="false" isInGroup="37">
+          <controlProperties>
+            <borderColor>0</borderColor>
+            <color>16777215</color>
+            <size>18</size>
+          </controlProperties>
+        </control>
+        <control controlID="6" controlTypeID="com.balsamiq.mockups::Icon" x="80" y="45" w="-1" h="-1" measuredW="24" measuredH="24" zOrder="6" locked="false" isInGroup="37">
+          <controlProperties>
+            <icon>RightTriangleIcon%7Csmall</icon>
+          </controlProperties>
+        </control>
+      </groupChildrenDescriptors>
+    </control>
+    <control controlID="38" controlTypeID="com.balsamiq.mockups::IconLabel" x="837" y="387" w="-1" h="-1" measuredW="142" measuredH="24" zOrder="16" locked="false" isInGroup="-1">
+      <controlProperties>
+        <borderStyle>none</borderStyle>
+        <color>0</color>
+        <icon>TableIcon%7Csmall</icon>
+        <labelPosition>left</labelPosition>
+        <state>up</state>
+        <text>Add%20to%20my%20schedule</text>
+      </controlProperties>
+    </control>
+    <control controlID="39" controlTypeID="com.balsamiq.mockups::IconLabel" x="837" y="546" w="-1" h="-1" measuredW="142" measuredH="24" zOrder="17" locked="false" isInGroup="-1">
+      <controlProperties>
+        <borderStyle>none</borderStyle>
+        <color>0</color>
+        <icon>TableIcon%7Csmall</icon>
+        <labelPosition>left</labelPosition>
+        <state>up</state>
+        <text>Add%20to%20my%20schedule</text>
+      </controlProperties>
+    </control>
+  </controls>
+</mockup>
