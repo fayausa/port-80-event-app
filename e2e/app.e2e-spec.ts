@@ -1,14 +1,14 @@
-import { FayaPage } from './app.po';
+import { PwaAngularPage } from './app.po';
 
-describe('faya App', () => {
-  let page: FayaPage;
+describe('pwa-angular App', () => {
+  let page: PwaAngularPage;
 
   beforeEach(() => {
-    page = new FayaPage();
+    page = new PwaAngularPage();
   });
 
   it('should display message saying app works', () => {
     page.navigateTo();
-    expect(page.getParagraphText()).toEqual('app works!');
+    expect(page.getParagraphText()).toEqual('pwa works!');
   });
 });

@@ -36,10 +36,6 @@ testem.log
 # e2e
 /e2e/*.js
 /e2e/*.map
-# Yarn
-yarn-debug.log*
-yarn-error.log*
-.yarn-integrity
 
 # System Files
 .DS_Store
