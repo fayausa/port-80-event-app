@@ -1,9 +1,26 @@
-// https://material.angular.io/guide/theming
+// // https://material.angular.io/guide/theming
+// @import '~@angular/material/theming';
+// @include mat-core();
+
+// $primary:       mat-palette($mat-blue, 800);
+// $accent:        mat-palette($mat-pink, A200, A100, A400);
+// $warn:          mat-palette($mat-deep-orange);
+// $light-theme:   mat-light-theme($primary, $accent, $warn);
+// @include angular-material-theme($light-theme);
+
 @import '~@angular/material/theming';
+@import '~@covalent/core/theming/all-theme';
+
+
+
 @include mat-core();
 
-$primary:       mat-palette($mat-blue, 800);
-$accent:        mat-palette($mat-pink, A200, A100, A400);
-$warn:          mat-palette($mat-deep-orange);
-$light-theme:   mat-light-theme($primary, $accent, $warn);
-@include angular-material-theme($light-theme);
+$primary: mat-palette($mat-orange, 800);
+$accent:  mat-palette($mat-light-blue, 600, A100, A400);
+
+$warn:    mat-palette($mat-red, 600);
+
+$theme: mat-light-theme($primary, $accent, $warn);
+
+@include angular-material-theme($theme);
+@include covalent-theme($theme);
