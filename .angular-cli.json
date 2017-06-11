@@ -30,7 +30,8 @@
       "styles": [
         "styles/theme.scss",
         "styles/mixin.scss",
-        "styles/styles.scss"
+        "styles/styles.scss",
+        "../node_modules/@covalent/core/common/platform.scss"
       ],
       "scripts": [],
       "environmentSource": "environments/environment.ts",
