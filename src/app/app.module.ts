@@ -6,7 +6,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { HomeComponent } from './home.component';
+import { HomeModule } from './home/home.module';
 import { PageNotFoundComponent } from './page-not-found.component';
 
 import {MdCardModule} from '@angular/material';
@@ -30,7 +30,6 @@ import { CovalentMediaModule } from '@covalent/core';
 @NgModule({
   declarations: [
     AppComponent,
-    HomeComponent,
     PageNotFoundComponent
   ],
   imports: [
@@ -55,7 +54,8 @@ import { CovalentMediaModule } from '@covalent/core';
     CovalentLayoutModule,
     CovalentMediaModule,
     CovalentMenuModule,
-    CovalentNotificationsModule
+    CovalentNotificationsModule,
+    HomeModule
   ],
   providers: [],
   bootstrap: [AppComponent]
