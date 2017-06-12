@@ -1,0 +1,159 @@
+<td-layout #layout>
+  <td-navigation-drawer logo="assets:covalent" sidenavTitle="Landing Page">
+    <md-nav-list>
+      <ng-template let-item let-last="last" ngFor [ngForOf]="routes">
+        <a md-list-item (click)="layout.close()">
+          <md-icon>{{item.icon}}</md-icon>{{item.title}}</a>
+      </ng-template>
+    </md-nav-list>
+    <md-nav-list td-navigation-drawer-menu>
+      <a md-list-item (click)="logout()">
+        <md-icon>exit_to_app</md-icon>Sign out</a>
+    </md-nav-list>
+  </td-navigation-drawer>
+  <td-layout-nav color="primary">
+    <div td-toolbar-content layout="row" layout-align="start center" flex>
+      <span><img src="assets/FAYA-80-logo.png" style="width: 75%;"></span>
+      <span flex></span>
+      <button md-icon-button>
+        <td-notification-count color="primary" [notifications]="12">
+          <md-icon>notifications</md-icon>
+        </td-notification-count>
+      </button>
+    </div>
+    <md-tab-group id="header" style="background: #fff;">
+      <md-tab>
+        <ng-template md-tab-label>
+          <span hide-xs> Premise</span>
+          <span hide-gt-xs>
+            <md-icon style="margin: 12px;">laptop_mac</md-icon>
+          </span>
+        </ng-template>
+        <pwa-premise></pwa-premise>
+      </md-tab>
+      <md-tab>
+        <ng-template md-tab-label>
+          <span hide-xs> About Us</span>
+          <span hide-gt-xs>
+            <md-icon style="margin: 12px;">laptop_mac</md-icon>
+          </span>
+        </ng-template>
+        <section class=" tc-white" tdMediaToggle="gt-xs" [mediaClasses]="['pad-top-md', 'pad-bottom-xl']">
+          <div layout-gt-xs="row">
+            <div flex class="pad" tdMediaToggle="gt-xs" [mediaClasses]="['pad-xl']">
+              <!--<div class="push-top-xl" hide-xs></div>-->
+              <div tdMediaToggle="gt-sm" [mediaClasses]="['push-lg']">
+                <h3 class="md-display-1 tc-black-A400 push-top-xs push-bottom-sm">ABOUT US</h3>
+                <p class=" tc-black-400 text_premise">
+                  FAYA:80 (read FAYA Port 80) is a monthly technology hangout for technology enthusiasts by technology enthusiasts to break the ice, analyse and evaluate emerging trends in technology.</p>
+                <p class="tc-black-400 text_premise">
+                  Held on the first Wednesday of the month at the Floor of Madness (FAYA, Technopark, Thiruvananthapuram), the series stands for Free Knowledge Sharing and aims to provide an open platform for entrepreneurs, developers and technology professionals to keep
+                  at par with the latest tools and technologies.
+                </p>
+                <p class=" tc-black-400 text_premise">
+                  Started in 2013, we have had 49 editions of FAYA:80 and DISRUPT KERALA 2017 marks the 50th instance. NASSCOM’s association with FAYA:80 from its 38th edition has helped further its impact to a wider audience across the State.</p>
+              </div>
+              <div class="push-bottom-xl" hide-xs></div>
+            </div>
+          </div>
+        </section>
+
+        <section class="bgc-green-A700">
+          <div layout-gt-xs="row">
+            <div flex class="pad" tdMediaToggle="gt-xs" [mediaClasses]="['pad-xxl']">
+
+            </div>
+          </div>
+        </section>
+      </md-tab>
+      <md-tab>
+        <ng-template md-tab-label>
+          <span hide-xs> Speakers</span>
+          <span hide-gt-xs>
+            <md-icon style="margin: 12px;">laptop_mac</md-icon>
+          </span>
+        </ng-template>
+        <section class="bgc-blue-A700 tc-white" tdMediaToggle="gt-xs" [mediaClasses]="['pad-top-md', 'pad-bottom-xl']">
+          <!--<h2 class="md-display-1 text-upper text-center push-bottom">Join . Share . Enlighten</h2>-->
+          <div layout="row" layout-align-gt-xs="center center">
+            <div flex-gt-xs="80" layout="row" layout-wrap>
+              <ng-template let-item let-last="last" ngFor [ngForOf]="[0,1,2,3]">
+              </ng-template>
+            </div>
+          </div>
+          <div class="text-center push-top">
+            <button md-raised-button color="accent" class="mat-button-lg text-upper">View Schedule</button>
+          </div>
+        </section>
+
+        <section class="bgc-green-A700">
+          <div layout-gt-xs="row">
+            <div flex class="pad" tdMediaToggle="gt-xs" [mediaClasses]="['pad-xxl']">
+
+            </div>
+          </div>
+        </section>
+      </md-tab>
+      <md-tab>
+        <ng-template md-tab-label>
+          <span hide-xs> Partners</span>
+          <span hide-gt-xs>
+            <md-icon style="margin: 12px;">laptop_mac</md-icon>
+          </span>
+        </ng-template>
+
+        <section class="bgc-green-A700">
+          <div layout-gt-xs="row">
+            <div flex class="pad" tdMediaToggle="gt-xs" [mediaClasses]="['pad-xxl']">
+
+            </div>
+          </div>
+        </section>
+      </md-tab>
+      <md-tab>
+        <ng-template md-tab-label>
+          <span hide-xs>Registration</span>
+          <span hide-gt-xs>
+            <md-icon style="margin: 12px;">laptop_mac</md-icon>
+          </span>
+        </ng-template>
+
+        <section class="bgc-green-A700">
+          <div layout-gt-xs="row">
+            <div flex class="pad" tdMediaToggle="gt-xs" [mediaClasses]="['pad-xxl']">
+
+            </div>
+          </div>
+        </section>
+      </md-tab>
+      <md-tab>
+        <ng-template md-tab-label>
+          <span hide-xs> Schedule</span>
+          <span hide-gt-xs>
+            <md-icon style="margin: 12px;">laptop_mac</md-icon>
+          </span>
+        </ng-template>
+
+        <section class="bgc-green-A700">
+          <div layout-gt-xs="row">
+            <div flex class="pad" tdMediaToggle="gt-xs" [mediaClasses]="['pad-xxl']">
+
+            </div>
+          </div>
+        </section>
+      </md-tab>
+    </md-tab-group>
+    <router-outlet></router-outlet>
+    <pwa-footer></pwa-footer>
+  </td-layout-nav>
+  <a md-fab color="accent" mdTooltip="Schedule" mdTooltipPosition="above" class="mat-fab-position-bottom-right fixed">
+    <md-icon>insert_invitation
+    </md-icon>
+  </a>
+
+</td-layout>
+
+
+<!--
+© 2017 Teradata. All rights reserved.
+-->
