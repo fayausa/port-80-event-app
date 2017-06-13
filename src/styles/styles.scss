@@ -159,6 +159,7 @@ $yellow:#f5d300;
 $black: #292929;
 $bg: #191919;
 $lines: #757474;
+$white: #fff;
 body {
   background-color: $bg;
   font-family: 'Open Sans', sans-serif;
@@ -375,5 +376,80 @@ body {
     -webkit-clip-path: polygon(0vw 0vh, 100vw 0vh, 100vw 100vh, 0vw 100vh);
     clip-path: polygon(0vw 0vh, 100vw 0vh, 100vw 100vh, 0vw 100vh);
     fill: $yellow;
+  }
+}
+
+// HOME PAGE
+#h_e_card {
+  margin-left: 5em !important;
+  margin-right: 5em!important;
+  margin-top: 0 !important;
+  margin-bottom: 0 !important;
+}
+
+.h_e_btn_bottm {
+  z-index: 1;
+}
+
+// FOOTER
+.f_r_headline {
+  font-size: 15px;
+  color: $white;
+}
+
+.f_r_border {
+  border-right: 1px solid #6b6b6b;
+}
+
+.f_l_border div,
+.f_l_border address {
+  font-style: normal;
+  font-size: 13px;
+  color: #969595;
+}
+
+.f_r_border div {
+  font-size: 13px;
+  color: #969595;
+}
+
+.f_r_copyright {
+  color: #6b6b6b;
+  font-weight: 600;
+}
+
+// PREMISE
+.p_e_img {
+  margin-right: 5em!important;
+}
+
+// ABOUT_US
+.a_t_img {
+  margin-left: 5em!important;
+}
+
+// COMMON
+a {
+  color: #87be49;
+}
+
+@media (max-width: 950px) {
+  #h_e_card {
+    margin-left: 0 !important;
+    margin-right: 0!important;
+  }
+}
+
+@media (max-width: 600px) {
+  .f_r_border {
+    border-right: none;
+  }
+  // PREMISE
+  .p_e_img {
+    margin-right: 0;
+  }
+  // ABOUT_US
+  .a_t_img {
+    margin-left: 0;
   }
 }
