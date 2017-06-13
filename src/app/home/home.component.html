@@ -1,13 +1,13 @@
 <td-layout #layout>
   <td-navigation-drawer logo="assets:covalent" sidenavTitle="Landing Page">
     <md-nav-list>
-      <ng-template let-item let-last="last" ngFor [ngForOf]="routes">
+      <ng-template let-item let-last="last" >
         <a md-list-item (click)="layout.close()">
           <md-icon>{{item.icon}}</md-icon>{{item.title}}</a>
       </ng-template>
     </md-nav-list>
     <md-nav-list td-navigation-drawer-menu>
-      <a md-list-item (click)="logout()">
+      <a md-list-item >
         <md-icon>exit_to_app</md-icon>Sign out</a>
     </md-nav-list>
   </td-navigation-drawer>
@@ -27,7 +27,7 @@
           <ng-template md-tab-label>
             <span hide-xs> Premise</span>
             <span hide-gt-xs>
-              <md-icon style="margin: 12px;">laptop_mac</md-icon>
+              <md-icon style="margin: 12px;">lightbulb_outline</md-icon>
             </span>
           </ng-template>
           <pwa-premise></pwa-premise>
@@ -36,7 +36,7 @@
           <ng-template md-tab-label>
             <span hide-xs> About Us</span>
             <span hide-gt-xs>
-              <md-icon style="margin: 12px;">laptop_mac</md-icon>
+              <md-icon style="margin: 12px;">nature_people</md-icon>
             </span>
           </ng-template>
           <pwa-aboutus></pwa-aboutus>
@@ -45,7 +45,7 @@
           <ng-template md-tab-label>
             <span hide-xs> Speakers</span>
             <span hide-gt-xs>
-              <md-icon style="margin: 12px;">laptop_mac</md-icon>
+              <md-icon style="margin: 12px;">sentiment_very_satisfied</md-icon>
             </span>
           </ng-template>
 
@@ -54,7 +54,7 @@
           <ng-template md-tab-label>
             <span hide-xs> Partners</span>
             <span hide-gt-xs>
-              <md-icon style="margin: 12px;">laptop_mac</md-icon>
+              <md-icon style="margin: 12px;">work</md-icon>
             </span>
           </ng-template>
 
@@ -63,7 +63,7 @@
           <ng-template md-tab-label>
             <span hide-xs>Registration</span>
             <span hide-gt-xs>
-              <md-icon style="margin: 12px;">laptop_mac</md-icon>
+              <md-icon style="margin: 12px;">assignment</md-icon>
             </span>
           </ng-template>
 
@@ -72,7 +72,7 @@
           <ng-template md-tab-label>
             <span hide-xs> Schedule</span>
             <span hide-gt-xs>
-              <md-icon style="margin: 12px;">laptop_mac</md-icon>
+              <md-icon style="margin: 12px;">schedule</md-icon>
             </span>
           </ng-template>
 
