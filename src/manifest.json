@@ -1,8 +1,8 @@
 {
   "$schema": "http://json.schemastore.org/web-manifest",
   "short_name": "faya",
-  "name": "Faya port:80",
-  "description": "Progressive Web Application with Angular.",
+  "name": "port:80",
+  "description": "Faya port:80.",
   "icons": [
         {
             "src": "assets/android-chrome-36x36.png",
@@ -40,14 +40,14 @@
             "type": "image/png"
         },
         {
-            "src": "assets/512x512.png",
+            "src": "assets/android-chrome-512x512.png",
             "sizes": "512x512",
             "type": "image/png"
         }
     ],
-  "background_color": "#EEE",
-  "theme_color": "#1565c0",
-  "start_url": "https://my-pwa-72eab.firebaseapp.com/home",
-  "display": "standalone",
+  "background_color": "#FFFFFF",
+  "theme_color": "#87C142",
+  "start_url": "https://my-pwa-72eab.firebaseapp.com",
+  "display": "fullscreen",
   "orientation": "any"
 }
