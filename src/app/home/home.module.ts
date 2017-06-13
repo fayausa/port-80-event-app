@@ -4,11 +4,6 @@ import { HttpModule } from '@angular/http';
 import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
-import { AppRoutingModule } from './app-routing.module';
-import { AppComponent } from './app.component';
-import { HomeModule } from './home/home.module';
-import { PageNotFoundComponent } from './page-not-found.component';
-
 import {MdCardModule} from '@angular/material';
 import {MdMenuModule} from '@angular/material';
 import {MdInputModule} from '@angular/material';
@@ -27,17 +22,25 @@ import { CovalentNotificationsModule } from '@covalent/core';
 import { CovalentLayoutModule } from '@covalent/core';
 import { CovalentMediaModule } from '@covalent/core';
 
+import { HomeRoutingModule } from './home-routing.module';
+import { HomeComponent } from './home.component';
+import { PremiseComponent } from './premise/premise.component';
+import { FooterComponent } from './footer/footer.component';
+import { AboutComponent } from './about/about.component';
+
 @NgModule({
   declarations: [
-    AppComponent,
-    PageNotFoundComponent
+    HomeComponent,
+    PremiseComponent,
+    FooterComponent,
+    AboutComponent
   ],
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
     FormsModule,
     HttpModule,
-    AppRoutingModule,
+    HomeRoutingModule,
     MdCardModule,
     MdMenuModule,
     MdInputModule,
@@ -49,15 +52,12 @@ import { CovalentMediaModule } from '@covalent/core';
     MdTooltipModule,
     MdDialogModule,
     MdTabsModule,
-    AppRoutingModule,
     CovalentChipsModule,
     CovalentLayoutModule,
     CovalentMediaModule,
     CovalentMenuModule,
-    CovalentNotificationsModule,
-    HomeModule
+    CovalentNotificationsModule
   ],
-  providers: [],
-  bootstrap: [AppComponent]
+  providers: []
 })
-export class AppModule { }
+export class HomeModule { }
