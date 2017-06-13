@@ -1,5 +1,5 @@
 <td-layout #layout>
-  <td-navigation-drawer logo="assets/FAYA-80-logo.png" icon="dashboard" sidenavTitle=" Port:80">
+  <td-navigation-drawer color="accent" logo="assets/FAYA-80-logo.png" icon="dashboard" sidenavTitle=" Port:80">
     <md-nav-list>
       <ng-template let-item let-last="last" ngFor [ngForOf]="routes">
         <a md-list-item (click)="layout.close()"><md-icon>{{item.icon}}</md-icon>{{item.title}}</a>
