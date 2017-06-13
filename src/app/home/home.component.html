@@ -1,9 +1,8 @@
 <td-layout #layout>
-  <td-navigation-drawer logo="assets:covalent" sidenavTitle="Landing Page">
+  <td-navigation-drawer logo="assets/FAYA-80-logo.png" icon="dashboard" sidenavTitle=" Port:80">
     <md-nav-list>
-      <ng-template let-item let-last="last" >
-        <a md-list-item (click)="layout.close()">
-          <md-icon>{{item.icon}}</md-icon>{{item.title}}</a>
+      <ng-template let-item let-last="last" ngFor [ngForOf]="routes">
+        <a md-list-item (click)="layout.close()"><md-icon>{{item.icon}}</md-icon>{{item.title}}</a>
       </ng-template>
     </md-nav-list>
     <md-nav-list td-navigation-drawer-menu>
