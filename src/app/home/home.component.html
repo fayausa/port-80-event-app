@@ -1,0 +1,90 @@
+<td-layout #layout>
+  <td-navigation-drawer logo="assets:covalent" sidenavTitle="Landing Page">
+    <md-nav-list>
+      <ng-template let-item let-last="last" ngFor [ngForOf]="routes">
+        <a md-list-item (click)="layout.close()">
+          <md-icon>{{item.icon}}</md-icon>{{item.title}}</a>
+      </ng-template>
+    </md-nav-list>
+    <md-nav-list td-navigation-drawer-menu>
+      <a md-list-item (click)="logout()">
+        <md-icon>exit_to_app</md-icon>Sign out</a>
+    </md-nav-list>
+  </td-navigation-drawer>
+  <td-layout-nav color="primary">
+    <div td-toolbar-content layout="row" layout-align="start center" flex>
+      <span><img src="assets/FAYA-80-logo.png" style="width: 75%;"></span>
+      <span flex></span>
+      <button md-icon-button>
+        <td-notification-count color="primary" [notifications]="12">
+          <md-icon>notifications</md-icon>
+        </td-notification-count>
+      </button>
+    </div>
+    <md-card id="h_e_card">
+      <md-tab-group id="header" style="background: #fff;">
+        <md-tab>
+          <ng-template md-tab-label>
+            <span hide-xs> Premise</span>
+            <span hide-gt-xs>
+              <md-icon style="margin: 12px;">laptop_mac</md-icon>
+            </span>
+          </ng-template>
+          <pwa-premise></pwa-premise>
+        </md-tab>
+        <md-tab>
+          <ng-template md-tab-label>
+            <span hide-xs> About Us</span>
+            <span hide-gt-xs>
+              <md-icon style="margin: 12px;">laptop_mac</md-icon>
+            </span>
+          </ng-template>
+          <pwa-aboutus></pwa-aboutus>
+        </md-tab>
+        <md-tab>
+          <ng-template md-tab-label>
+            <span hide-xs> Speakers</span>
+            <span hide-gt-xs>
+              <md-icon style="margin: 12px;">laptop_mac</md-icon>
+            </span>
+          </ng-template>
+
+        </md-tab>
+        <md-tab>
+          <ng-template md-tab-label>
+            <span hide-xs> Partners</span>
+            <span hide-gt-xs>
+              <md-icon style="margin: 12px;">laptop_mac</md-icon>
+            </span>
+          </ng-template>
+
+        </md-tab>
+        <md-tab>
+          <ng-template md-tab-label>
+            <span hide-xs>Registration</span>
+            <span hide-gt-xs>
+              <md-icon style="margin: 12px;">laptop_mac</md-icon>
+            </span>
+          </ng-template>
+
+        </md-tab>
+        <md-tab>
+          <ng-template md-tab-label>
+            <span hide-xs> Schedule</span>
+            <span hide-gt-xs>
+              <md-icon style="margin: 12px;">laptop_mac</md-icon>
+            </span>
+          </ng-template>
+
+        </md-tab>
+      </md-tab-group>
+    </md-card>
+    <pwa-footer></pwa-footer>
+  </td-layout-nav>
+  <a md-fab color="primary" mdTooltip="Schedule" mdTooltipPosition="above" class="mat-fab-position-bottom-right fixed h_e_btn_bottm">
+    <md-icon style="color:#fff">
+      insert_invitation
+    </md-icon>
+  </a>
+
+</td-layout>

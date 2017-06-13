@@ -7,10 +7,8 @@ const applicationServerPublicKey = 'BMZuj1Uek9SeT0myecw8TQxr4dB6Vl4X7c4abMzAA4KR
 
 @Component({
   selector: 'pwa-home',
-  template: `
-    <div class="content">
-      <h3>Faya port 80</h3>
-  `
+  templateUrl: 'home.component.html',
+  styleUrls: ['home.component.scss']
 })
 export class HomeComponent implements OnInit {
   private isSubscribed = false;

@@ -1,123 +1,22 @@
-<td-layout #layout>
-  <td-navigation-drawer logo="assets/FAYA-80-logo.png" sidenavTitle="Faya port:80" >
-    <md-nav-list >
-      <ng-template let-item let-last="last" ngFor [ngForOf]="routes">
-        <a md-list-item (click)="layout.close()"><md-icon>{{item.icon}}</md-icon>{{item.title}}</a>
-      </ng-template>
-    </md-nav-list>
-    <md-nav-list td-navigation-drawer-menu >
-      <a md-list-item ><md-icon>exit_to_app</md-icon>Sign out</a>
-    </md-nav-list>
-  </td-navigation-drawer>
-  <td-layout-nav color="none" logo="assets:covalent" >
-    <div td-toolbar-content layout="row" layout-align="start center" flex >
-      <span hide-gt-xs class="tc-green-500 md-subhead">Port:80</span>
-      <span hide-xs class="tc-green-500 md-subhead"></span>
-      <span flex ></span>
-      <button md-icon-button >
-        <td-notification-count color="accent" [notifications]="4">
-          <md-icon>notifications</md-icon>
-        </td-notification-count>
-      </button>
-      <!--<md-menu >
-      </md-menu>-->
-    </div>
-    <md-toolbar  class="pad-none">
-      <nav  md-stretch-tabs md-tab-nav-bar class="pull-bottom-xl pull-top-md text-upper" flex>
-        <a md-tab-link >
-          <span hide-xs>PREMISE</span>
-          <span hide-gt-xs><md-icon>home</md-icon></span>
-        </a>
-        <a md-tab-link>
-          <span hide-xs>ABOUT US</span>
-          <span hide-gt-xs><md-icon>laptop_mac</md-icon></span>
-        </a>
-        <a md-tab-link>
-          <span hide-xs>SPEAKERS</span>
-          <span hide-gt-xs><md-icon>language</md-icon></span>
-        </a>
-        <a md-tab-link>
-          <span hide-xs>PARTNERS</span>
-          <span hide-gt-xs><md-icon>assignment</md-icon></span>
-        </a>
-        <a md-tab-link>
-          <span hide-xs>REGISTRATION</span>
-          <span hide-gt-xs><md-icon>people</md-icon></span>
-        </a>
-        <a md-tab-link>
-          <span hide-xs>SCHEDULE</span>
-          <span hide-gt-xs><md-icon>insert_chart</md-icon>
-          </span>
-        </a>
-      </nav>
-    </md-toolbar>
-    <!-- router outlet goes here -->
-    <section class="bgc-blue-grey-50">
-      <div layout-gt-xs="row">
-        <div flex class="pad" tdMediaToggle="gt-xs" [mediaClasses]="['pad-xl']">
-          <div class="push-top-xl" hide-xs></div>
-          <div tdMediaToggle="gt-sm" [mediaClasses]="['push-lg']">
-            <h1 class="md-display-1 tc-grey-A400 push-top-xs push-bottom-sm">Disrupt Kerala 2017 </h1>
-            <h2 class="md-headline tc-grey-800 push-top-xs push-bottom-sm">Join . Share . Enlighten</h2>
-            <!--<p class="md-subhead tc-grey-600">Leverage agile frameworks to provide a robust synopsis for high level overviews. Iterative approaches to corporate strategy foster collaborative thinking to further the overall value proposition. Organically grow the holistic world view of disruptive innovation via workplace diversity and empowerment.</p>-->
-            <!--<button md-raised-button color="accent" class="push-bottom mat-button-lg text-upper">Schedule</button>-->
-          </div>
-          <div class="push-bottom-xl" hide-xs></div>
-        </div>
-      </div>
-    </section>
+<!--<div class="splash">
+  <div class="splash_logo">
+    <img src="assets/FAYA-80-logo.png">
+  </div>
+  <div class="splash_svg">
+    <svg width="100%" height="100%">
+      <rect width="100%" height="100%" >
+	  </svg>
+  </div>
+  <div class="splash_minimize">
+    <svg width="100%" height="100%">
+      <rect width="100%" height="100%" >
+	  </svg>
+  </div>
+</div>
+<div class="text">
+  <p>Faya</p>
+  <p>Port 80</p>
+  <button [routerLink]="['/home']">More</button>
 
-    <!--<section class="bgc-blue-A700 tc-white"  tdMediaToggle="gt-xs" [mediaClasses]="['pad-top-md', 'pad-bottom-xl']">
-      <div layout="row" layout-align-gt-xs="center center">
-        <div flex-gt-xs="80" layout="row" layout-wrap>
-          <ng-template let-item let-last="last" ngFor [ngForOf]="[0,1,2,3]">
-          </ng-template>
-        </div>
-      </div>
-      <div class="text-center push-top">
-          <button md-raised-button color="accent" class="mat-button-lg text-upper">View Schedule</button>
-      </div>
-    </section>-->
-
-    <section class="bgc-green-A700">
-      <div layout-gt-xs="row">
-        <div flex class="pad" tdMediaToggle="gt-xs" [mediaClasses]="['pad-xxl']">
-
-        </div>
-      </div>
-    </section>
-    <!-- end content -->
-    <section class="bgc-blue-grey-800 tc-blue-grey-100">
-      <div layout-gt-xs="row" layout-align-gt-xs="center center">
-        <div layout-gt-sm="row" flex-gt-xs="75" layout-margin layout-padding>
-          <div flex>
-            <md-nav-list>
-              <h3 md-subheader class="text-upper tc-blue-grey-100">About Faya port:80</h3>
-            </md-nav-list>
-          </div>
-          <div flex>
-            <md-nav-list>
-              <h3 md-subheader class="text-upper tc-blue-grey-100">Events</h3>
-              <md-list-item>
-                <p md-line class="tc-blue-grey-300">Locations</p>
-              </md-list-item>
-              <md-list-item>
-                <p md-line class="tc-blue-grey-300">Schedule</p>
-              </md-list-item>
-            </md-nav-list>
-          </div>
-          <div flex-gt-xs="10">
-          </div>
-          <div flex layout="column" flex-gt-xs="30">
-            <md-icon class="push-top-md" svgIcon="assets:covalent" style="height:auto;width:auto;"></md-icon>
-            <p class="md-body-1">&copy; Copyright 2017 Fayausa. All rights reserved.</p>
-          </div>
-        </div>
-      </div>
-    </section>
-  </td-layout-nav>
-  <a md-fab color="accent" mdTooltip="Schedule" mdTooltipPosition="above" class="mat-fab-position-bottom-right fixed">
-    <md-icon>insert_invitation
-</md-icon>
-  </a>
-</td-layout>
+</div>-->
+<router-outlet></router-outlet>
