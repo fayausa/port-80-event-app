@@ -1,28 +1,28 @@
 <td-layout #layout>
-  <td-navigation-drawer logo="assets/FAYA-80-logo.png" sidenavTitle="Faya port:80">
-    <md-nav-list>
+  <td-navigation-drawer logo="assets/FAYA-80-logo.png" sidenavTitle="Faya port:80" >
+    <md-nav-list >
       <ng-template let-item let-last="last" ngFor [ngForOf]="routes">
         <a md-list-item (click)="layout.close()"><md-icon>{{item.icon}}</md-icon>{{item.title}}</a>
       </ng-template>
     </md-nav-list>
-    <md-nav-list td-navigation-drawer-menu>
+    <md-nav-list td-navigation-drawer-menu >
       <a md-list-item ><md-icon>exit_to_app</md-icon>Sign out</a>
     </md-nav-list>
   </td-navigation-drawer>
-  <td-layout-nav color="none" logo="assets:covalent">
-    <div td-toolbar-content layout="row" layout-align="start center" flex>
-      <span hide-gt-xs class="tc-blue-500 md-subhead">Faya</span>
-      <span hide-xs class="tc-blue-500 md-subhead">Port:80</span>
+  <td-layout-nav color="none" logo="assets:covalent" >
+    <div td-toolbar-content layout="row" layout-align="start center" flex >
+      <span hide-gt-xs class="tc-green-500 md-subhead">Port:80</span>
+      <span hide-xs class="tc-green-500 md-subhead"></span>
       <span flex ></span>
       <button md-icon-button >
-        <td-notification-count color="accent" [notifications]="12">
+        <td-notification-count color="accent" [notifications]="4">
           <md-icon>notifications</md-icon>
         </td-notification-count>
       </button>
       <!--<md-menu >
       </md-menu>-->
     </div>
-    <md-toolbar class="pad-none">
+    <md-toolbar  class="pad-none">
       <nav  md-stretch-tabs md-tab-nav-bar class="pull-bottom-xl pull-top-md text-upper" flex>
         <a md-tab-link >
           <span hide-xs>PREMISE</span>
@@ -57,7 +57,7 @@
         <div flex class="pad" tdMediaToggle="gt-xs" [mediaClasses]="['pad-xl']">
           <div class="push-top-xl" hide-xs></div>
           <div tdMediaToggle="gt-sm" [mediaClasses]="['push-lg']">
-            <h1 class="md-display-1 tc-blue-A400 push-top-xs push-bottom-sm">Disrupt Kerala 2017 </h1>
+            <h1 class="md-display-1 tc-grey-A400 push-top-xs push-bottom-sm">Disrupt Kerala 2017 </h1>
             <h2 class="md-headline tc-grey-800 push-top-xs push-bottom-sm">Join . Share . Enlighten</h2>
             <!--<p class="md-subhead tc-grey-600">Leverage agile frameworks to provide a robust synopsis for high level overviews. Iterative approaches to corporate strategy foster collaborative thinking to further the overall value proposition. Organically grow the holistic world view of disruptive innovation via workplace diversity and empowerment.</p>-->
             <!--<button md-raised-button color="accent" class="push-bottom mat-button-lg text-upper">Schedule</button>-->
@@ -67,8 +67,7 @@
       </div>
     </section>
 
-    <section class="bgc-blue-A700 tc-white"  tdMediaToggle="gt-xs" [mediaClasses]="['pad-top-md', 'pad-bottom-xl']">
-      <!--<h2 class="md-display-1 text-upper text-center push-bottom">Join . Share . Enlighten</h2>-->
+    <!--<section class="bgc-blue-A700 tc-white"  tdMediaToggle="gt-xs" [mediaClasses]="['pad-top-md', 'pad-bottom-xl']">
       <div layout="row" layout-align-gt-xs="center center">
         <div flex-gt-xs="80" layout="row" layout-wrap>
           <ng-template let-item let-last="last" ngFor [ngForOf]="[0,1,2,3]">
@@ -78,7 +77,7 @@
       <div class="text-center push-top">
           <button md-raised-button color="accent" class="mat-button-lg text-upper">View Schedule</button>
       </div>
-    </section>
+    </section>-->
 
     <section class="bgc-green-A700">
       <div layout-gt-xs="row">
