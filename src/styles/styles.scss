@@ -186,6 +186,19 @@ $white: #fff;
   font-size: 12px;
 }
 
+.sponsers-wrap {
+  padding: 5px;
+  min-height: 65px;
+  text-align: center;
+  margin-bottom: 15px;
+  width: 100%;
+  display: inline-block;
+}
+
+.sponsers-wrap img {
+  max-width: 100%;
+}
+
 // FOOTER
 .f_r_headline {
   font-size: 15px;
@@ -340,10 +353,77 @@ a {
   margin-left: 1.4em;
 }
 
+// SCHEDULE
+.s_e_img {
+  padding: 1em;
+  width: 100%;
+}
+
+.s_e_img_travancore {
+  padding: 1em;
+  width: 86%;
+}
+
+.margin_top {
+  margin-top: 3em;
+}
+
+.event-schedule {
+  color: #181717;
+  font-size: 14px;
+  list-style-type: none;
+  padding-top: 25px;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.event-schedule-wrap {
+  width: 100%;
+  float: left;
+  padding-bottom: 15px;
+  margin-bottom: 10px;
+  border-bottom: 1px solid #ccc;
+}
+
+.event-hall {
+  color: #2A2A2A;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 0;
+  margin-top: 0;
+  padding-left: 1em;
+}
+
+.event-schedule .event-schedule-list {
+  line-height: 3;
+  width: 100%;
+}
+
 @media (max-width: 950px) {
   #h_e_card {
     margin-left: 0 !important;
     margin-right: 0!important;
+  }
+}
+
+@media screen and (max-width: 959px) and (min-width: 600px) {
+  .event-schedule-wrap {
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+}
+
+@media (max-width: 960px) {
+  .margin_top {
+    margin-top: -1em;
+    padding: 1em;
+  }
+}
+
+@media (max-width: 960px) {
+  .margin_top {
+    margin-top: -1em;
+    padding: 1em;
   }
 }
 
@@ -358,6 +438,10 @@ a {
   // ABOUT_US
   .a_t_img {
     margin-left: 0 !important;
+  }
+  .s_e_img_travancore {
+    padding: 1em;
+    width: 91%;
   }
 }
 
