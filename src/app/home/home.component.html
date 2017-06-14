@@ -1,13 +1,12 @@
 <td-layout #layout>
-  <td-navigation-drawer logo="assets:covalent" sidenavTitle="Landing Page">
+  <td-navigation-drawer color="accent" logo="assets/FAYA-80-logo.png" icon="dashboard" sidenavTitle=" Port:80">
     <md-nav-list>
       <ng-template let-item let-last="last" ngFor [ngForOf]="routes">
-        <a md-list-item (click)="layout.close()">
-          <md-icon>{{item.icon}}</md-icon>{{item.title}}</a>
+        <a md-list-item (click)="layout.close()"><md-icon>{{item.icon}}</md-icon>{{item.title}}</a>
       </ng-template>
     </md-nav-list>
     <md-nav-list td-navigation-drawer-menu>
-      <a md-list-item (click)="logout()">
+      <a md-list-item >
         <md-icon>exit_to_app</md-icon>Sign out</a>
     </md-nav-list>
   </td-navigation-drawer>
@@ -27,8 +26,9 @@
           <ng-template md-tab-label>
             <span hide-xs> Premise</span>
             <span hide-gt-xs>
-              <md-icon>laptop_mac</md-icon>
+              <md-icon>lightbulb_outline</md-icon>
               <span class="h_e_title">Premise</span>
+
             </span>
           </ng-template>
           <pwa-premise></pwa-premise>
@@ -37,7 +37,7 @@
           <ng-template md-tab-label>
             <span hide-xs> About Us</span>
             <span hide-gt-xs>
-              <md-icon>laptop_mac</md-icon>
+              <md-icon>nature_people</md-icon>
               <span class="h_e_title">About Us</span>
             </span>
           </ng-template>
@@ -47,7 +47,7 @@
           <ng-template md-tab-label>
             <span hide-xs> Speakers</span>
             <span hide-gt-xs>
-              <md-icon>laptop_mac</md-icon>
+              <md-icon>sentiment_very_satisfied</md-icon>
               <span class="h_e_title">Speakers</span>
             </span>
           </ng-template>
@@ -57,7 +57,7 @@
           <ng-template md-tab-label>
             <span hide-xs> Partners</span>
             <span hide-gt-xs>
-              <md-icon>laptop_mac</md-icon>
+              <md-icon>work</md-icon>
               <span class="h_e_title">Partners</span>
             </span>
           </ng-template>
@@ -76,7 +76,7 @@
           <ng-template md-tab-label>
             <span hide-xs>Registration</span>
             <span hide-gt-xs>
-              <md-icon>laptop_mac</md-icon>
+              <md-icon>assignment</md-icon>
               <span class="h_e_title">Registration</span>
             </span>
           </ng-template>
@@ -86,7 +86,7 @@
           <ng-template md-tab-label>
             <span hide-xs> Schedule</span>
             <span hide-gt-xs>
-              <md-icon>laptop_mac</md-icon>
+              <md-icon>schedule</md-icon>
               <span class="h_e_title">Schedule</span>
             </span>
           </ng-template>
