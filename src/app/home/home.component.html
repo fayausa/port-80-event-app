@@ -61,7 +61,16 @@
               <span class="h_e_title">Partners</span>
             </span>
           </ng-template>
-
+          <div layout-gt-sm="row" layout-padding>
+            <md-card class="sponsers-wrap" flex-gt-sm="30">
+              <img md-card-image src="assets/sponsers-icfoss.png">
+              <!--<md-card-subtitle>ICFOSS</md-card-subtitle>-->
+            </md-card>
+            <md-card class="sponsers-wrap" flex-gt-sm="30">
+              <img md-card-image src="assets/sponsers-startup-mission.png">
+              <!--<md-card-subtitle>Startup Mission</md-card-subtitle>-->
+            </md-card>
+          </div>
         </md-tab>
         <md-tab>
           <ng-template md-tab-label>
@@ -81,7 +90,7 @@
               <span class="h_e_title">Schedule</span>
             </span>
           </ng-template>
-
+          <pwa-schedule></pwa-schedule>
         </md-tab>
       </md-tab-group>
     </md-card>
