@@ -26,7 +26,9 @@
           <ng-template md-tab-label>
             <span hide-xs> Premise</span>
             <span hide-gt-xs>
-              <md-icon style="margin: 12px;">lightbulb_outline</md-icon>
+              <md-icon>lightbulb_outline</md-icon>
+              <span class="h_e_title">Premise</span>
+
             </span>
           </ng-template>
           <pwa-premise></pwa-premise>
@@ -35,7 +37,8 @@
           <ng-template md-tab-label>
             <span hide-xs> About Us</span>
             <span hide-gt-xs>
-              <md-icon style="margin: 12px;">nature_people</md-icon>
+              <md-icon>nature_people</md-icon>
+              <span class="h_e_title">About Us</span>
             </span>
           </ng-template>
           <pwa-aboutus></pwa-aboutus>
@@ -44,25 +47,37 @@
           <ng-template md-tab-label>
             <span hide-xs> Speakers</span>
             <span hide-gt-xs>
-              <md-icon style="margin: 12px;">sentiment_very_satisfied</md-icon>
+              <md-icon>sentiment_very_satisfied</md-icon>
+              <span class="h_e_title">Speakers</span>
             </span>
           </ng-template>
-
+          <pwa-speakers></pwa-speakers>
         </md-tab>
         <md-tab>
           <ng-template md-tab-label>
             <span hide-xs> Partners</span>
             <span hide-gt-xs>
-              <md-icon style="margin: 12px;">work</md-icon>
+              <md-icon>work</md-icon>
+              <span class="h_e_title">Partners</span>
             </span>
           </ng-template>
-
+          <div layout-gt-sm="row" layout-padding>
+            <md-card class="sponsers-wrap" flex-gt-sm="30">
+              <img md-card-image src="assets/sponsers-icfoss.png">
+              <!--<md-card-subtitle>ICFOSS</md-card-subtitle>-->
+            </md-card>
+            <md-card class="sponsers-wrap" flex-gt-sm="30">
+              <img md-card-image src="assets/sponsers-startup-mission.png">
+              <!--<md-card-subtitle>Startup Mission</md-card-subtitle>-->
+            </md-card>
+          </div>
         </md-tab>
         <md-tab>
           <ng-template md-tab-label>
             <span hide-xs>Registration</span>
             <span hide-gt-xs>
-              <md-icon style="margin: 12px;">assignment</md-icon>
+              <md-icon>assignment</md-icon>
+              <span class="h_e_title">Registration</span>
             </span>
           </ng-template>
 
@@ -71,10 +86,11 @@
           <ng-template md-tab-label>
             <span hide-xs> Schedule</span>
             <span hide-gt-xs>
-              <md-icon style="margin: 12px;">schedule</md-icon>
+              <md-icon>schedule</md-icon>
+              <span class="h_e_title">Schedule</span>
             </span>
           </ng-template>
-
+          <pwa-schedule></pwa-schedule>
         </md-tab>
       </md-tab-group>
     </md-card>

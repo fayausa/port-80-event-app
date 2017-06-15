@@ -27,13 +27,16 @@ import { HomeComponent } from './home.component';
 import { PremiseComponent } from './premise/premise.component';
 import { FooterComponent } from './footer/footer.component';
 import { AboutComponent } from './about/about.component';
-
+import { SpeakersComponent } from './speakers/speakers.component';
+import { ScheduleComponent } from './schedule/schedule.component';
 @NgModule({
   declarations: [
     HomeComponent,
     PremiseComponent,
     FooterComponent,
-    AboutComponent
+    AboutComponent,
+    SpeakersComponent,
+    ScheduleComponent
   ],
   imports: [
     BrowserModule,
