@@ -399,6 +399,121 @@ a {
   width: 100%;
 }
 
+.banner-bg {
+  background: url(../assets/prt80-bg.png) no-repeat 0 0;
+  text-align: center;
+  position: relative;
+}
+
+.particle-network-animation {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0);
+  z-index: 1;
+}
+
+.register-now-btn {
+  background: url(../assets/register-now-btn.png) no-repeat center;
+  max-width: 290px;
+  height: 85px;
+  display: block;
+  text-indent: -99999em;
+  background-size: 100%;
+}
+
+.register-now-bg {
+  margin-top: -0.5em;
+}
+
+.clock_set {}
+
+.banner-inner {
+  max-width: 1165px;
+  width: 100%;
+  position: relative;
+  margin: 0 auto;
+  padding-top: 1%;
+}
+
+.banner-inner img {
+  width: 100%;
+  margin-left: 1%;
+}
+
+#countdown {
+  height: 75px;
+}
+
+#countdown .days,
+#countdown .hours,
+#countdown .minutes,
+#countdown .seconds {
+  display: inline-block;
+}
+
+#countdown .label-days,
+#countdown .label-hours,
+#countdown .label-minutes,
+#countdown .label-seconds {
+  display: none;
+}
+
+#countdown .days,
+#countdown .hours,
+#countdown .minutes,
+#countdown .seconds {
+  width: 60px;
+  padding: 20px 0;
+  background: #EBEBEB;
+  font-size: 35px;
+  font-weight: 700;
+  color: #8E9091;
+  text-align: center;
+  position: relative;
+  margin-right: 10px;
+}
+
+#countdown .days::after,
+#countdown .hours::after,
+#countdown .minutes::after,
+#countdown .seconds::after {
+  content: "Days";
+  font-size: 10px;
+  color: #8E9091;
+  position: absolute;
+  font-weight: 600;
+  bottom: -25px;
+  left: 14px;
+  text-transform: uppercase;
+}
+
+#countdown .hours::after {
+  content: "Hours";
+}
+
+#countdown .minutes::after {
+  content: "Minutes";
+}
+
+#countdown .seconds::after {
+  content: "Seconds";
+}
+
+.countdown-label {
+  font-size: 30px;
+  font-weight: 700;
+  color: #000;
+  font-family: 'Open Sans', sans-serif;
+  padding-top: 30px;
+}
+
+.countdown-label .red {
+  color: #cb1818;
+}
+
 @media (max-width: 950px) {
   #h_e_card {
     margin-left: .5em !important;
