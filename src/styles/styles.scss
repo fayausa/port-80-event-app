@@ -251,8 +251,8 @@ a {
 
 .speakers-photo-case {
   display: block;
-  height: 225px;
-  width: 225px;
+  height: 194px;
+  width: 194px;
   float: left;
 }
 
@@ -399,6 +399,47 @@ a {
   width: 100%;
 }
 
+// LANDING PAGE
+.landing-page {
+  height: 662px;
+  background: rgba(0, 0, 0, 0) linear-gradient(135deg, #8ec64e 0%, #41aba0 100%) repeat scroll 0 0;
+}
+
+.card-details {
+  background-color: rgba(136, 199, 144, 0.6);
+}
+
+.event-details {
+  min-height: 140px;
+  background-color: rgb(167, 215, 183);
+  margin: 1.5px;
+}
+
+.date-card {
+  margin: auto;
+}
+
+.date-card .mat-card {
+  padding: 2em!important;
+}
+
+.event-details p, h1 {
+  text-align: center;
+  color: white;
+}
+
+.event-details h1 {
+  font-size: 60px;
+  margin-bottom: 0px;
+  margin-top: 15px;
+  font-weight: normal;
+}
+
+.l-p-style p {
+  color: white;
+  line-height: 2;
+}
+
 @media (max-width: 950px) {
   #h_e_card {
     margin-left: .5em !important;
@@ -443,6 +484,9 @@ a {
     padding: 1em;
     width: 91%;
   }
+  .landing-page-content {
+    width: 100%;
+  }
 }
 
 @media (max-width: 1199px) {
@@ -452,5 +496,13 @@ a {
   }
   .social-icon-section {
     margin-bottom: 1em;
+  }
+}
+  // LANDING PAGE
+@media (min-width: 600px) {
+  .landing-page-content {
+    width: 86%;
+    margin: 0 auto;
+    padding-top: 10em;
   }
 }
