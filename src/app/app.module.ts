@@ -27,10 +27,14 @@ import { CovalentNotificationsModule } from '@covalent/core';
 import { CovalentLayoutModule } from '@covalent/core';
 import { CovalentMediaModule } from '@covalent/core';
 
+import { LandingPageComponent } from './landing-page/landing-page.component';
+
+
 @NgModule({
   declarations: [
     AppComponent,
-    PageNotFoundComponent
+    PageNotFoundComponent,
+    LandingPageComponent
   ],
   imports: [
     BrowserModule,
