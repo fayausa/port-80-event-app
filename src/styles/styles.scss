@@ -401,7 +401,7 @@ a {
 
 // LANDING PAGE
 .landing-page {
-  height: 662px;
+  min-height: 662px;
   background: rgba(0, 0, 0, 0) linear-gradient(135deg, #8ec64e 0%, #41aba0 100%) repeat scroll 0 0;
 }
 
@@ -437,7 +437,18 @@ a {
 
 .l-p-style p {
   color: white;
-  line-height: 2;
+  line-height: 1.9;
+}
+
+.main-image img{
+  width: 100%;
+}
+
+.landing-page .mat-raised-button {
+  background: rgba(61, 212, 164, 0.75);
+}
+.landing-page .mat-raised-button {
+  color: white!important;
 }
 
 @media (max-width: 950px) {
@@ -486,6 +497,15 @@ a {
   }
   .landing-page-content {
     width: 100%;
+  }
+  .landing-page {
+    padding: 1em;
+  }
+  .date-card .mat-card {
+    margin: 0px!important;
+  }
+  .event-details h1 {
+    padding-top: 16px;
   }
 }
 

@@ -4,5 +4,7 @@ import { Component } from '@angular/core';
   selector: 'pwa-landingpage',
   templateUrl: 'landing-page.component.html'
 })
-export class LandingPageComponent { }
+export class LandingPageComponent { 
+	
+}
 
