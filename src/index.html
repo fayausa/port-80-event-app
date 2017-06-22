@@ -1,5 +1,6 @@
 <!doctype html>
 <html lang="en">
+
 <head>
   <meta charset="utf-8">
   <title>Faya port:80</title>
@@ -15,14 +16,63 @@
   <meta name="apple-mobile-web-app-capable" content="yes">
   <link rel="manifest" href="/manifest.json">
   <link rel="icon" type="image/x-icon" href="favicon.ico">
-   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800" rel="stylesheet">
+  <!--<link rel="stylesheet" type="text/css" href="assets/css/normalize.css" />-->
+  <link rel="stylesheet" type="text/css" href="assets/css/flipclock.css" />
 </head>
-<body>
 
+<body>
+  <div style="height: 100vh;overflow-x: hidden;">
+    <div id="x-corp-carousel" class="slide hero-slide">
+      <div class="carousel-inner" role="listbox">
+        <div class="banner-bg">
+          <div class="particle-network-animation">
+          </div>
+          <div class="banner-inner">
+            <img src="assets/title-container.png" alt="Event Slide">
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="clock_set" layout-gt-md="row" layout-padding layout-align="center center">
+      <div flex style="margin-top: -2em;">
+        <h3 class="countdown-label">EVENT <span class="red">STARTS</span> IN</h3>
+      </div>
+      <div flex>
+        <div class="clock"></div>
+      </div>
+      <div flex>
+        <a href="#" class="register-now-btn" title="Register Now"></a>
+      </div>
+    </div>
   <pwa-root><div class="loading">
     <pwa-landingpage></pwa-landingpage>
   </div></pwa-root>
-
-  <script src="assets/idb-keyval-min.js"></script>
+    <script src="assets/js/jquery-2.1.4.min.js"></script>
+    <script src="assets/js/flipclock/flipclock.js"></script>
+    <script src="assets/js/networkAnimation.js"></script>
+    <!--<script src="assets/js/scripts.js"></script>-->
+    <script type="text/javascript">
+      var clock;
+      $(document).ready(function() {
+        var clock;
+        var date = new Date("July 05, 2017 09:00:00");
+        var now = new Date();
+        var diff = (date.getTime() / 1000) - (now.getTime() / 1000);
+        clock = $('.clock').FlipClock(diff, {
+          clockFace: 'DailyCounter',
+          autoStart: false,
+          callbacks: {
+            stop: function() {
+              $('.message').html('The clock has stopped!')
+            }
+          }
+        });
+        clock.setCountdown(true);
+        clock.start();
+      });
+    </script>
+  </div>
 </body>
+
 </html>
