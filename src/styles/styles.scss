@@ -447,8 +447,18 @@ a {
 .landing-page .mat-raised-button {
   background: rgba(61, 212, 164, 0.75);
 }
+
 .landing-page .mat-raised-button {
   color: white!important;
+}
+
+.b-logo {
+  float: left;
+  margin-top: 11px;
+}
+
+.b-logo img {
+   width: 16%;
 }
 
 @media (max-width: 950px) {
@@ -521,8 +531,13 @@ a {
   // LANDING PAGE
 @media (min-width: 600px) {
   .landing-page-content {
-    width: 86%;
+    width: 90%;
     margin: 0 auto;
-    padding-top: 10em;
+    padding-top: 7em;
+  }
+  .date-card .mat-card {
+    width: 80%;
+    float: right;
+    margin-top: -30px;
   }
 }
