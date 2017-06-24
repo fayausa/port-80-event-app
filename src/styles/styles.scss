@@ -1,5 +1,5 @@
 /* You can add global styles to this file, and also import other style files */
-
+@import url('https://fonts.googleapis.com/css?family=Amatic+SC');
 @import 'mixin';
 html,
 body {
@@ -540,4 +540,62 @@ a {
     float: right;
     margin-top: -30px;
   }
+}
+
+//Btn
+
+.btn {
+  border: none;
+  border-radius: 5px;
+  display: block;
+  text-align: center;
+  cursor: pointer;
+  text-transform: uppercase;
+  outline: none;
+  overflow: hidden;
+  position: relative;
+  color: #fff;
+  font-weight: 700;
+  font-size: 15px;
+  background-color: #5FB680;
+  padding: 17px 60px;
+  margin: -2 auto;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.20);
+}
+
+.btn span {
+  position: relative;
+  z-index: 1;
+}
+
+.btn:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 490%;
+  width: 140%;
+  background: #72BC6B;
+  -webkit-transition: all .5s ease-in-out;
+  transition: all .5s ease-in-out;
+  -webkit-transform: translateX(-98%) translateY(-25%) rotate(45deg);
+  transform: translateX(-98%) translateY(-25%) rotate(45deg);
+}
+
+.btn:hover:after {
+  -webkit-transform: translateX(-9%) translateY(-25%) rotate(45deg);
+  transform: translateX(-9%) translateY(-25%) rotate(45deg);
+}
+
+.animated {
+// 	-webkit-animation-duration: 5s;
+// 	   -moz-animation-duration: 5s;
+// 	    -ms-animation-duration: 5s;
+// 	     -o-animation-duration: 5s;
+	        animation-duration: 3s;
+// 	-webkit-animation-fill-mode: both;
+// 	   -moz-animation-fill-mode: both;
+// 	    -ms-animation-fill-mode: both;
+// 	     -o-animation-fill-mode: both;
+	        animation-fill-mode: both;
 }
