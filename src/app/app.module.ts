@@ -4,10 +4,11 @@ import { HttpModule } from '@angular/http';
 import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
+import { HomeRoutingModule } from './home/home-routing.module';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HomeModule } from './home/home.module';
-import { PageNotFoundComponent } from './page-not-found.component';
+import { CodeOfConductComponent } from './code-of-conduct/code-of-conduct.component';
 
 import {MdCardModule} from '@angular/material';
 import {MdMenuModule} from '@angular/material';
@@ -21,6 +22,8 @@ import {MdTooltipModule} from '@angular/material';
 import {MdDialogModule} from '@angular/material';
 import {MdTabsModule} from '@angular/material';
 
+import { LeafletModule } from '@asymmetrik/angular2-leaflet';
+
 import { CovalentChipsModule } from '@covalent/core';
 import { CovalentMenuModule } from '@covalent/core';
 import { CovalentNotificationsModule } from '@covalent/core';
@@ -28,13 +31,19 @@ import { CovalentLayoutModule } from '@covalent/core';
 import { CovalentMediaModule } from '@covalent/core';
 
 import { LandingPageComponent } from './landing-page/landing-page.component';
+import { PageNotFoundComponent } from './page-not-found.component';
+import { FooterComponent } from './footer/footer.component';
+import { MapComponent } from './map/map.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
+    CodeOfConductComponent,
+    LandingPageComponent,
     PageNotFoundComponent,
-    LandingPageComponent
+    FooterComponent,
+    MapComponent
   ],
   imports: [
     BrowserModule,
@@ -42,6 +51,7 @@ import { LandingPageComponent } from './landing-page/landing-page.component';
     FormsModule,
     HttpModule,
     AppRoutingModule,
+    HomeRoutingModule,
     MdCardModule,
     MdMenuModule,
     MdInputModule,
@@ -59,7 +69,8 @@ import { LandingPageComponent } from './landing-page/landing-page.component';
     CovalentMediaModule,
     CovalentMenuModule,
     CovalentNotificationsModule,
-    HomeModule
+    HomeModule,
+    LeafletModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -2,15 +2,7 @@ import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'pwa-map',
-  template: `
-  <md-card >
-  <div  leaflet style="height: 500px; width:100%; z-index: 0;"
-		 [leafletOptions]="options"
-		 [leafletBaseLayers]="baseLayers"
-		>
-	</div>
-</md-card>
-  `,
+  templateUrl: 'map.component.html',
   styles: []
 })
 export class MapComponent implements OnInit {
@@ -19,6 +11,7 @@ export class MapComponent implements OnInit {
     id: 'openstreetmap',
     name: 'Open Street Map',
     enabled: true,
+    // tslint:disable-next-line:max-line-length
     layer: L.tileLayer('https://api.mapbox.com/styles/v1/mapbox/satellite-streets-v10/tiles/256/{z}/{x}/{y}?access_token=pk.eyJ1IjoiYW1hbHNoZWh1IiwiYSI6ImNqM2Nub3BvZDAwMGwzMm81bmRvN2NmOXEifQ.IvKLj2jB_z4FF2HKH7AkXA', {
       maxZoom: 18,
       attribution: `Map data &copy; <a href="http://openstreetmap.org">OpenStreetMap</a>
