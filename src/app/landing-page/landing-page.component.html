@@ -1,8 +1,8 @@
 	<div class="landing-page" >
 		<div layout-gt-xs="row" class="landing-page-content">
-			<div flex flex-gt-xs="48" layout="column" >
-	       <div class="faya-logo">
-	      	 <img class="animated zoomIn" src="assets/FAYA-80-logo.png" style="filter: brightness(0) invert(1);">
+			<div flex flex-gt-xs="48" layout="column" flex-sm="40">
+	     <div class="faya-logo">
+	      	<img class="animated zoomIn" src="assets/FAYA-80-logo.png" style="filter: brightness(0) invert(1);">
 	      </div>
 	      <div class="main-image">
 	      	 <img src="assets/title-container.png" class="animated zoomIn">
@@ -14,7 +14,7 @@
 	       		TECHNOPARK, TRIVANDRUM
 	       	</p>
 	      </div>
-	      <div style="margin-bottom: 1.5em;" class="animated zoomIn" layout="row">
+	      <div class="animated zoomIn " layout="row">
 	      	<!--<button md-raised-button [routerLink]="['home']" >CONNECT PORT 80</button>-->
           <button class="btn" [routerLink]="['home']"><span> Details</span></button>
           <button class="btn" [routerLink]="['']" style="margin-left:.5em;"><span> Register</span></button>
@@ -29,25 +29,25 @@
           </div>
         </div>
       </div>
-			<div flex flex-gt-xs="52" layout="column" class="animated bounceInUp">
-      	<div flex flex-gt-xs="85" class="date-card">
-      	  <md-card class="card-details" layout="column">
-      	  	<div flex layout-gt-xs="row">
-      	 			<div flex-gt-xs="49" class="event-details" >
+			<div flex flex-gt-xs="52"  flex-sm="60" layout="column" class="animated bounceInUp">
+      	<div flex flex-gt-xs="85" layout-xs="column" flex-xs ="100" class="date-card">
+      	  <md-card class="card-details" layout="column"  flex-xs ="100">
+      	  	<div flex layout-gt-xs="row" layout-xs="row">
+      	 			<div flex-gt-xs="49" class="event-details" flex-xs ="49">
 		      	    <h1>{{time.days}}</h1>
 		      	    <p>Days</p>
       	 	  	</div>
-      	 	  	<div flex-gt-xs="49" class="event-details">
+      	 	  	<div flex-gt-xs="49" class="event-details" flex-xs ="49">
       	     		<h1>{{time.hours}}</h1>
       	    		<p>Hours</p>
       	 	  	</div>
       	 		</div>
-      	 		<div flex layout-gt-xs="row" layout-align="center center">
-      	 			<div flex-gt-xs="49" class="event-details">
+      	 		<div flex layout-gt-xs="row" layout-align="center center"  layout-xs="row">
+      	 			<div flex-gt-xs="49" class="event-details" flex-xs ="49">
       	    		<h1>{{time.minutes}}</h1>
       	    		<p>Minutes</p>
       	 	  	</div>
-      	 	  	<div flex-gt-xs="49" class="event-details">
+      	 	  	<div flex-gt-xs="49" class="event-details" flex-xs ="49">
       	     		<h1>{{time.seconds}}</h1>
       	    		<p>Seconds</p>
       	 	  	</div>
