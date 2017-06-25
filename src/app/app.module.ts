@@ -22,6 +22,8 @@ import {MdTooltipModule} from '@angular/material';
 import {MdDialogModule} from '@angular/material';
 import {MdTabsModule} from '@angular/material';
 
+import { LeafletModule } from '@asymmetrik/angular2-leaflet';
+
 import { CovalentChipsModule } from '@covalent/core';
 import { CovalentMenuModule } from '@covalent/core';
 import { CovalentNotificationsModule } from '@covalent/core';
@@ -31,6 +33,7 @@ import { CovalentMediaModule } from '@covalent/core';
 import { LandingPageComponent } from './landing-page/landing-page.component';
 import { PageNotFoundComponent } from './page-not-found.component';
 import { FooterComponent } from './footer/footer.component';
+import { MapComponent } from './map/map.component';
 
 
 @NgModule({
@@ -39,7 +42,8 @@ import { FooterComponent } from './footer/footer.component';
     CodeOfConductComponent,
     LandingPageComponent,
     PageNotFoundComponent,
-    FooterComponent
+    FooterComponent,
+    MapComponent
   ],
   imports: [
     BrowserModule,
@@ -65,7 +69,8 @@ import { FooterComponent } from './footer/footer.component';
     CovalentMediaModule,
     CovalentMenuModule,
     CovalentNotificationsModule,
-    HomeModule
+    HomeModule,
+    LeafletModule
   ],
   providers: [],
   bootstrap: [AppComponent]

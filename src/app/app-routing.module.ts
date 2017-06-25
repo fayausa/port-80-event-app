@@ -5,11 +5,13 @@ import { PageNotFoundComponent } from './page-not-found.component';
 import { LandingPageComponent } from './landing-page/landing-page.component';
 import { CodeOfConductComponent } from './code-of-conduct/code-of-conduct.component';
 import { HomeComponent } from './home/home.component';
+import { MapComponent } from './map/map.component';
 
 const routes: Routes = [
   { path: '', component: LandingPageComponent },
   { path: 'home', component: HomeComponent },
-  { path: 'coc', component: CodeOfConductComponent }
+  { path: 'coc', component: CodeOfConductComponent },
+  { path: 'map', component: MapComponent }
     // { path: '', pathMatch: 'full', redirectTo: 'home' },
     // { path: 'home', component: HomeComponent },
     // { path: '**', pathMatch: 'full', component: PageNotFoundComponent }
