@@ -1,96 +1,65 @@
-<td-layout #layout>
-  <td-navigation-drawer color="accent" logo="assets/FAYA-80-logo.png" icon="dashboard" sidenavTitle=" Port:80">
-    <md-nav-list>
-        <a [routerLink]="['/coc']" md-list-item><md-icon>person</md-icon>CODE OF CONDUCT</a>
-        <a [routerLink]="['/coc']" md-list-item><md-icon>map</md-icon>MAP</a>
-        <a [routerLink]="['/coc']" md-list-item><md-icon>contacts</md-icon>CONTACT</a>
-    </md-nav-list>
-    <md-nav-list td-navigation-drawer-menu>
-      <a md-list-item >
-        <md-icon>exit_to_app</md-icon>Sign out</a>
-    </md-nav-list>
-  </td-navigation-drawer>
-  <td-layout-nav color="primary">
-    <div td-toolbar-content layout="row" layout-align="start center" flex>
-      <span><img src="assets/FAYA-80-logo.png" style="width: 75%;"></span>
-      <span flex></span>
-      <button md-icon-button>
-        <td-notification-count color="primary" [notifications]="12">
-          <md-icon>notifications</md-icon>
-        </td-notification-count>
-      </button>
-    </div>
-    <md-card id="h_e_card">
-      <md-tab-group id="header" style="background: #fff;">
-        <md-tab>
-          <ng-template md-tab-label>
-            <span hide-xs> Premise</span>
-            <span hide-gt-xs>
+<md-card id="h_e_card">
+  <md-tab-group id="header" style="background: #fff;">
+    <md-tab>
+      <ng-template md-tab-label>
+        <span hide-xs> Premise</span>
+        <span hide-gt-xs>
               <md-icon>lightbulb_outline</md-icon>
               <span class="h_e_title">Premise</span>
 
-            </span>
-          </ng-template>
-          <pwa-code-of-conduct></pwa-code-of-conduct>
-          <pwa-premise></pwa-premise>
-        </md-tab>
-        <md-tab>
-          <ng-template md-tab-label>
-            <span hide-xs> About Us</span>
-            <span hide-gt-xs>
+        </span>
+      </ng-template>
+      <!--<pwa-code-of-conduct></pwa-code-of-conduct>-->
+      <pwa-premise></pwa-premise>
+    </md-tab>
+    <md-tab>
+      <ng-template md-tab-label>
+        <span hide-xs> About Us</span>
+        <span hide-gt-xs>
               <md-icon>nature_people</md-icon>
               <span class="h_e_title">About Us</span>
-            </span>
-          </ng-template>
-          <pwa-aboutus></pwa-aboutus>
-        </md-tab>
-        <md-tab>
-          <ng-template md-tab-label>
-            <span hide-xs> Speakers</span>
-            <span hide-gt-xs>
+        </span>
+      </ng-template>
+      <pwa-aboutus></pwa-aboutus>
+    </md-tab>
+    <md-tab>
+      <ng-template md-tab-label>
+        <span hide-xs> Speakers</span>
+        <span hide-gt-xs>
               <md-icon>sentiment_very_satisfied</md-icon>
               <span class="h_e_title">Speakers</span>
-            </span>
-          </ng-template>
-          <pwa-speakers></pwa-speakers>
-        </md-tab>
-        <md-tab>
-          <ng-template md-tab-label>
-            <span hide-xs> Partners</span>
-            <span hide-gt-xs>
+        </span>
+      </ng-template>
+      <pwa-speakers></pwa-speakers>
+    </md-tab>
+    <md-tab>
+      <ng-template md-tab-label>
+        <span hide-xs> Partners</span>
+        <span hide-gt-xs>
               <md-icon>work</md-icon>
               <span class="h_e_title">Partners</span>
-            </span>
-          </ng-template>
-          <div layout-gt-sm="row" layout-padding>
-            <md-card class="sponsers-wrap" flex-gt-sm="30">
-              <img md-card-image src="assets/sponsers-icfoss.png">
-              <!--<md-card-subtitle>ICFOSS</md-card-subtitle>-->
-            </md-card>
-            <md-card class="sponsers-wrap" flex-gt-sm="30">
-              <img md-card-image src="assets/sponsers-startup-mission.png">
-              <!--<md-card-subtitle>Startup Mission</md-card-subtitle>-->
-            </md-card>
-          </div>
-        </md-tab>
-        <md-tab>
-          <ng-template md-tab-label>
-            <span hide-xs> Schedule</span>
-            <span hide-gt-xs>
+        </span>
+      </ng-template>
+      <div layout-gt-sm="row" layout-padding>
+        <md-card class="sponsers-wrap" flex-gt-sm="30">
+          <img md-card-image src="assets/sponsers-icfoss.png">
+          <!--<md-card-subtitle>ICFOSS</md-card-subtitle>-->
+        </md-card>
+        <md-card class="sponsers-wrap" flex-gt-sm="30">
+          <img md-card-image src="assets/sponsers-startup-mission.png">
+          <!--<md-card-subtitle>Startup Mission</md-card-subtitle>-->
+        </md-card>
+      </div>
+    </md-tab>
+    <md-tab>
+      <ng-template md-tab-label>
+        <span hide-xs> Schedule</span>
+        <span hide-gt-xs>
               <md-icon>schedule</md-icon>
               <span class="h_e_title">Schedule</span>
-            </span>
-          </ng-template>
-          <pwa-schedule></pwa-schedule>
-        </md-tab>
-      </md-tab-group>
-    </md-card>
-    <pwa-footer></pwa-footer>
-  </td-layout-nav>
-  <a md-fab color="primary" mdTooltip="Schedule" mdTooltipPosition="above" class="mat-fab-position-bottom-right fixed h_e_btn_bottm">
-    <md-icon style="color:#fff">
-      insert_invitation
-    </md-icon>
-  </a>
-
-</td-layout>
+        </span>
+      </ng-template>
+      <pwa-schedule></pwa-schedule>
+    </md-tab>
+  </md-tab-group>
+</md-card>

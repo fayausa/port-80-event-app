@@ -25,20 +25,16 @@ import { CovalentMediaModule } from '@covalent/core';
 import { HomeRoutingModule } from './home-routing.module';
 import { HomeComponent } from './home.component';
 import { PremiseComponent } from './premise/premise.component';
-import { FooterComponent } from './footer/footer.component';
 import { AboutComponent } from './about/about.component';
 import { SpeakersComponent } from './speakers/speakers.component';
 import { ScheduleComponent } from './schedule/schedule.component';
-import { CodeOfConductComponent } from './code-of-conduct.component';
 @NgModule({
   declarations: [
     HomeComponent,
     PremiseComponent,
-    FooterComponent,
     AboutComponent,
     SpeakersComponent,
-    ScheduleComponent,
-    CodeOfConductComponent
+    ScheduleComponent
   ],
   imports: [
     BrowserModule,
