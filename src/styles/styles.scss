@@ -440,7 +440,7 @@ a {
 }
 
 .main-image img{
-  width: 100%;
+  width: 93%;
 }
 
 .landing-page .mat-raised-button {
@@ -504,6 +504,14 @@ a {
     margin-top: -1em;
     padding: 1em;
   }
+  .date-card .mat-card {
+    width: 92%;
+    float: right;
+    margin-top: 61px;
+  }
+  .date-card .mat-card {
+    padding: 1em !important;
+  }
 }
 
 @media (max-width: 600px) {
@@ -534,6 +542,30 @@ a {
   .event-details h1 {
     padding-top: 16px;
   }
+  .date-card .mat-card {
+    padding: 1em !important;
+  }
+  .event-details h1 {
+    font-size: 36px;
+    margin-top: 2px;
+  }
+  .event-details {
+    min-height: 118px;
+  }
+  .btn {
+    padding: 10px 39px!important;
+  }
+  .b-logo img {
+    float: left;
+  }
+  .nasscom {
+    padding: 0px 0px 0px 8px;
+    font-size: 20px;
+  }
+  .l-p-style p {
+    line-height: 1.5;
+    font-size: 13px;
+  }
 }
 
 @media (max-width: 1199px) {
@@ -563,7 +595,6 @@ a {
 
 .btn {
   border: none;
-  border-radius: 5px;
   display: block;
   text-align: center;
   cursor: pointer;
@@ -575,7 +606,7 @@ a {
   font-weight: 700;
   font-size: 15px;
   background-color: #3ED4A4;
-  padding: 17px 60px;
+  padding: 11px 38px;
   margin: -2 auto;
   box-shadow: 0 5px 15px rgba(0,0,0,0.20);
 }
