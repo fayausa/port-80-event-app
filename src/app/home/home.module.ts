@@ -29,6 +29,7 @@ import { FooterComponent } from './footer/footer.component';
 import { AboutComponent } from './about/about.component';
 import { SpeakersComponent } from './speakers/speakers.component';
 import { ScheduleComponent } from './schedule/schedule.component';
+import { CodeOfConductComponent } from './code-of-conduct.component';
 @NgModule({
   declarations: [
     HomeComponent,
@@ -36,7 +37,8 @@ import { ScheduleComponent } from './schedule/schedule.component';
     FooterComponent,
     AboutComponent,
     SpeakersComponent,
-    ScheduleComponent
+    ScheduleComponent,
+    CodeOfConductComponent
   ],
   imports: [
     BrowserModule,
