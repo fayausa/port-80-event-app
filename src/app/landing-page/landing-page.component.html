@@ -14,12 +14,12 @@
 	       		TECHNOPARK, TRIVANDRUM
 	       	</p>
 	      </div>
-	      <div style="margin-bottom: 1.5em;font-family: 'Orbitron', sans-serif;" class="animated zoomIn" layout="row">
+	      <div style="margin-bottom: 1.5em;font-family: 'Orbitron', sans-serif;" layout="row">
 	      	<!--<button md-raised-button [routerLink]="['home']" >CONNECT PORT 80</button>-->
-          <button style="font-family: 'Orbitron', sans-serif;" class="btn" [routerLink]="['home']"><span> Details</span></button>
-          <button style="font-family: 'Orbitron', sans-serif; margin-left:.5em;" class="btn" [routerLink]="['']"><span> Register</span></button>
+          <button  class="btn animated bounceInUp" [routerLink]="['home']"><span> Details</span></button>
+          <button style="margin-left:.5em;" class="btn animated bounceInDown" [routerLink]="['']"><span> Register</span></button>
 	      </div>
-        <div layout-gt-xs="row" class="partners">
+        <!--<div layout-gt-xs="row" class="partners">
           <div>
             <h3>In Association with :<span class="nasscom">NASSCOM</span></h3>
           </div>
@@ -27,17 +27,17 @@
             <h3>Partners :<span style="color: black;">     IC</span>
             <span style="color: #F37920;">FOSS</span></h3>
           </div>
-        </div>
+        </div>-->
       </div>
 			<div flex flex-gt-xs="52"  flex-sm="60" layout="column" class="animated bounceInUp">
       	<div flex flex-gt-xs="85" layout-xs="column" flex-xs ="100" class="date-card">
-      	  <md-card class="card-details" layout="column"  flex-xs ="100">
+      	  <md-card class="card-details" layout="column"  flex-xs ="100" >
       	  	<div flex layout-gt-xs="row" layout-xs="row">
       	 			<div flex-gt-xs="49" class="event-details" flex-xs ="49">
 		      	    <h1>{{time.days}}</h1>
 		      	    <p>Days</p>
       	 	  	</div>
-      	 	  	<div flex-gt-xs="49" class="event-details" flex-xs ="49">
+      	 	  	<div flex-gt-xs="49" class="event-details" flex-xs ="49" >
       	     		<h1>{{time.hours}}</h1>
       	    		<p>Hours</p>
       	 	  	</div>
