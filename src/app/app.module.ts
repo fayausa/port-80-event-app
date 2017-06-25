@@ -4,10 +4,11 @@ import { HttpModule } from '@angular/http';
 import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
+import { HomeRoutingModule } from './home/home-routing.module';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HomeModule } from './home/home.module';
-import { PageNotFoundComponent } from './page-not-found.component';
+import { CodeOfConductComponent } from './code-of-conduct/code-of-conduct.component';
 
 import {MdCardModule} from '@angular/material';
 import {MdMenuModule} from '@angular/material';
@@ -28,13 +29,17 @@ import { CovalentLayoutModule } from '@covalent/core';
 import { CovalentMediaModule } from '@covalent/core';
 
 import { LandingPageComponent } from './landing-page/landing-page.component';
+import { PageNotFoundComponent } from './page-not-found.component';
+import { FooterComponent } from './footer/footer.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
+    CodeOfConductComponent,
+    LandingPageComponent,
     PageNotFoundComponent,
-    LandingPageComponent
+    FooterComponent
   ],
   imports: [
     BrowserModule,
@@ -42,6 +47,7 @@ import { LandingPageComponent } from './landing-page/landing-page.component';
     FormsModule,
     HttpModule,
     AppRoutingModule,
+    HomeRoutingModule,
     MdCardModule,
     MdMenuModule,
     MdInputModule,
