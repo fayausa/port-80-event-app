@@ -2,11 +2,17 @@
   <td-navigation-drawer color="accent" logo="assets/FAYA-80-logo.png" icon="dashboard" sidenavTitle=" Port:80">
     <md-nav-list>
       <a [routerLink]="['/coc']" md-list-item (click)="layout.close()">
-        <md-icon>person</md-icon>CODE OF CONDUCT</a>
+        <md-icon>person</md-icon>
+        <h4>CODE OF CONDUCT</h4>
+      </a>
       <a [routerLink]="['/map']" md-list-item (click)="layout.close()">
-        <md-icon>map</md-icon>MAP</a>
-      <a [routerLink]="['/coc']" md-list-item (click)="layout.close()">
-        <md-icon>contacts</md-icon>CONTACT</a>
+        <md-icon>map</md-icon>
+        <h4>MAP</h4>
+      </a>
+      <a [routerLink]="['/contact']" md-list-item (click)="layout.close()">
+        <md-icon>contacts</md-icon>
+        <h4>CONTACT</h4>
+      </a>
     </md-nav-list>
     <md-nav-list td-navigation-drawer-menu>
       <a md-list-item>

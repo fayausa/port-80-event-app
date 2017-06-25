@@ -34,6 +34,7 @@ import { LandingPageComponent } from './landing-page/landing-page.component';
 import { PageNotFoundComponent } from './page-not-found.component';
 import { FooterComponent } from './footer/footer.component';
 import { MapComponent } from './map/map.component';
+import { ContactComponent } from './contact/contact.component'
 
 
 @NgModule({
@@ -43,7 +44,8 @@ import { MapComponent } from './map/map.component';
     LandingPageComponent,
     PageNotFoundComponent,
     FooterComponent,
-    MapComponent
+    MapComponent,
+    ContactComponent
   ],
   imports: [
     BrowserModule,
