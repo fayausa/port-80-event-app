@@ -454,6 +454,7 @@ a {
 .b-logo {
   float: left;
   margin-top: 11px;
+  margin-left: 20px;
 }
 
 .b-logo img {
@@ -461,7 +462,7 @@ a {
 }
 
 .faya-logo {
-  margin: 0em 0em 3em 0em;
+  margin: 0em 0em 1em 0em;
 }
 .partners h3{
   color: white;
@@ -604,6 +605,7 @@ a {
   position: relative;
   color: lightgreen;
   font-weight: 700;
+  font-family: 'Orbitron', sans-serif;
   font-size: 12px;
   background-color: #292b2a;
   padding: 11px 38px;
@@ -623,7 +625,7 @@ a {
   top: 0;
   height: 490%;
   width: 140%;
-  background: #72BC6B;
+  background:lightgreen;
   -webkit-transition: all .5s ease-in-out;
   transition: all .5s ease-in-out;
   -webkit-transform: translateX(-98%) translateY(-25%) rotate(45deg);
