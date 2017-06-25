@@ -1,7 +1,7 @@
 	<div class="landing-page" >
 		<div layout-gt-xs="row" class="landing-page-content">
 			<div flex flex-gt-xs="48" layout="column" >
-	       <div>
+	       <div class="faya-logo">
 	      	 <img class="animated zoomIn" src="assets/FAYA-80-logo.png" style="filter: brightness(0) invert(1);">
 	      </div>
 	      <div class="main-image">
@@ -16,11 +16,17 @@
 	      </div>
 	      <div style="margin-bottom: 1.5em;" class="animated zoomIn" layout="row">
 	      	<!--<button md-raised-button [routerLink]="['home']" >CONNECT PORT 80</button>-->
-          <button class="btn" [routerLink]="['home']"><span> details</span></button>
+          <button class="btn" [routerLink]="['home']"><span> Details</span></button>
           <button class="btn" [routerLink]="['']" style="margin-left:.5em;"><span> Register</span></button>
 	      </div>
-        <div>
-          <img src="assets/partnerslogo.png">
+        <div layout-gt-xs="row" class="partners">
+          <div>
+            <h3>In Association with :<span class="nasscom">NASSCOM</span></h3>
+          </div>  
+          <div class="partners-logo">
+            <h3>Partners :<span style="color: black;">     IC</span>
+            <span style="color: #F37920;">FOSS</span></h3>
+          </div>
         </div>
       </div>
 			<div flex flex-gt-xs="52" layout="column" class="animated bounceInUp">
@@ -48,12 +54,12 @@
       	 		</div>
       	 	</md-card>
           <div flex class="b-logo" >
-            <img class="animated bounceInUp" src="assets/1.png" alt="image1" >
-            <img class="animated bounceIn" src="assets/2.png" alt="image2" style="width: 10%;">
-            <img class="animated bounceInUp" src="assets/3.png" alt="image3">
-            <img class="animated bounceIn" src="assets/4.png" alt="image4" >
-            <img class="animated bounceInUp" src="assets/5.png" alt="image5" style="width: 14%;">
-            <img class="animated bounceIn" src="assets/6.png" alt="image5">
+            <img class="animated bounceInUp" src="assets/1.png" alt="image1" style="width: 16%" >
+            <img class="animated bounceIn" src="assets/2.png" alt="image2" style="width: 9.3%">
+            <img class="animated bounceInUp" src="assets/3.png" alt="image3" style="width: 14.5%">
+            <img class="animated bounceIn" src="assets/4.png" alt="image4" style="width: 15%">
+            <img class="animated bounceInUp" src="assets/5.png" alt="image5" style="width: 13%">
+            <img class="animated bounceIn" src="assets/6.png" alt="image5" style="width: 16%">
           </div>
       	</div>
       </div>

@@ -4,9 +4,8 @@
 html,
 body {
   font-family: 'Open Sans', sans-serif !important;
-  margin: 0px;
+  
 }
-
 .content {
   margin: 1em;
 }
@@ -401,7 +400,7 @@ a {
 
 // LANDING PAGE
 .landing-page {
-  min-height: 662px;
+  min-height: 100%;
   background: rgba(0, 0, 0, 0) linear-gradient(135deg, #8ec64e 0%, #41aba0 100%) repeat scroll 0 0;
 }
 
@@ -458,7 +457,25 @@ a {
 }
 
 .b-logo img {
-   width: 16%;
+  float: right;
+}
+
+.faya-logo {
+  margin: 0em 0em 3em 0em;
+}
+.partners h3{
+  color: white;
+  font-weight: normal;
+}
+.nasscom {
+  color: #95111B;
+  padding: 0px 26px 0px 12px;
+  font-size: 25px;
+  font-weight: bold;
+}
+.partners-logo span {
+  font-size: 25px;
+  font-weight: bold;
 }
 
 @media (max-width: 950px) {
@@ -533,12 +550,12 @@ a {
   .landing-page-content {
     width: 90%;
     margin: 0 auto;
-    padding-top: 7em;
+    padding-top: 4em;
   }
   .date-card .mat-card {
     width: 80%;
     float: right;
-    margin-top: -30px;
+    margin-top: 61px;
   }
 }
 
