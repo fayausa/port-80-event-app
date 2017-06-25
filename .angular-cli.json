@@ -31,7 +31,8 @@
         "styles/theme.scss",
         "styles/mixin.scss",
         "styles/styles.scss",
-        "../node_modules/@covalent/core/common/platform.scss"
+        "../node_modules/@covalent/core/common/platform.scss",
+        "../node_modules/leaflet/dist/leaflet.css"
       ],
       "scripts": [],
       "environmentSource": "environments/environment.ts",

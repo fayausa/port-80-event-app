@@ -30,6 +30,9 @@ import { AboutComponent } from './about/about.component';
 import { SpeakersComponent } from './speakers/speakers.component';
 import { ScheduleComponent } from './schedule/schedule.component';
 import { CodeOfConductComponent } from './code-of-conduct.component';
+import { MapComponent } from './map.component';
+import { LeafletModule } from '@asymmetrik/angular2-leaflet';
+
 @NgModule({
   declarations: [
     HomeComponent,
@@ -38,7 +41,8 @@ import { CodeOfConductComponent } from './code-of-conduct.component';
     AboutComponent,
     SpeakersComponent,
     ScheduleComponent,
-    CodeOfConductComponent
+    CodeOfConductComponent,
+    MapComponent
   ],
   imports: [
     BrowserModule,
@@ -61,7 +65,8 @@ import { CodeOfConductComponent } from './code-of-conduct.component';
     CovalentLayoutModule,
     CovalentMediaModule,
     CovalentMenuModule,
-    CovalentNotificationsModule
+    CovalentNotificationsModule,
+    LeafletModule
   ],
   providers: []
 })
