@@ -28,13 +28,16 @@ import { CovalentLayoutModule } from '@covalent/core';
 import { CovalentMediaModule } from '@covalent/core';
 
 import { LandingPageComponent } from './landing-page/landing-page.component';
+import { FooterComponent } from './footer/footer.component';
+
 
 
 @NgModule({
   declarations: [
     AppComponent,
     PageNotFoundComponent,
-    LandingPageComponent
+    LandingPageComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,

@@ -30,6 +30,7 @@ import { SpeakersComponent } from './speakers/speakers.component';
 import { ScheduleComponent } from './schedule/schedule.component';
 import { CodeOfConductComponent } from './code-of-conduct.component';
 import { MapComponent } from '../map/map.component';
+import { ContactComponent } from '../contact/contact.component';
 @NgModule({
   declarations: [
     HomeComponent,
@@ -39,7 +40,8 @@ import { MapComponent } from '../map/map.component';
     SpeakersComponent,
     ScheduleComponent,
     CodeOfConductComponent,
-    MapComponent
+    MapComponent,
+    ContactComponent
 
   ],
   imports: [
