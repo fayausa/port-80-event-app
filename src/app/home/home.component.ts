@@ -1,5 +1,3 @@
-import { AppService } from '../app.service';
-
 import { Component, OnInit } from '@angular/core';
 
 declare var idbKeyval;
@@ -21,9 +19,7 @@ export class HomeComponent implements OnInit {
   subscriptionJson = '';
   message: { phone: string, body: string } = { phone: undefined, body: undefined };
 
-  constructor(public service: AppService) {
-    this.service.showMenu = true;
-   }
+  constructor() { }
 
   ngOnInit() {
     this.setupPush();
