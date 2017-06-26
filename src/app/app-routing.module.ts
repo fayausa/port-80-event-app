@@ -3,7 +3,6 @@ import { Routes, RouterModule, PreloadAllModules } from '@angular/router';
 // import { HomeComponent } from './home.component';
 import { PageNotFoundComponent } from './page-not-found.component';
 import { LandingPageComponent } from './landing-page/landing-page.component';
-import { CodeOfConductComponent } from './code-of-conduct/code-of-conduct.component';
 import { HomeComponent } from './home/home.component';
 import { MapComponent } from './map/map.component';
 import { ContactComponent } from './contact/contact.component'
