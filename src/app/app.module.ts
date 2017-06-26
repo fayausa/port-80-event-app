@@ -35,7 +35,7 @@ import { PageNotFoundComponent } from './page-not-found.component';
 import { FooterComponent } from './footer/footer.component';
 import { MapComponent } from './map/map.component';
 import { ContactComponent } from './contact/contact.component'
-
+import { AppService } from './app.service';
 
 @NgModule({
   declarations: [
@@ -74,7 +74,7 @@ import { ContactComponent } from './contact/contact.component'
     HomeModule,
     LeafletModule
   ],
-  providers: [],
+  providers: [AppService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
