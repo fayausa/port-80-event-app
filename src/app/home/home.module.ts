@@ -32,6 +32,8 @@ import { CodeOfConductComponent } from '../code-of-conduct/code-of-conduct.compo
 import { MapComponent } from '../map/map.component';
 import { ContactComponent } from '../contact/contact.component';
 import { PanellistComponent } from './panellist/panellist.component';
+import { LoopbackComponent  } from '../loopback/loopback.component';
+import { CarouselModule } from 'ngx-bootstrap';
 @NgModule({
   declarations: [
     HomeComponent,
@@ -44,6 +46,7 @@ import { PanellistComponent } from './panellist/panellist.component';
     MapComponent,
     ContactComponent,
     PanellistComponent
+    LoopbackComponent
   ],
   imports: [
     BrowserModule,
@@ -67,7 +70,8 @@ import { PanellistComponent } from './panellist/panellist.component';
     CovalentMediaModule,
     CovalentMenuModule,
     CovalentNotificationsModule,
-    LeafletModule
+    LeafletModule,
+    CarouselModule.forRoot()
   ],
   providers: []
 })
