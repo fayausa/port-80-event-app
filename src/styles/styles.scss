@@ -407,6 +407,7 @@ a {
 
 .card-details {
   background-color: rgba(136, 199, 144, 0.6);
+  padding: 1em !important;
 }
 
 .event-details {
@@ -454,13 +455,7 @@ h1 {
 }
 
 .b-logo {
-  float: left;
   margin-top: 11px;
-  margin-left: 20px;
-}
-
-.b-logo img {
-  float: right;
 }
 
 .faya-logo {
@@ -487,6 +482,37 @@ h1 {
 md-nav-list h4 {
   color: #455A64;
   font-size: 15px;
+}
+
+.image1 {
+  width: 110px;
+}
+
+.image2 {
+  width: 60px;
+}
+
+.image3 {
+  width: 95px;
+}
+
+.image4 {
+  width: 95px;
+}
+
+.image5 {
+  width: 90px;
+}
+
+.image6 {
+  width: 95px;
+}
+
+.image_sponser {
+  width: 100px;
+  height: 50px;
+  margin-left: 8px;
+  margin-right: 8px;
 }
 
 @media (max-width: 950px) {
@@ -526,6 +552,10 @@ md-nav-list h4 {
 }
 
 @media (max-width: 600px) {
+  .image_sponser {
+    margin-left: 5px;
+    margin-right: 5px;
+  }
   .f_r_border {
     border-right: none;
   }
@@ -566,9 +596,6 @@ md-nav-list h4 {
   .btn {
     padding: 10px 39px!important;
   }
-  .b-logo img {
-    float: left;
-  }
   .nasscom {
     padding: 0px 0px 0px 8px;
     font-size: 20px;
@@ -580,6 +607,24 @@ md-nav-list h4 {
   .a_t_img {
     margin: 0;
     padding: 1em;
+  }
+  .image1 {
+    width: 60px;
+  }
+  .image2 {
+    width: 35px;
+  }
+  .image3 {
+    width: 60px;
+  }
+  .image4 {
+    width: 60px;
+  }
+  .image5 {
+    width: 55px;
+  }
+  .image6 {
+    width: 65px;
   }
 }
 
