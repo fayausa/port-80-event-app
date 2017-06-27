@@ -401,7 +401,7 @@ a {
 
 // LANDING PAGE
 .landing-page {
-  min-height: 83%;
+  min-height: 100%;
   background: rgba(0, 0, 0, 0) linear-gradient(135deg, #8ec64e 0%, #41aba0 100%) repeat scroll 0 0;
 }
 
@@ -455,7 +455,8 @@ h1 {
 }
 
 .b-logo {
-  margin-top: 11px;
+  margin-left: 1em;
+  margin-right: 1em;
 }
 
 .faya-logo {
@@ -533,9 +534,6 @@ md-nav-list h4 {
   .margin_top {
     margin-top: -1em;
     padding: 1em;
-  }
-  .landing-page {
-    min-height: 78%;
   }
 }
 
