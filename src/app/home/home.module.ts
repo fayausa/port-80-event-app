@@ -45,7 +45,7 @@ import { CarouselModule } from 'ngx-bootstrap';
     CodeOfConductComponent,
     MapComponent,
     ContactComponent,
-    PanellistComponent
+    PanellistComponent,
     LoopbackComponent
   ],
   imports: [
