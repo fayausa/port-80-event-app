@@ -37,8 +37,7 @@ import { FooterComponent } from './footer/footer.component';
     AppComponent,
     PageNotFoundComponent,
     LandingPageComponent,
-    FooterComponent
-  ],
+    FooterComponent],
   imports: [
     BrowserModule,
     BrowserAnimationsModule,

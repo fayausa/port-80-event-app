@@ -31,6 +31,8 @@ import { ScheduleComponent } from './schedule/schedule.component';
 import { CodeOfConductComponent } from '../code-of-conduct/code-of-conduct.component';
 import { MapComponent } from '../map/map.component';
 import { ContactComponent } from '../contact/contact.component';
+import { LoopbackComponent  } from '../loopback/loopback.component';
+import { CarouselModule } from 'ngx-bootstrap';
 @NgModule({
   declarations: [
     HomeComponent,
@@ -41,7 +43,8 @@ import { ContactComponent } from '../contact/contact.component';
     ScheduleComponent,
     CodeOfConductComponent,
     MapComponent,
-    ContactComponent
+    ContactComponent,
+    LoopbackComponent
 
   ],
   imports: [
@@ -66,7 +69,8 @@ import { ContactComponent } from '../contact/contact.component';
     CovalentMediaModule,
     CovalentMenuModule,
     CovalentNotificationsModule,
-    LeafletModule
+    LeafletModule,
+    CarouselModule.forRoot()
   ],
   providers: []
 })
