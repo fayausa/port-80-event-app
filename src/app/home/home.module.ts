@@ -34,6 +34,15 @@ import { ContactComponent } from '../contact/contact.component';
 import { PanellistComponent } from './panellist/panellist.component';
 import { LoopbackComponent  } from '../loopback/loopback.component';
 import { CarouselModule } from 'ngx-bootstrap';
+import { ModalModule, OverlayRenderer, DOMOverlayRenderer, Overlay } from 'angular2-modal';
+import { Modal, BootstrapModalModule } from 'angular2-modal/plugins/bootstrap';
+
+const MODAL_PROVIDERS = [
+  Modal,
+  Overlay,
+  { provide: OverlayRenderer, useClass: DOMOverlayRenderer }
+];
+
 @NgModule({
   declarations: [
     HomeComponent,
@@ -72,9 +81,11 @@ import { CarouselModule } from 'ngx-bootstrap';
     CovalentMenuModule,
     CovalentNotificationsModule,
     LeafletModule,
-    CarouselModule.forRoot()
+    CarouselModule.forRoot(),
+    ModalModule,
+    BootstrapModalModule
   ],
   entryComponents: [DialogComponent],
-  providers: []
+  providers: [MODAL_PROVIDERS]
 })
 export class HomeModule { }
