@@ -31,6 +31,7 @@ import { ScheduleComponent } from './schedule/schedule.component';
 import { CodeOfConductComponent } from '../code-of-conduct/code-of-conduct.component';
 import { MapComponent } from '../map/map.component';
 import { ContactComponent } from '../contact/contact.component';
+import { PanellistComponent } from './panellist/panellist.component';
 @NgModule({
   declarations: [
     HomeComponent,
@@ -41,8 +42,8 @@ import { ContactComponent } from '../contact/contact.component';
     ScheduleComponent,
     CodeOfConductComponent,
     MapComponent,
-    ContactComponent
-
+    ContactComponent,
+    PanellistComponent
   ],
   imports: [
     BrowserModule,
