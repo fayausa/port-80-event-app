@@ -26,7 +26,7 @@ import { HomeComponent } from './home.component';
 import { PremiseComponent } from './premise/premise.component';
 import { FooterComponent } from './footer/footer.component';
 import { AboutComponent } from './about/about.component';
-import { SpeakersComponent } from './speakers/speakers.component';
+import { SpeakersComponent, DialogComponent } from './speakers/speakers.component';
 import { ScheduleComponent } from './schedule/schedule.component';
 import { CodeOfConductComponent } from '../code-of-conduct/code-of-conduct.component';
 import { MapComponent } from '../map/map.component';
@@ -46,7 +46,8 @@ import { CarouselModule } from 'ngx-bootstrap';
     MapComponent,
     ContactComponent,
     PanellistComponent,
-    LoopbackComponent
+    LoopbackComponent,
+    DialogComponent
   ],
   imports: [
     BrowserModule,
@@ -73,6 +74,7 @@ import { CarouselModule } from 'ngx-bootstrap';
     LeafletModule,
     CarouselModule.forRoot()
   ],
+  entryComponents: [DialogComponent],
   providers: []
 })
 export class HomeModule { }
