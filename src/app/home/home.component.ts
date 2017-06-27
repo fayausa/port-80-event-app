@@ -11,39 +11,6 @@ const applicationServerPublicKey = 'BMZuj1Uek9SeT0myecw8TQxr4dB6Vl4X7c4abMzAA4KR
   styleUrls: ['home.component.scss']
 })
 export class HomeComponent implements OnInit {
-   routes: Object[] = [
-    {
-      title: 'Services',
-      route: '/',
-      icon: 'web',
-    }, {
-      title: 'Portfolio',
-      route: '/',
-      icon: 'wallpaper',
-    }, {
-      title: 'Blog',
-      route: '/',
-      icon: 'chrome_reader_mode',
-    }, {
-      title: 'Contact',
-      route: '/',
-      icon: 'contacts',
-    }, {
-      title: 'Code of conduct',
-      route: '/',
-      icon: 'people',
-    },
-    {
-      title: 'Map',
-      route: '/',
-      icon: 'map',
-    },
-    {
-      title: 'Settings',
-      route: '/',
-      icon: 'settings',
-    }
-  ];
   private isSubscribed = false;
   private registration = undefined;
 

@@ -1,21 +1,20 @@
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
+import { MdTabsModule } from '@angular/material';
+import { MdDialogModule } from '@angular/material';
+import { MdCardModule } from '@angular/material';
+import { MdMenuModule } from '@angular/material';
+import { MdInputModule } from '@angular/material';
+import { MdButtonModule } from '@angular/material';
+import { MdListModule } from '@angular/material';
+import { MdIconModule } from '@angular/material';
+import { MdSidenavModule } from '@angular/material';
+import { MdToolbarModule } from '@angular/material';
+import { MdTooltipModule } from '@angular/material';
 import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-
-import {MdCardModule} from '@angular/material';
-import {MdMenuModule} from '@angular/material';
-import {MdInputModule} from '@angular/material';
-import {MdButtonModule} from '@angular/material';
-import {MdListModule} from '@angular/material';
-import {MdIconModule} from '@angular/material';
-import {MdSidenavModule} from '@angular/material';
-import {MdToolbarModule} from '@angular/material';
-import {MdTooltipModule} from '@angular/material';
-import {MdDialogModule} from '@angular/material';
-import {MdTabsModule} from '@angular/material';
-
+import { LeafletModule } from '@asymmetrik/angular2-leaflet';
 import { CovalentChipsModule } from '@covalent/core';
 import { CovalentMenuModule } from '@covalent/core';
 import { CovalentNotificationsModule } from '@covalent/core';
@@ -29,6 +28,9 @@ import { FooterComponent } from './footer/footer.component';
 import { AboutComponent } from './about/about.component';
 import { SpeakersComponent } from './speakers/speakers.component';
 import { ScheduleComponent } from './schedule/schedule.component';
+import { CodeOfConductComponent } from '../code-of-conduct/code-of-conduct.component';
+import { MapComponent } from '../map/map.component';
+import { ContactComponent } from '../contact/contact.component';
 @NgModule({
   declarations: [
     HomeComponent,
@@ -36,7 +38,11 @@ import { ScheduleComponent } from './schedule/schedule.component';
     FooterComponent,
     AboutComponent,
     SpeakersComponent,
-    ScheduleComponent
+    ScheduleComponent,
+    CodeOfConductComponent,
+    MapComponent,
+    ContactComponent
+
   ],
   imports: [
     BrowserModule,
@@ -59,7 +65,8 @@ import { ScheduleComponent } from './schedule/schedule.component';
     CovalentLayoutModule,
     CovalentMediaModule,
     CovalentMenuModule,
-    CovalentNotificationsModule
+    CovalentNotificationsModule,
+    LeafletModule
   ],
   providers: []
 })

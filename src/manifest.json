@@ -1,7 +1,7 @@
 {
   "$schema": "http://json.schemastore.org/web-manifest",
-  "short_name": "faya",
-  "name": "port:80",
+  "short_name": "Faya port:80",
+  "name": "Faya port:80",
   "description": "Faya port:80.",
   "icons": [
         {
@@ -45,9 +45,9 @@
             "type": "image/png"
         }
     ],
-  "background_color": "#FFFFFF",
+  "background_color": "#8BC552",
   "theme_color": "#87C142",
-  "start_url": "https://my-pwa-72eab.firebaseapp.com",
+  "start_url": "./?utm_source=web_app_manifest",
   "display": "fullscreen",
   "orientation": "any"
 }

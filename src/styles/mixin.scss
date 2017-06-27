@@ -1,5 +1,5 @@
 @import 'theme';
-
+@import url('https://fonts.googleapis.com/css?family=Orbitron');
 @mixin primary-color {
   $primary-color: map-get($primary, 800);
   color: $primary-color;

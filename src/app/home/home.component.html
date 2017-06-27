@@ -1,9 +1,9 @@
 <td-layout #layout>
   <td-navigation-drawer color="accent" logo="assets/FAYA-80-logo.png" icon="dashboard" sidenavTitle=" Port:80">
     <md-nav-list>
-      <ng-template let-item let-last="last" ngFor [ngForOf]="routes">
-        <a md-list-item (click)="layout.close()"><md-icon>{{item.icon}}</md-icon>{{item.title}}</a>
-      </ng-template>
+        <a [routerLink]="['/coc']" md-list-item><md-icon>person</md-icon>CODE OF CONDUCT</a>
+        <a [routerLink]="['/map']" md-list-item><md-icon>map</md-icon>MAP</a>
+        <a [routerLink]="['/contact']" md-list-item><md-icon>contacts</md-icon>CONTACT</a>
     </md-nav-list>
     <md-nav-list td-navigation-drawer-menu>
       <a md-list-item >
@@ -84,7 +84,6 @@
         </md-tab>
       </md-tab-group>
     </md-card>
-    <pwa-footer></pwa-footer>
   </td-layout-nav>
   <a md-fab color="primary" mdTooltip="Schedule" mdTooltipPosition="above" class="mat-fab-position-bottom-right fixed h_e_btn_bottm">
     <md-icon style="color:#fff">

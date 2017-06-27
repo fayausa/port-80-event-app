@@ -1,11 +1,12 @@
 /* You can add global styles to this file, and also import other style files */
+
 @import url('https://fonts.googleapis.com/css?family=Amatic+SC');
 @import 'mixin';
 html,
 body {
   font-family: 'Open Sans', sans-serif !important;
-  
 }
+
 .content {
   margin: 1em;
 }
@@ -422,7 +423,8 @@ a {
   padding: 2em!important;
 }
 
-.event-details p, h1 {
+.event-details p,
+h1 {
   text-align: center;
   color: white;
 }
@@ -439,7 +441,7 @@ a {
   line-height: 1.9;
 }
 
-.main-image img{
+.main-image img {
   width: 93%;
 }
 
@@ -454,6 +456,7 @@ a {
 .b-logo {
   float: left;
   margin-top: 11px;
+  margin-left: 20px;
 }
 
 .b-logo img {
@@ -461,21 +464,29 @@ a {
 }
 
 .faya-logo {
-  margin: 0em 0em 3em 0em;
+  margin: 0em 0em 1em 0em;
 }
-.partners h3{
+
+.partners h3 {
   color: white;
   font-weight: normal;
 }
+
 .nasscom {
   color: #95111B;
   padding: 0px 26px 0px 12px;
   font-size: 25px;
   font-weight: bold;
 }
+
 .partners-logo span {
   font-size: 25px;
   font-weight: bold;
+}
+
+md-nav-list h4 {
+  color: #455A64;
+  font-size: 15px;
 }
 
 @media (max-width: 950px) {
@@ -566,6 +577,10 @@ a {
     line-height: 1.5;
     font-size: 13px;
   }
+  .a_t_img {
+    margin: 0;
+    padding: 1em;
+  }
 }
 
 @media (max-width: 1199px) {
@@ -577,7 +592,8 @@ a {
     margin-bottom: 1em;
   }
 }
-  // LANDING PAGE
+
+// LANDING PAGE
 @media (min-width: 600px) {
   .landing-page-content {
     width: 90%;
@@ -592,7 +608,6 @@ a {
 }
 
 //Btn
-
 .btn {
   border: none;
   display: block;
@@ -604,11 +619,12 @@ a {
   position: relative;
   color: #fff;
   font-weight: 700;
-  font-size: 15px;
-  background-color: #3ED4A4;
+  font-family: 'Orbitron', sans-serif;
+  font-size: 12px;
+  background-color: #292b2a;
   padding: 11px 38px;
   margin: -2 auto;
-  box-shadow: 0 5px 15px rgba(0,0,0,0.20);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.20);
 }
 
 .btn span {
@@ -623,7 +639,8 @@ a {
   top: 0;
   height: 490%;
   width: 140%;
-  background: #72BC6B;
+  background: lightgreen;
+  color: #fff;
   -webkit-transition: all .5s ease-in-out;
   transition: all .5s ease-in-out;
   -webkit-transform: translateX(-98%) translateY(-25%) rotate(45deg);
@@ -633,17 +650,18 @@ a {
 .btn:hover:after {
   -webkit-transform: translateX(-9%) translateY(-25%) rotate(45deg);
   transform: translateX(-9%) translateY(-25%) rotate(45deg);
+  color: #fff;
 }
 
 .animated {
-// 	-webkit-animation-duration: 5s;
-// 	   -moz-animation-duration: 5s;
-// 	    -ms-animation-duration: 5s;
-// 	     -o-animation-duration: 5s;
-	        animation-duration: 3s;
-// 	-webkit-animation-fill-mode: both;
-// 	   -moz-animation-fill-mode: both;
-// 	    -ms-animation-fill-mode: both;
-// 	     -o-animation-fill-mode: both;
-	        animation-fill-mode: both;
+  // 	-webkit-animation-duration: 5s;
+  // 	   -moz-animation-duration: 5s;
+  // 	    -ms-animation-duration: 5s;
+  // 	     -o-animation-duration: 5s;
+  animation-duration: 3s;
+  // 	-webkit-animation-fill-mode: both;
+  // 	   -moz-animation-fill-mode: both;
+  // 	    -ms-animation-fill-mode: both;
+  // 	     -o-animation-fill-mode: both;
+  animation-fill-mode: both;
 }
