@@ -17,16 +17,15 @@
           <div class="social-icon-section">
             <div>
               <a href="#" mdTooltip="LinkedIn" title="LinkedIn" class="social-icons linkedIn"></a>
+              <a href="#" mdTooltip="Twitter" title="Twitter" class="social-icons twitter"></a>
             </div>
             <div class="speaker_more">
-              More
+              <button (click)="onClick1()"  md-button style="margin-bottom:10px;">More</button>
             </div>
           </div>
         </div>
       </div>
     </md-card>
-
-
     <md-card flex-gt-sm="50" style="margin: 1em">
       <div layout-md="column" layout-sm="column" layout-xs="column">
         <img class="speakers-photo-case" src="assets/venkat.png">
@@ -48,7 +47,7 @@
               <a href="#" mdTooltip="LinkedIn" title="LinkedIn" class="social-icons linkedIn"></a>
             </div>
             <div class="speaker_more">
-              More
+              <button (click)="onClick2()"  md-button style="margin-bottom:10px;">More</button>
             </div>
           </div>
         </div>
@@ -56,7 +55,7 @@
     </md-card>
   </div>
   <div layout-gt-sm="row">
-       <md-card flex-gt-sm="50" style="margin: 1em">
+    <md-card flex-gt-sm="50" style="margin: 1em">
       <div layout-md="column" layout-sm="column" layout-xs="column">
         <img class="speakers-photo-case" src="assets/satish-babu.jpg">
         <div layout="column">
@@ -75,7 +74,7 @@
               <a href="#" mdTooltip="LinkedIn" title="LinkedIn" class="social-icons linkedIn"></a>
             </div>
             <div class="speaker_more">
-              More
+              <button (click)="onClick3()"  md-button style="margin-bottom:10px;">More</button>
             </div>
           </div>
         </div>
@@ -85,27 +84,27 @@
      <md-card flex-gt-sm="50" style="margin: 1em">
       <div layout-md="column" layout-sm="column" layout-xs="column">
         <img class="speakers-photo-case" src="assets/nandini.jpg">
-        <div layout="column">
-          <div class="speakers-detail">
-            <div class="speaker-name">Prof. Nandini Vaidyanathan</div>
-            <div class="speaker-designation">Chairman and Managing Director</div>
-            <div class="speaker-organisation">CARMa Venture Services</div>
-          </div>
-          <div>
-            <div class="speaker-info">
-             Having spent 20 years in the corporate sector as a senior management professional in MNC's on all inhabited continents, I now enjoy sharing that experience with and learning from aspiring and practicing entrepreneurs across the globe.
+          <div layout="column">
+            <div class="speakers-detail">
+              <div class="speaker-name">Prof. Nandini Vaidyanathan</div>
+              <div class="speaker-designation">Chairman and Managing Director</div>
+              <div class="speaker-organisation">CARMa Venture Services</div>
             </div>
-          </div>
-          <div class="social-icon-section">
             <div>
-              <a href="#" mdTooltip="Facebook" title="Facebook" class="social-icons fb"></a>
-              <a href="#" mdTooltip="LinkedIn" title="LinkedIn" class="social-icons linkedIn"></a>
+              <div class="speaker-info">
+               Having spent 20 years in the corporate sector as a senior management professional in MNC's on all inhabited continents, I now enjoy sharing that experience with and learning from aspiring and practicing entrepreneurs across the globe.
+              </div>
             </div>
-            <div class="speaker_more">
-              More
+            <div class="social-icon-section">
+              <div>
+                <a href="#" mdTooltip="Facebook" title="Facebook" class="social-icons fb"></a>
+                <a href="#" mdTooltip="LinkedIn" title="LinkedIn" class="social-icons linkedIn"></a>
+              </div>
+              <div class="speaker_more">
+                <button (click)="onClick4()"  md-button style="margin-bottom:10px;">More</button>
+              </div>
             </div>
           </div>
-        </div>
       </div>
     </md-card>
 
@@ -114,55 +113,55 @@
     <md-card flex-gt-sm="50" style="margin: 1em">
       <div layout-md="column" layout-sm="column" layout-xs="column">
         <img class="speakers-photo-case" src="assets/amrit.jpg">
-        <div layout="column">
-          <div class="speakers-detail">
-            <div class="speaker-name">Mr. Amrit Sanjeev</div>
-            <div class="speaker-designation">Senior Developer Advocate</div>
-            <div class="speaker-organisation">Google</div>
-          </div>
-          <div>
-            <div class="speaker-info">
-              Amrit Sanjeev is the organizer of Blrdroid, the largest open android developer community in India and also the first Google developer expert for Android from the country.
+          <div layout="column">
+            <div class="speakers-detail">
+              <div class="speaker-name">Mr. Amrit Sanjeev</div>
+              <div class="speaker-designation">Senior Developer Advocate</div>
+              <div class="speaker-organisation">Google</div>
             </div>
-          </div>
-          <div class="social-icon-section">
             <div>
-              <a href="#" mdTooltip="Facebook" title="Facebook" class="social-icons fb"></a>
-              <a href="#" mdTooltip="Twitter" title="Twitter" class="social-icons twitter"></a>
-              <a href="#" mdTooltip="LinkedIn" title="LinkedIn" class="social-icons linkedIn"></a>
+              <div class="speaker-info">
+                Amrit Sanjeev is the organizer of Blrdroid, the largest open android developer community in India and also the first Google developer expert for Android from the country.
+              </div>
             </div>
-            <div class="speaker_more">
-              More
+            <div class="social-icon-section">
+              <div>
+                <a href="#" mdTooltip="Facebook" title="Facebook" class="social-icons fb"></a>
+                <a href="#" mdTooltip="Twitter" title="Twitter" class="social-icons twitter"></a>
+                <a href="#" mdTooltip="LinkedIn" title="LinkedIn" class="social-icons linkedIn"></a>
+              </div>
+              <div class="speaker_more">
+                <button (click)="onClick5()"  md-button style="margin-bottom:10px;">More</button>
+              </div>
             </div>
           </div>
-        </div>
       </div>
     </md-card>
     <md-card flex-gt-sm="50" style="margin: 1em">
       <div layout-md="column" layout-sm="column" layout-xs="column">
         <img class="speakers-photo-case" src="assets/rama-brahmam.jpg">
-        <div layout="column">
-          <div class="speakers-detail">
-            <div class="speaker-name">Mr. Rama Brahmam Aletiy</div>
-            <div class="speaker-designation">Co-founder & Director - Experience Design</div>
-            <div class="speaker-organisation">AccThink Design Collaborativeubits</div>
-          </div>
-          <div>
-            <div class="speaker-info">
-               Rama has been instrumental in developing the company into a leading, world-class UX Design and Innovation Consultancy..
+          <div layout="column">
+            <div class="speakers-detail">
+              <div class="speaker-name">Mr. Rama Brahmam Aletiy</div>
+              <div class="speaker-designation">Co-founder & Director - Experience Design</div>
+              <div class="speaker-organisation">AccThink Design Collaborativeubits</div>
             </div>
-          </div>
-          <div class="social-icon-section">
             <div>
-              <a href="#" mdTooltip="Facebook" title="Facebook" class="social-icons fb"></a>
-              <a href="#" mdTooltip="Twitter" title="Twitter" class="social-icons twitter"></a>
-              <a href="#" mdTooltip="LinkedIn" title="LinkedIn" class="social-icons linkedIn"></a>
+              <div class="speaker-info">
+                 Rama has been instrumental in developing the company into a leading, world-class UX Design and Innovation Consultancy..
+              </div>
             </div>
-            <div class="speaker_more">
-              More
+            <div class="social-icon-section">
+              <div>
+                <a href="#" mdTooltip="Facebook" title="Facebook" class="social-icons fb"></a>
+                <a href="#" mdTooltip="Twitter" title="Twitter" class="social-icons twitter"></a>
+                <a href="#" mdTooltip="LinkedIn" title="LinkedIn" class="social-icons linkedIn"></a>
+              </div>
+              <div class="speaker_more">
+               <button (click)="onClick11()"  md-button style="margin-bottom:10px;">More</button>
+              </div>
             </div>
           </div>
-        </div>
       </div>
     </md-card>
   </div>
@@ -170,115 +169,113 @@
      <md-card flex-gt-sm="50" style="margin: 1em">
       <div layout-md="column" layout-sm="column" layout-xs="column">
         <img class="speakers-photo-case" src="assets/abhilash-ashok.jpg">
-        <div layout="column">
-          <div class="speakers-detail">
-            <div class="speaker-name">Mr. Abhilash Ashok</div>
-            <div class="speaker-designation">Senior Lead, UX Development</div>
-            <div class="speaker-organisation">Valorem</div>
-          </div>
-          <div>
-            <div class="speaker-info">
-              An Incorruptible Passionate Microsoft Technology Stack Enthusiast with rich 8+ years’ experience, well-versed with Windows ...
-          </div>
-          </div>
-          <div class="social-icon-section">
+          <div layout="column">
+            <div class="speakers-detail">
+              <div class="speaker-name">Mr. Abhilash Ashok</div>
+              <div class="speaker-designation">Senior Lead, UX Development</div>
+              <div class="speaker-organisation">Valorem</div>
+            </div>
             <div>
-              <a href="#" mdTooltip="Facebook" title="Facebook" class="social-icons fb"></a>
-              <a href="#" mdTooltip="Twitter" title="Twitter" class="social-icons twitter"></a>
-              <a href="#" mdTooltip="LinkedIn" title="LinkedIn" class="social-icons linkedIn"></a>
+              <div class="speaker-info">
+                An Incorruptible Passionate Microsoft Technology Stack Enthusiast with rich 8+ years’ experience, well-versed with Windows ...
             </div>
-            <div class="speaker_more">
-              More
+            </div>
+            <div class="social-icon-section">
+              <div>
+                <a href="#" mdTooltip="Facebook" title="Facebook" class="social-icons fb"></a>
+                <a href="#" mdTooltip="Twitter" title="Twitter" class="social-icons twitter"></a>
+                <a href="#" mdTooltip="LinkedIn" title="LinkedIn" class="social-icons linkedIn"></a>
+              </div>
+              <div class="speaker_more">
+                <button (click)="onClick7()"  md-button style="margin-bottom:10px;">More</button>
+              </div>
             </div>
           </div>
-        </div>
       </div>
     </md-card>
     <md-card flex-gt-sm="50" style="margin: 1em">
       <div layout-md="column" layout-sm="column" layout-xs="column">
         <img class="speakers-photo-case" src="assets/sanju-mathew.jpg">
-        <div layout="column">
-          <div class="speakers-detail">
-            <div class="speaker-name">Mr. Sanju Mathew</div>
-            <div class="speaker-designation">CEO</div>
-            <div class="speaker-organisation">Onbyz</div>
-          </div>
-          <div>
-            <div class="speaker-info">
-              Sanju Mathew is an Mtech Electronics graduate (Signal Processing and Bionics), Entrepreneur, Intel IoT Innovator and a speaker at National and International conferences on Bionics and IoT.</div>
-          </div>
-          <div class="social-icon-section">
+          <div layout="column">
+            <div class="speakers-detail">
+              <div class="speaker-name">Mr. Sanju Mathew</div>
+              <div class="speaker-designation">CEO</div>
+              <div class="speaker-organisation">Onbyz</div>
+            </div>
             <div>
-              <a href="#" mdTooltip="Facebook" title="Facebook" class="social-icons fb"></a>
-              <a href="#" mdTooltip="Twitter" title="Twitter" class="social-icons twitter"></a>
-              <a href="#" mdTooltip="LinkedIn" title="LinkedIn" class="social-icons linkedIn"></a>
+              <div class="speaker-info">
+                Sanju Mathew is an Mtech Electronics graduate (Signal Processing and Bionics), Entrepreneur, Intel IoT Innovator and a speaker at National and International conferences on Bionics and IoT.</div>
             </div>
-            <div class="speaker_more">
-              More
+            <div class="social-icon-section">
+              <div>
+                <a href="#" mdTooltip="Facebook" title="Facebook" class="social-icons fb"></a>
+                <a href="#" mdTooltip="Twitter" title="Twitter" class="social-icons twitter"></a>
+                <a href="#" mdTooltip="LinkedIn" title="LinkedIn" class="social-icons linkedIn"></a>
+              </div>
+              <div class="speaker_more">
+               <button (click)="onClick8()"  md-button style="margin-bottom:10px;">More</button>
+              </div>
             </div>
           </div>
-        </div>
       </div>
     </md-card>
-
   </div>
 
 <div layout-gt-sm="row">
   <md-card flex-gt-sm="50" style="margin: 1em">
-      <div layout-md="column" layout-sm="column" layout-xs="column">
-        <img class="speakers-photo-case" src="assets/anivar.jpg">
-        <div layout="column">
-          <div class="speakers-detail">
-            <div class="speaker-name">Mr. Anivar Aravind</div>
-            <div class="speaker-designation">Founder Executive Director</div>
-            <div class="speaker-organisation">Indic Project</div>
+    <div layout-md="column" layout-sm="column" layout-xs="column">
+      <img class="speakers-photo-case" src="assets/anivar.jpg">
+      <div layout="column">
+        <div class="speakers-detail">
+          <div class="speaker-name">Mr. Anivar Aravind</div>
+          <div class="speaker-designation">Founder Executive Director</div>
+          <div class="speaker-organisation">Indic Project</div>
+        </div>
+        <div>
+          <div class="speaker-info">
+            Anivar A. Aravind is Founder Executive Director of Indic Project, a civic-tech non-profit initiative works on language engineering, technology standards and digital rights.
           </div>
+        </div>
+        <div class="social-icon-section">
           <div>
-            <div class="speaker-info">
-              Anivar A. Aravind is Founder Executive Director of Indic Project, a civic-tech non-profit initiative works on language engineering, technology standards and digital rights.
-            </div>
+            <a href="#" mdTooltip="Facebook" title="Facebook" class="social-icons fb"></a>
+            <a href="#" mdTooltip="Twitter" title="Twitter" class="social-icons twitter"></a>
+            <a href="#" mdTooltip="LinkedIn" title="LinkedIn" class="social-icons linkedIn"></a>
           </div>
-          <div class="social-icon-section">
-            <div>
-              <a href="#" mdTooltip="Facebook" title="Facebook" class="social-icons fb"></a>
-              <a href="#" mdTooltip="Twitter" title="Twitter" class="social-icons twitter"></a>
-              <a href="#" mdTooltip="LinkedIn" title="LinkedIn" class="social-icons linkedIn"></a>
-            </div>
-            <div class="speaker_more" >
-              <button (click)="onClick()"  md-button style="margin-bottom:10px;">More</button>
-            </div>
+          <div class="speaker_more" >
+            <button (click)="onClick9()"  md-button style="margin-bottom:10px;">More</button>
           </div>
         </div>
       </div>
+    </div>
     </md-card>
 
     <md-card flex-gt-sm="50" style="margin: 1em">
       <div layout-md="column" layout-sm="column" layout-xs="column">
         <img class="speakers-photo-case" src="assets/rafi.jpg">
-        <div layout="column">
-          <div class="speakers-detail">
-            <div class="speaker-name">Mr. Mohammed Rafi T. F.</div>
-            <div class="speaker-designation">Behavioural Scientist</div>
-            <div class="speaker-organisation">Neuro Lingusitic Programme</div>
-          </div>
-          <div>
-            <div class="speaker-info">
-              A Behavioural Scientist, Life Transformation Specialist and International Master Trainer in Neuro Lingusitic Programme...
+          <div layout="column">
+            <div class="speakers-detail">
+              <div class="speaker-name">Mr. Mohammed Rafi T. F.</div>
+              <div class="speaker-designation">Behavioural Scientist</div>
+              <div class="speaker-organisation">Neuro Lingusitic Programme</div>
             </div>
-          </div>
-          <div class="social-icon-section">
             <div>
-              <a href="#" mdTooltip="Facebook" title="Facebook" class="social-icons fb"></a>
-              <a href="#" mdTooltip="Twitter" title="Twitter" class="social-icons twitter"></a>
-              <a href="#" mdTooltip="LinkedIn" title="LinkedIn" class="social-icons linkedIn"></a>
+              <div class="speaker-info">
+                A Behavioural Scientist, Life Transformation Specialist and International Master Trainer in Neuro Lingusitic Programme...
+              </div>
             </div>
-            <div class="speaker_more">
-              More
+            <div class="social-icon-section">
+              <div>
+                <a href="#" mdTooltip="Facebook" title="Facebook" class="social-icons fb"></a>
+                <a href="#" mdTooltip="Twitter" title="Twitter" class="social-icons twitter"></a>
+                <a href="#" mdTooltip="LinkedIn" title="LinkedIn" class="social-icons linkedIn"></a>
+              </div>
+              <div class="speaker_more">
+                <button (click)="onClick10()"  md-button style="margin-bottom:10px;">More</button>
+              </div>
             </div>
           </div>
-        </div>
       </div>
     </md-card>
-
   </div>
 </section>
