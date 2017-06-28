@@ -353,6 +353,30 @@ a {
   margin-left: 1.4em;
 }
 
+.model-dialog span {
+  color: #293719;
+  font-size: 12px;
+}
+
+.model-dialog img {
+  margin-right: 16px;
+  padding-bottom: 1em;
+}
+
+.model-dialog h4{
+  margin-bottom: 0px!important;
+}
+
+.model-dialog .speakers-photo-case {
+  height: 137px;
+  width: 169px;
+  float: left;
+}
+
+.model-dialog .social-icons.linkedIn, .model-dialog .social-icons.twitter, .model-dialog .social-icons.fb {
+  margin-top: .8em;
+}
+
 // SCHEDULE
 .s_e_img {
   padding: 1em;
@@ -514,6 +538,14 @@ md-nav-list h4 {
   margin-left: 8px;
   margin-right: 8px;
 }
+
+@media (min-width: 992px) {
+  .modal-lg {
+    width: 900px;
+    margin: 4em auto!important;
+  }
+}
+
 
 @media (max-width: 950px) {
   #h_e_card {
@@ -710,3 +742,13 @@ md-nav-list h4 {
   // 	     -o-animation-fill-mode: both;
   animation-fill-mode: both;
 }
+.button-speaker {
+  color: white;
+  float: right;
+  background: #00E676;
+  width: 74px;
+  height: 35px;
+  font-weight: bold;
+  border: none;
+}
+
