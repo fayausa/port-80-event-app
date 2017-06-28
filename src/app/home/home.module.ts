@@ -56,7 +56,8 @@ const MODAL_PROVIDERS = [
     ContactComponent,
     PanellistComponent,
     LoopbackComponent,
-    DialogComponent
+    DialogComponent,
+    DialogPannelComponent
   ],
   imports: [
     BrowserModule,
