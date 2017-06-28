@@ -34,8 +34,8 @@ export class SpeakersComponent {
                 Bitcoin Canada and the McGill Cryptocurrency Club. While at McGill, Michael 
                 organized the Bitcoin Airdrop events where he gave hundreds of students their first bitcoin.</text>
                 <div>
-                  <a href="#" mdTooltip="LinkedIn" title="LinkedIn" class="social-icons linkedIn"></a>
-                  <a href="#" mdTooltip="Twitter" title="Twitter" class="social-icons twitter"></a>
+                  <a href="https://www.linkedin.com/in/mgord/" mdTooltip="LinkedIn" title="LinkedIn" class="social-icons linkedIn"></a>
+                  <a href="https://twitter.com/bitgord" mdTooltip="Twitter" title="Twitter" class="social-icons twitter"></a>
                 </div>
                 <br>
               `)
@@ -58,9 +58,9 @@ export class SpeakersComponent {
                 to deliver data science solutions. Before this, he used to work as a Physicist, working primarily in the field
                 of phase transitions in Soft Condensed Matter systems.</text>
                 <div>
-                  <a href="#" mdTooltip="Facebook" title="Facebook" class="social-icons fb"></a>
-                  <a href="#" mdTooltip="Twitter" title="Twitter" class="social-icons twitter"></a>
-                  <a href="#" mdTooltip="LinkedIn" title="LinkedIn" class="social-icons linkedIn"></a>
+                  <a href="https://www.facebook.com/venkat.rpr" title="Facebook" class="social-icons fb" target="_blank"></a>
+                  <a href="https://twitter.com/venkatramananpr" title="Twitter" class="social-icons twitter" target="_blank"></a>
+                  <a href="https://www.linkedin.com/in/venkatramanan-p-r-a25b0321/?ppe=1" title="LinkedIn" class="social-icons linkedIn" target="_blank"></a>
                 </div>
                 <br>
               `)
@@ -83,7 +83,8 @@ export class SpeakersComponent {
                 ISOC, IEEE and InApp. Fellow and former President of Computer
                 Society of India. Chair, APRALO, ICANN and Member, 2017 HAC, IEEE.</text>
                 <div>
-                  <a href="#" mdTooltip="LinkedIn" title="LinkedIn" class="social-icons linkedIn"></a>
+                  <a href="https://www.linkedin.com/in/sierrabravo/" title="LinkedIn" class="social-icons linkedIn" target="_blank"></a>
+                  <a href="https://twitter.com/satish_babu" title="Twitter" class="social-icons twitter" target="_blank"></a>
                 </div>
                 <br>
               `)
@@ -108,8 +109,8 @@ export class SpeakersComponent {
                 A TED speaker and regular jury member of television shows on business channels and entrepreneurship events across the world, she was named Business Woman of the Year by Business Goa in 2014. 
                 Passionate about cooking and entertaining people, her versatility extends to the Carnatic form of music in which she is a trained singer. She currently lives in Goa.</text>
                 <div>
-                  <a href="#" mdTooltip="Facebook" title="Facebook" class="social-icons fb"></a>
-                  <a href="#" mdTooltip="LinkedIn" title="LinkedIn" class="social-icons linkedIn"></a>
+                  <a href="https://www.facebook.com/nandini.vaidyanathan" title="Facebook" class="social-icons fb" target="_blank"></a>
+                  <a href="https://in.linkedin.com/in/nandinivaidyanathan" title="LinkedIn" class="social-icons linkedIn" target="_blank"></a>
                 </div>
                 <br>
               `)
@@ -131,9 +132,9 @@ export class SpeakersComponent {
                 <text>Amrit Sanjeev is the organizer of Blrdroid, the largest open android developer 
                 community in India and also the first Google developer expert for Android from the country.</text>
                 <div>
-                  <a href="#" mdTooltip="Facebook" title="Facebook" class="social-icons fb"></a>
-                  <a href="#" mdTooltip="Twitter" title="Twitter" class="social-icons twitter"></a>
-                  <a href="#" mdTooltip="LinkedIn" title="LinkedIn" class="social-icons linkedIn"></a>
+                  <a href="https://www.facebook.com/amrit.sanjeev" title="Facebook" class="social-icons fb" target="_blank"></a>
+                  <a href="https://twitter.com/amsanjeev" title="Twitter" class="social-icons twitter" target="_blank"></a>
+                  <a href="https://www.linkedin.com/in/amrit-sanjeev-a4984438/?ppe=1" title="LinkedIn" class="social-icons linkedIn" target="_blank"></a>
                 </div>
                 <br>
               `)
@@ -177,9 +178,9 @@ export class SpeakersComponent {
                 He also has solid experience in airline domain, telecom domain, software and services; combined with proven experience in product life cycle, product quality, envisioning features, development and implementation. He had received various awards and laurels for his proven performance. 
                 He writes about “Nerds False Positive” in his blog – CameTooFar (http://cametoofar.com/) and tweets at https://twitter.com/abhilashca.</text>
                 <div>
-                  <a href="#" mdTooltip="Facebook" title="Facebook" class="social-icons fb"></a>
-                  <a href="#" mdTooltip="Twitter" title="Twitter" class="social-icons twitter"></a>
-                  <a href="#" mdTooltip="LinkedIn" title="LinkedIn" class="social-icons linkedIn"></a>
+                  <a href="https://www.facebook.com/abhilashca" title="Facebook" class="social-icons fb" target="_blank"></a>
+                  <a href="https://twitter.com/abhilashca" title="Twitter" class="social-icons twitter" target="_blank"></a>
+                  <a href="https://www.linkedin.com/in/abhilashca/" title="LinkedIn" class="social-icons linkedIn" target="_blank"></a> 
                 </div>
                 <br>
               `)
@@ -200,9 +201,9 @@ export class SpeakersComponent {
                 <div><b>Onbyz</b></div>
                 <text>Sanju Mathew is an Mtech Electronics graduate (Signal Processing and Bionics), Entrepreneur, Intel IoT Innovator and a speaker at National and International conferences on Bionics and IoT. He is an Electronics Hardware Engineer, System Architect and UI/UX designer by choice with over 7 years of experience in these fields. His work includes a Predictive Maintenance AI for Airports (Australia), Water Supply Automation system for star hotels (USA) and Laser Calibration unit for Spectroscopy units (USA). His team built a Low Cost Bionic Hand for the disabled that focuses on modularity of sensors, custom designed feedback systems, powerful and low footprint microprocessor unit and a software architecture that makes use of Marketplace and community driven app development. Projects realized by his team was selected twice as top 10 in the world by Intel and was invited to present it at Intel Developer Forum 2015 and 2016 at San Francisco, USA. His team was awarded the runners-up prize for Mastermind competition by Dr. A P J Abdul Kalam and was one of the winners for National Level Intel IoT Hackathon 2015.</text>
                 <div>
-                  <a href="#" mdTooltip="Facebook" title="Facebook" class="social-icons fb"></a>
-                  <a href="#" mdTooltip="Twitter" title="Twitter" class="social-icons twitter"></a>
-                  <a href="#" mdTooltip="LinkedIn" title="LinkedIn" class="social-icons linkedIn"></a>
+                  <a href="https://www.facebook.com/sanjumathewk" title="Facebook" class="social-icons fb" target="_blank"></a>
+                  <a href="https://twitter.com/sanjumathew?lang=en" title="Twitter" class="social-icons twitter" target="_blank"></a>
+                  <a href="https://www.linkedin.com/in/sanjumathewk/" title="LinkedIn" class="social-icons linkedIn" target="_blank"></a>
                 </div>
                 <br>
               `)
@@ -226,9 +227,9 @@ export class SpeakersComponent {
                 Anivar A. Aravind is Founder Executive Director of Indic Project, a civic-tech non-profit initiative works on language engineering, technology standards and digital rights.
                 </text>
                 <div>
-                  <a href="#" mdTooltip="Facebook" title="Facebook" class="social-icons fb"></a>
-                  <a href="#" mdTooltip="Twitter" title="Twitter" class="social-icons twitter"></a>
-                  <a href="#" mdTooltip="LinkedIn" title="LinkedIn" class="social-icons linkedIn"></a>
+                  <a href="https://www.facebook.com/an1var/" title="Facebook" class="social-icons fb" target="_blank"></a>
+                  <a href="https://twitter.com/anivar" title="Twitter" class="social-icons twitter" target="_blank"></a>
+                  <a href="https://www.linkedin.com/in/anivar/" title="LinkedIn" class="social-icons linkedIn" target="_blank"></a>
                 </div>
                 <br>
               `)
@@ -264,9 +265,7 @@ export class SpeakersComponent {
                 • 1 year Management development program from School of Communication and Management Studies
                 </text>
                 <div>
-                  <a href="#" mdTooltip="Facebook" title="Facebook" class="social-icons fb"></a>
-                  <a href="#" mdTooltip="Twitter" title="Twitter" class="social-icons twitter"></a>
-                  <a href="#" mdTooltip="LinkedIn" title="LinkedIn" class="social-icons linkedIn"></a>
+                  <a href="https://www.facebook.com/mohammed.rafi.71619" title="Facebook" class="social-icons fb" target="_blank"></a>
                 </div>
                 <br>
               `)
@@ -293,9 +292,7 @@ export class SpeakersComponent {
                 Rama is a Post Graduate from the prestigious National Institute of Design (NID) after doing his Graduation in Applied Arts from Jawaharlal Nehru Technological University (JNTU). An ardent Design background is what enables Rama to extend his expertise to Strategic Design, Experience Design and Design Thinking. 
                 On a personal front, he loves his South Indian delicacies, is an avid movie enthusiast, a great fan of Indian films, especially his regional Telugu movies. Even whilst pursuing his geeky inclinations, he loves spending time with his family, particularly, playing with his daughter and watching her grow up.</text>
                 <div>
-                  <a href="#" mdTooltip="Facebook" title="Facebook" class="social-icons fb"></a>
-                  <a href="#" mdTooltip="Twitter" title="Twitter" class="social-icons twitter"></a>
-                  <a href="#" mdTooltip="LinkedIn" title="LinkedIn" class="social-icons linkedIn"></a>
+                  <a href="https://www.linkedin.com/in/aleti-rama-brahmam-127a835/" title="LinkedIn" class="social-icons linkedIn" target="_blank"></a>
                 </div>
                 <br>
               `)
