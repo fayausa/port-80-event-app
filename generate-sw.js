@@ -8,7 +8,8 @@ const input = {
   globDirectory: BUILD_DIR,
   globPatterns: [
     '**/*.{js,png,ico,svg,html,css}',
-    'assets/**/*'
+    'assets/**/*',
+    'assets/slider/*'
   ],
   globIgnores: [
     'package.json',

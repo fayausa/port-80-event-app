@@ -1,12 +1,17 @@
 <td-layout #layout>
   <td-navigation-drawer color="accent" logo="assets/FAYA-80-logo.png" icon="dashboard" sidenavTitle=" Port:80">
     <md-nav-list>
-        <a [routerLink]="['/coc']" md-list-item><md-icon>person</md-icon>CODE OF CONDUCT</a>
-        <a [routerLink]="['/map']" md-list-item><md-icon>map</md-icon>MAP</a>
-        <a [routerLink]="['/contact']" md-list-item><md-icon>contacts</md-icon>CONTACT</a>
+      <a [routerLink]="['/coc']" md-list-item>
+        <md-icon>person</md-icon>CODE OF CONDUCT</a>
+      <a [routerLink]="['/map']" md-list-item>
+        <md-icon>map</md-icon>MAP</a>
+      <a [routerLink]="['/contact']" md-list-item>
+        <md-icon>contacts</md-icon>CONTACT</a>
+      <a [routerLink]="['/loopback']" md-list-item>
+        <md-icon>photo</md-icon>LOOP BACK</a>
     </md-nav-list>
     <md-nav-list td-navigation-drawer-menu>
-      <a md-list-item >
+      <a md-list-item>
         <md-icon>exit_to_app</md-icon>Sign out</a>
     </md-nav-list>
   </td-navigation-drawer>
@@ -82,13 +87,23 @@
           </ng-template>
           <pwa-schedule></pwa-schedule>
         </md-tab>
+        <md-tab>
+          <ng-template md-tab-label>
+            <span hide-xs> Panellists</span>
+            <span hide-gt-xs>
+              <md-icon>schedule</md-icon>
+              <span class="h_e_title">Panellists</span>
+            </span>
+          </ng-template>
+          <pwa-panellist></pwa-panellist>
+        </md-tab>
       </md-tab-group>
     </md-card>
+    <pwa-footer></pwa-footer>
   </td-layout-nav>
   <a md-fab color="primary" mdTooltip="Schedule" mdTooltipPosition="above" class="mat-fab-position-bottom-right fixed h_e_btn_bottm">
     <md-icon style="color:#fff">
       insert_invitation
     </md-icon>
   </a>
-
 </td-layout>

@@ -26,11 +26,23 @@ import { HomeComponent } from './home.component';
 import { PremiseComponent } from './premise/premise.component';
 import { FooterComponent } from './footer/footer.component';
 import { AboutComponent } from './about/about.component';
-import { SpeakersComponent } from './speakers/speakers.component';
+import { SpeakersComponent, DialogComponent } from './speakers/speakers.component';
 import { ScheduleComponent } from './schedule/schedule.component';
 import { CodeOfConductComponent } from '../code-of-conduct/code-of-conduct.component';
 import { MapComponent } from '../map/map.component';
 import { ContactComponent } from '../contact/contact.component';
+import { PanellistComponent } from './panellist/panellist.component';
+import { LoopbackComponent  } from '../loopback/loopback.component';
+import { CarouselModule } from 'ngx-bootstrap';
+import { ModalModule, OverlayRenderer, DOMOverlayRenderer, Overlay } from 'angular2-modal';
+import { Modal, BootstrapModalModule } from 'angular2-modal/plugins/bootstrap';
+
+const MODAL_PROVIDERS = [
+  Modal,
+  Overlay,
+  { provide: OverlayRenderer, useClass: DOMOverlayRenderer }
+];
+
 @NgModule({
   declarations: [
     HomeComponent,
@@ -41,8 +53,10 @@ import { ContactComponent } from '../contact/contact.component';
     ScheduleComponent,
     CodeOfConductComponent,
     MapComponent,
-    ContactComponent
-
+    ContactComponent,
+    PanellistComponent,
+    LoopbackComponent,
+    DialogComponent
   ],
   imports: [
     BrowserModule,
@@ -66,8 +80,12 @@ import { ContactComponent } from '../contact/contact.component';
     CovalentMediaModule,
     CovalentMenuModule,
     CovalentNotificationsModule,
-    LeafletModule
+    LeafletModule,
+    CarouselModule.forRoot(),
+    ModalModule,
+    BootstrapModalModule
   ],
-  providers: []
+  entryComponents: [DialogComponent],
+  providers: [MODAL_PROVIDERS]
 })
 export class HomeModule { }
