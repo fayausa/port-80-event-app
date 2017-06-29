@@ -1,5 +1,5 @@
 <td-layout #layout>
-  <td-navigation-drawer color="accent" [routerLink]="['home']" logo="assets/FAYA-80-logo.png" icon="dashboard" sidenavTitle=" Port:80">
+  <td-navigation-drawer color="accent" [routerLink]="['home']" logo="assets/FAYA-80-logo.png" icon="developer_board" sidenavTitle=" Port:80">
     <md-nav-list>
       <a [routerLink]="['premise']" (click)="layout.close()" md-list-item>
         <md-icon>lightbulb_outline</md-icon>
@@ -55,7 +55,7 @@
           <ng-template md-tab-label>
             <span hide-xs> Premise</span>
             <span hide-gt-xs>
-              <md-icon>lightbulb_outline</md-icon>
+              <md-icon>gamepad</md-icon>
               <span class="h_e_title">Premise</span>
 
             </span>
@@ -76,7 +76,7 @@
           <ng-template md-tab-label>
             <span hide-xs> Speakers</span>
             <span hide-gt-xs>
-              <md-icon>sentiment_very_satisfied</md-icon>
+              <md-icon>record_voice_over</md-icon>
               <span class="h_e_title">Speakers</span>
             </span>
           </ng-template>
@@ -103,7 +103,7 @@
           <ng-template md-tab-label>
             <span hide-xs> Schedule</span>
             <span hide-gt-xs>
-              <md-icon>schedule</md-icon>
+              <md-icon>watch</md-icon>
               <span class="h_e_title">Schedule</span>
             </span>
           </ng-template>
