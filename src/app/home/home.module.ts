@@ -33,6 +33,7 @@ import { MapComponent } from '../map/map.component';
 import { ContactComponent } from '../contact/contact.component';
 import { PanellistComponent , DialogPannelComponent} from './panellist/panellist.component';
 import { LoopbackComponent  } from '../loopback/loopback.component';
+import { RegisterComponent } from '../register/register.component'
 import { CarouselModule } from 'ngx-bootstrap';
 import { ModalModule, OverlayRenderer, DOMOverlayRenderer, Overlay } from 'angular2-modal';
 import { Modal, BootstrapModalModule } from 'angular2-modal/plugins/bootstrap';
@@ -57,7 +58,8 @@ const MODAL_PROVIDERS = [
     PanellistComponent,
     LoopbackComponent,
     DialogComponent,
-    DialogPannelComponent
+    DialogPannelComponent,
+    RegisterComponent
   ],
   imports: [
     BrowserModule,

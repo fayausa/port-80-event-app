@@ -1,36 +1,38 @@
 <td-layout #layout>
-  <td-navigation-drawer color="accent" logo="assets/FAYA-80-logo.png" icon="dashboard" sidenavTitle=" Port:80">
+  <td-navigation-drawer color="accent" [routerLink]="['home']" logo="assets/FAYA-80-logo.png" icon="dashboard" sidenavTitle=" Port:80">
     <md-nav-list>
-       <a [routerLink]="['premise']" md-list-item>
-        <md-icon >lightbulb_outline</md-icon>
+      <a [routerLink]="['premise']" (click)="layout.close()" md-list-item>
+        <md-icon>lightbulb_outline</md-icon>
         PREMISE
       </a>
-       <a [routerLink]="['about']" md-list-item>
-        <md-icon >nature_people</md-icon>
+      <a [routerLink]="['about']" (click)="layout.close()" md-list-item>
+        <md-icon>nature_people</md-icon>
         ABOUT
       </a>
-      <a [routerLink]="['speakers']" md-list-item>
-        <md-icon >sentiment_very_satisfied</md-icon>
+      <a [routerLink]="['speakers']" (click)="layout.close()" md-list-item>
+        <md-icon>sentiment_very_satisfied</md-icon>
         SPEAKERS
       </a>
-       <a [routerLink]="['panellists']" md-list-item>
-        <md-icon >view_list</md-icon>
+      <a [routerLink]="['panellists']" (click)="layout.close()" md-list-item>
+        <md-icon>view_list</md-icon>
         PANEL LISTS
       </a>
-      <a [routerLink]="['schedule']" md-list-item>
-        <md-icon >schedule</md-icon>
+      <a [routerLink]="['schedule']" (click)="layout.close()" md-list-item>
+        <md-icon>schedule</md-icon>
         SCHEDULE
       </a>
-       <a [routerLink]="['coc']" md-list-item>
-        <md-icon >chrome_reader_mode</md-icon>
+      <a [routerLink]="['coc']" (click)="layout.close()" md-list-item>
+        <md-icon>chrome_reader_mode</md-icon>
         CODE OF CONDUCT
       </a>
-      <a [routerLink]="['map']" md-list-item>
+      <a [routerLink]="['map']" (click)="layout.close()" md-list-item>
         <md-icon>map</md-icon>MAP</a>
       <!--<a [routerLink]="['contact']" md-list-item>
         <md-icon>contacts</md-icon>CONTACT</a>-->
-      <a [routerLink]="['loopback']" md-list-item>
+      <a [routerLink]="['loopback']" (click)="layout.close()" md-list-item>
         <md-icon>photo</md-icon>LOOP BACK</a>
+      <a [routerLink]="['register']" (click)="layout.close()" md-list-item>
+        <md-icon>photo</md-icon>REGISTER</a>
     </md-nav-list>
     <md-nav-list td-navigation-drawer-menu>
       <a md-list-item>
@@ -39,7 +41,7 @@
   </td-navigation-drawer>
   <td-layout-nav color="primary">
     <div td-toolbar-content layout="row" layout-align="start center" flex>
-      <span><img src="assets/FAYA-80-logo.png" style="width: 75%;"></span>
+      <span><img src="assets/FAYA-80-logo.png" style="width: 75%;cursor: pointer;" [routerLink]="['/home']"></span>
       <span flex></span>
       <button md-icon-button>
         <td-notification-count color="primary" [notifications]="12">

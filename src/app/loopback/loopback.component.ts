@@ -5,7 +5,7 @@ import { CarouselConfig } from 'ngx-bootstrap/carousel';
   selector: 'pwa-loopback',
   templateUrl: './loopback.component.html',
   styleUrls: ['./loopback.component.css'],
-  providers: [{provide: CarouselConfig, useValue: {interval: 2000, noPause: false}}]
+  providers: [{provide: CarouselConfig, useValue: {interval: 4000, noPause: false}}]
 })
 export class LoopbackComponent implements OnInit {
 
