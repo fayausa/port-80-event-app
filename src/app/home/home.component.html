@@ -1,13 +1,35 @@
 <td-layout #layout>
   <td-navigation-drawer color="accent" logo="assets/FAYA-80-logo.png" icon="dashboard" sidenavTitle=" Port:80">
     <md-nav-list>
-      <a [routerLink]="['/coc']" md-list-item>
-        <md-icon>person</md-icon>CODE OF CONDUCT</a>
-      <a [routerLink]="['/map']" md-list-item>
+       <a [routerLink]="['premise']" md-list-item>
+        <md-icon >lightbulb_outline</md-icon>
+        PREMISE
+      </a>
+       <a [routerLink]="['about']" md-list-item>
+        <md-icon >nature_people</md-icon>
+        ABOUT
+      </a>
+      <a [routerLink]="['speakers']" md-list-item>
+        <md-icon >sentiment_very_satisfied</md-icon>
+        SPEAKERS
+      </a>
+       <a [routerLink]="['panellists']" md-list-item>
+        <md-icon >view_list</md-icon>
+        PANEL LISTS
+      </a>
+      <a [routerLink]="['schedule']" md-list-item>
+        <md-icon >schedule</md-icon>
+        SCHEDULE
+      </a>
+       <a [routerLink]="['coc']" md-list-item>
+        <md-icon >chrome_reader_mode</md-icon>
+        CODE OF CONDUCT
+      </a>
+      <a [routerLink]="['map']" md-list-item>
         <md-icon>map</md-icon>MAP</a>
-      <a [routerLink]="['/contact']" md-list-item>
-        <md-icon>contacts</md-icon>CONTACT</a>
-      <a [routerLink]="['/loopback']" md-list-item>
+      <!--<a [routerLink]="['contact']" md-list-item>
+        <md-icon>contacts</md-icon>CONTACT</a>-->
+      <a [routerLink]="['loopback']" md-list-item>
         <md-icon>photo</md-icon>LOOP BACK</a>
     </md-nav-list>
     <md-nav-list td-navigation-drawer-menu>
@@ -25,7 +47,7 @@
         </td-notification-count>
       </button>
     </div>
-    <md-card id="h_e_card">
+    <md-card id="h_e_card" *ngIf="router.url === '/home'">
       <md-tab-group id="header" style="background: #fff;">
         <md-tab>
           <ng-template md-tab-label>
@@ -69,11 +91,9 @@
           <div layout-gt-sm="row" layout-padding>
             <md-card class="sponsers-wrap" flex-gt-sm="30">
               <img md-card-image src="assets/sponsers-icfoss.png">
-              <!--<md-card-subtitle>ICFOSS</md-card-subtitle>-->
             </md-card>
             <md-card class="sponsers-wrap" flex-gt-sm="30">
               <img md-card-image src="assets/sponsers-startup-mission.png">
-              <!--<md-card-subtitle>Startup Mission</md-card-subtitle>-->
             </md-card>
           </div>
         </md-tab>
@@ -99,6 +119,7 @@
         </md-tab>
       </md-tab-group>
     </md-card>
+    <router-outlet></router-outlet>
     <pwa-footer></pwa-footer>
   </td-layout-nav>
   <a md-fab color="primary" mdTooltip="Schedule" mdTooltipPosition="above" class="mat-fab-position-bottom-right fixed h_e_btn_bottm">
