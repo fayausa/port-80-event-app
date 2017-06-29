@@ -368,7 +368,7 @@ a {
 }
 
 .model-dialog .speakers-photo-case {
-  height: 137px;
+  height: 169px;
   width: 169px;
   float: left;
 }
@@ -437,14 +437,14 @@ a {
 }
 
 .event-details {
-  min-height: 140px;
+  min-height: 95px;
   background-color: rgb(167, 215, 183);
   margin: 1.5px;
 }
 
-.date-card {
+/*.date-card {
   margin: auto;
-}
+}*/
 
 .date-card .mat-card {
   padding: 2em!important;
@@ -457,7 +457,7 @@ h1 {
 }
 
 .event-details h1 {
-  font-size: 60px;
+  font-size: 46px;
   margin-bottom: 0px;
   margin-top: 15px;
   font-weight: normal;
@@ -584,7 +584,7 @@ md-nav-list h4 {
     padding: 1em;
   }
   .date-card .mat-card {
-    width: 92%;
+    width: 100%;
     float: right;
     margin-top: 61px;
   }
@@ -632,9 +632,9 @@ md-nav-list h4 {
     font-size: 36px;
     margin-top: 2px;
   }
-  .event-details {
+/*  .event-details {
     min-height: 118px;
-  }
+  }*/
   .btn {
     padding: 10px 39px!important;
   }
@@ -650,7 +650,7 @@ md-nav-list h4 {
     margin: 0;
     padding: 1em;
   }
-  .image1 {
+/*  .image1 {
     width: 60px;
   }
   .image2 {
@@ -664,9 +664,10 @@ md-nav-list h4 {
   }
   .image5 {
     width: 55px;
-  }
-  .image6 {
-    width: 65px;
+  }*/
+  .image {
+    width: 100%;
+    height: 100%;
   }
   .b-logo {
     margin-top: 1em;
@@ -693,7 +694,7 @@ md-nav-list h4 {
     padding-top: 4em;
   }
   .date-card .mat-card {
-    width: 80%;
+    width: 90%;
     float: right;
     margin-top: 61px;
   }
