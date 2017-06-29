@@ -10,6 +10,7 @@ import { PanellistComponent } from './panellist/panellist.component';
 import { PremiseComponent } from './premise/premise.component';
 import { ScheduleComponent } from './schedule/schedule.component';
 import { SpeakersComponent } from './speakers/speakers.component';
+import { RegisterComponent } from '../register/register.component'
 @NgModule({
   imports: [
     RouterModule.forChild([
@@ -21,6 +22,10 @@ import { SpeakersComponent } from './speakers/speakers.component';
          {
            path: 'map',
            component: MapComponent
+         },
+         {
+           path: 'register',
+           component: RegisterComponent
          },
          {
            path: 'contact',
