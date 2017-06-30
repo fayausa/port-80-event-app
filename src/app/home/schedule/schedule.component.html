@@ -271,7 +271,10 @@
         <md-card-title-group>
           <md-card-title class="text-xxl">FOSS - Role of communities</md-card-title>
           <md-card-subtitle>Mr. Satish Babu (Chair, APRALO - ICANN)</md-card-subtitle>
-          <md-card-subtitle><strong>11:10 AM</strong></md-card-subtitle>
+          <md-card-subtitle><strong>11:10 AM</strong>
+          <md-card-subtitle><strong>12:20 PM</strong>
+            <md-chip style="margin:0px 5px;padding:3px 6px;border-radius:30px;background-color: #00e4e6;" selected="true">FOSS</md-chip>
+          </md-card-subtitle>
           <md-card-subtitle>
             <md-icon class="tc-blue-700" (click)="onClick1()">videocam</md-icon>
           </md-card-subtitle>
@@ -286,7 +289,11 @@
           <md-card-title class="text-xxl">Designing Machine Learning Systems</md-card-title>
           <md-card-subtitle>Mr. Venkatramanan P. R. (Data Scientist - Thoughtworks) Mr. Venkatramanan P. R. (Data Scientist - Thoughtworks)
           </md-card-subtitle>
-          <md-card-subtitle><strong>11:40 AM</strong></md-card-subtitle>
+          <md-card-subtitle><strong>11:40 AM</strong>
+          <md-card-subtitle><strong>12:20 PM</strong>
+            <md-chip style="margin:0px 5px;padding:3px 6px;border-radius:30px;background-color: #00e4e6;" selected="true">AI</md-chip>
+            <md-chip style="margin:0px 5px;padding:3px 6px;border-radius:30px;background-color: yellow;" selected="true">Tensor Flow</md-chip
+          </md-card-subtitle>
           <md-card-subtitle>
             <md-icon class="tc-blue-700" (click)="onClick1()">videocam</md-icon>
           </md-card-subtitle>
@@ -300,7 +307,10 @@
         <md-card-title-group>
           <md-card-title class="text-xxl">How Tensor Flow converts Data into Intelligence</md-card-title>
           <md-card-subtitle>Mr. Amrit Sanjeev (Senior Developer Advocate - Google)</md-card-subtitle>
-          <md-card-subtitle><strong>12:20 PM</strong></md-card-subtitle>
+          <md-card-subtitle><strong>12:20 PM</strong>
+            <md-chip style="margin:0px 5px;padding:3px 6px;border-radius:30px;background-color: #00e4e6;" selected="true">AI</md-chip>
+            <md-chip style="margin:0px 5px;padding:3px 6px;border-radius:30px;background-color: yellow;" selected="true">Tensor Flow</md-chip
+          </md-card-subtitle>
           <md-card-subtitle>
             <md-icon class="tc-blue-700" (click)="onClick1()">videocam</md-icon>
           </md-card-subtitle>
@@ -320,7 +330,8 @@
         <md-card-title-group>
           <md-card-title class="text-xxl">How to Grow Faster & Smarter in the Age of Disruption</md-card-title>
           <md-card-subtitle> Prof. Nandini Vaidyanathan (Chairman and Managing Director - CARMa Venture Services) </md-card-subtitle>
-          <md-card-subtitle><strong>2:00 PM</strong></md-card-subtitle>
+          <md-card-subtitle><strong>2:00 PM</strong> 
+          </md-card-subtitle>
           <md-card-subtitle>
             <md-icon class="tc-blue-700" (click)="onClick1()">videocam</md-icon>
           </md-card-subtitle>
@@ -334,7 +345,9 @@
         <md-card-title-group>
           <md-card-title class="text-xxl">UX at the Age of Disruption </md-card-title>
           <md-card-subtitle> Mr. Rama Brahmam Aleti (Senior Lead, UX - Valorem) </md-card-subtitle>
-          <md-card-subtitle><strong>03:00 PM</strong></md-card-subtitle>
+          <md-card-subtitle><strong>03:00 PM</strong>
+             <md-chip style="margin:0px 5px;padding:3px 6px;border-radius:30px;background-color: #00e4e6;" selected="true">UX</md-chip>
+          </md-card-subtitle>
           <md-card-subtitle>
             <md-icon class="tc-blue-700" (click)="onClick1()">videocam</md-icon>
           </md-card-subtitle>
@@ -353,7 +366,9 @@
       <md-card>
         <md-card-title-group>
           <md-card-title class="text-xxl">Panel Discussion - Staying Relevant at the Age of Disruption</md-card-title>
-          <md-card-subtitle><strong>03:00 PM</strong></md-card-subtitle>
+          <md-card-subtitle><strong>03:00 PM</strong>
+             <md-chip style="margin:0px 5px;padding:3px 6px;border-radius:30px;background-color: #00e4e6;" selected="true">Panel Discussion</md-chip>
+          </md-card-subtitle>
           <md-card-subtitle>
             <md-icon class="tc-blue-700" (click)="onClick1()">videocam</md-icon>
           </md-card-subtitle>
@@ -389,22 +404,42 @@
         <md-card-title-group>
           <md-card-title class="text-xxl">Software & Hardware Breakthroughs in Bionics and IOT</md-card-title>
           <md-card-subtitle> Mr. Sanju Mathew (CEO - Onbyz) </md-card-subtitle>
-          <md-card-subtitle><strong>11:00 AM</strong></md-card-subtitle>
-          <img md-card-md-image src="assets/sanju-mathew.jpg">
+          <md-card-subtitle><strong>11:00 AM</strong>
+             <md-chip style="margin:0px 5px;padding:3px 6px;border-radius:30px;background-color: #00e4e6;" selected="true">IOT</md-chip>
+            <md-chip style="margin:0px 5px;padding:3px 6px;border-radius:30px;background-color: yellow;" selected="true">Bionics</md-chip> 
+          </md-card-subtitle>
+         <md-card-subtitle>
+            <md-icon class="tc-blue-700" (click)="onClick1()">videocam</md-icon>
+          </md-card-subtitle>
         </md-card-title-group>
+        <div *ngIf="isClicked" class="animate slideInDown">
+          <md-divider></md-divider>
+          <iframe width="100%" height="auto" src="https://www.youtube.com/embed/lrUoThXxj1Q" frameborder="0" allowfullscreen></iframe>
+        </div>
       </md-card>
       <md-card>
         <md-card-title-group>
           <md-card-title class="text-xxl">VR, AR & MR: What’s Real, What’s Now, What’s to Come</md-card-title>
           <md-card-subtitle> Mr. Abhilash Ashok (Senior Lead UX Development - Valorem) </md-card-subtitle>
-          <md-card-subtitle><strong>12:00 PM </strong></md-card-subtitle>
-          <img md-card-md-image src="assets/abhilash-ashok.jpg">
+          <md-card-subtitle><strong>12:00 PM </strong>
+            <md-chip style="margin:0px 5px;padding:3px 6px;border-radius:30px;background-color: yellow;" selected="true">VR & AR</md-chip>     
+          </md-card-subtitle>
+         <md-card-subtitle>
+            <md-icon class="tc-blue-700" (click)="onClick1()">videocam</md-icon>
+          </md-card-subtitle>
         </md-card-title-group>
+        <div *ngIf="isClicked" class="animate slideInDown">
+          <md-divider></md-divider>
+          <iframe width="100%" height="auto" src="https://www.youtube.com/embed/rmZmafAi1PM" frameborder="0" allowfullscreen></iframe>
+        </div>
       </md-card>
       <md-card>
         <md-card-title-group>
           <md-card-title class="text-xxl">Get your ‘Hands-On’ Block Chain!</md-card-title>
-          <md-card-subtitle><strong>02:00 PM</strong></md-card-subtitle>
+          <md-card-subtitle><strong>02:00 PM</strong>
+             <md-chip style="margin:0px 5px;padding:3px 6px;border-radius:30px;background-color: #00e4e6;" selected="true">Workshop</md-chip>
+            <md-chip style="margin:0px 5px;padding:3px 6px;border-radius:30px;background-color: yellow;" selected="true">BlockChain</md-chip>         
+          </md-card-subtitle>
         </md-card-title-group>
       </md-card>
     </div>
@@ -426,22 +461,41 @@
         <md-card-title-group>
           <md-card-title class="text-xxl">Fairness in Civic Technologies</md-card-title>
           <md-card-subtitle> Mr. Anivar Aravind (Founder Executive Director, Indic Project) </md-card-subtitle>
-          <md-card-subtitle><strong>11:00 AM</strong></md-card-subtitle>
-          <img md-card-md-image src="assets/anivar.jpg">
+          <md-card-subtitle><strong>11:00 AM</strong>
+            <md-chip style="margin:0px 5px;padding:3px 6px;border-radius:30px;background-color: #00e4e6;" selected="true">Civic Technologies</md-chip>
+            <md-chip style="margin:0px 5px;padding:3px 6px;border-radius:30px;background-color: yellow;" selected="true">Privacy</md-chip>
+          </md-card-subtitle>
+         <md-card-subtitle>
+            <md-icon class="tc-blue-700" (click)="onClick1()">videocam</md-icon>
+          </md-card-subtitle>
         </md-card-title-group>
+        <div *ngIf="isClicked" class="animate slideInDown">
+          <md-divider></md-divider>
+          <iframe width="100%" height="auto" src="https://www.youtube.com/embed/k-rsDfR7DqE" frameborder="0" allowfullscreen></iframe>
+        </div>
       </md-card>
       <md-card>
         <md-card-title-group>
           <md-card-title class="text-xxl">Decoding Phantoms in the Brain Using Technology</md-card-title>
           <md-card-subtitle> Mr. Mohammed Rafi T. F. (Behavioural Scientist) </md-card-subtitle>
-          <md-card-subtitle><strong>12:00 PM </strong></md-card-subtitle>
-          <img md-card-md-image src="assets/rafi.jpg">
+          <md-card-subtitle><strong>12:00 PM </strong>
+            <md-chip style="margin:0px 5px;padding:3px 6px;border-radius:30px;background-color: #00e4e6;" selected="true">NLP</md-chip>
+          </md-card-subtitle>
+         <md-card-subtitle>
+            <md-icon class="tc-blue-700" (click)="onClick1()">videocam</md-icon>
+          </md-card-subtitle>
         </md-card-title-group>
+        <div *ngIf="isClicked" class="animate slideInDown">
+          <md-divider></md-divider>
+          <iframe width="100%" height="auto" src="https://www.youtube.com/embed/wT-Y4Dm_HmI" frameborder="0" allowfullscreen></iframe>
+        </div>
       </md-card>
       <md-card>
         <md-card-title-group>
           <md-card-title class="text-xxl">Programming your way to Progressive Web</md-card-title>
-          <md-card-subtitle><strong>02:00 PM</strong></md-card-subtitle>
+          <md-card-subtitle><strong>02:00 PM</strong>
+           <md-chip style="margin:0px 5px;padding:3px 6px;border-radius:30px;background-color: yellow;" selected="true">Workshop</md-chip>
+          </md-card-subtitle>
         </md-card-title-group>
       </md-card>
     </div>
@@ -463,8 +517,11 @@
         <md-card-title-group>
           <md-card-title class="text-xxl"> Soft Computing and Blockchain in Bioinformatics </md-card-title>
           <md-card-subtitle> Mr. Manuyash Chaudhary, Mr. Rahul A. R. (Accubits Technologies) </md-card-subtitle>
-          <md-card-subtitle><strong>11:00 AM</strong></md-card-subtitle>
-          <img md-card-md-image src="assets/manuyash-chaudhary.jpg">
+          <md-card-subtitle><strong>11:00 AM</strong>
+            <md-chip style="margin:0px 5px;padding:3px 6px;border-radius:30px;background-color: #00e4e6;" selected="true">Bioinformatics</md-chip>
+            <md-chip style="margin:0px 5px;padding:3px 6px;border-radius:30px;background-color: yellow;" selected="true">Blockchain</md-chip>
+            <md-chip style="margin:0px 5px;padding:3px 6px;border-radius:30px;background-color: yellow;" selected="true">Workshop</md-chip>
+          </md-card-subtitle>
         </md-card-title-group>
       </md-card>
       <md-card>
@@ -473,41 +530,13 @@
           <md-card-subtitle> Mr. Charush S. Nair, Mr. Jithin V. G. ( Accubits Technologies) </md-card-subtitle>
           <md-card-subtitle><strong>02:00 PM </strong>
            <md-chip style="margin:0px 5px;padding:3px 6px;border-radius:30px;background-color: #00e4e6;" selected="true">Machine Learning</md-chip>
-              <md-chip style="margin:0px 5px;padding:3px 6px;border-radius:30px;background-color: yellow;" selected="true">Bionics</md-chip>
+           <md-chip style="margin:0px 5px;padding:3px 6px;border-radius:30px;background-color: yellow;" selected="true">Bionics</md-chip>
+            <md-chip style="margin:0px 5px;padding:3px 6px;border-radius:30px;background-color: yellow;" selected="true">Workshop</md-chip>
+
           </md-card-subtitle>
         </md-card-title-group>
       </md-card>
     </div>
-
-
-
-<md-card>
-        <md-card-title-group>
-          <md-card-title class="text-xxl">Tech Disruption – Opportunities & Threats</md-card-title>
-          <md-card-subtitle>Mr. Michael Gord (Founder & CEO - MLG Blockchain Consulting)</md-card-subtitle>
-          <md-card-subtitle><strong>10:00 AM</strong>
-              <md-chip style="margin:0px 5px;padding:3px 6px;border-radius:30px;background-color: #00e4e6;" selected="true">Keynote</md-chip>
-              <md-chip style="margin:0px 5px;padding:3px 6px;border-radius:30px;background-color: yellow;" selected="true">Blockchain</md-chip>
-
-          </md-card-subtitle>
-          <md-card-subtitle>
-            <md-icon class="tc-blue-700" (click)="onClick1()">videocam</md-icon>
-          </md-card-subtitle>
-        </md-card-title-group>
-        <div *ngIf="isClicked" class="animate slideInDown">
-          <md-divider></md-divider>
-          <iframe width="100%" height="auto" src="https://www.youtube.com/embed/LMlbRsiYgpw" frameborder="0" allowfullscreen></iframe>
-        </div>
-      </md-card>
-
-
-
-
-
-
-
-
-
   </md-tab>
   <md-tab label="Exhibition Hall, Park Centre">
     <ng-template md-tab-label>
