@@ -252,10 +252,10 @@
               <md-chip style="margin:0px 5px;padding:3px 6px;border-radius:30px;background-color: yellow;" selected="true">Blockchain</md-chip>
           </md-card-subtitle>
           <md-card-subtitle>
-            <md-icon class="tc-blue-700" (click)="onClick1()">videocam</md-icon>
+            <md-icon class="tc-blue-700" (click)="toggle(1)">videocam</md-icon>
           </md-card-subtitle>
         </md-card-title-group>
-        <div *ngIf="isClicked" class="animate slideInDown">
+        <div *ngIf="toggleObj[1]" class="animate slideInDown">
           <md-divider></md-divider>
           <iframe width="100%" height="auto" src="https://www.youtube.com/embed/LMlbRsiYgpw" frameborder="0" allowfullscreen></iframe>
         </div>
