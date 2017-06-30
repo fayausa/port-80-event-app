@@ -272,13 +272,13 @@
           <md-card-title class="text-xxl">FOSS - Role of communities</md-card-title>
           <md-card-subtitle>Mr. Satish Babu (Chair, APRALO - ICANN)</md-card-subtitle>
           <md-card-subtitle><strong>11:10 AM</strong>
-            <md-chip style="margin:0px 5px;padding:3px 6px;border-radius:30px;background-color: #00e4e6;" selected="true">FOSS</md-chip>
+            <md-chip style="margin:0px 5px;padding:3px 6px;border-radius:30px;background-color: whitesmoke;" selected="true">FOSS</md-chip>
           </md-card-subtitle>
           <md-card-subtitle>
-            <md-icon class="tc-blue-700" (click)="onClick1()">videocam</md-icon>
+            <md-icon class="tc-blue-700" (click)="toggle(2)">videocam</md-icon>
           </md-card-subtitle>
         </md-card-title-group>
-        <div *ngIf="isClicked" class="animate slideInDown">
+        <div *ngIf="toggleObj[2]" class="animate slideInDown">
           <md-divider></md-divider>
           <iframe width="100%" height="auto" src="https://www.youtube.com/embed/Vtiqj1hCH4I" frameborder="0" allowfullscreen></iframe>
         </div>
@@ -289,14 +289,14 @@
           <md-card-subtitle>Mr. Venkatramanan P. R. (Data Scientist - Thoughtworks) Mr. Venkatramanan P. R. (Data Scientist - Thoughtworks)
           </md-card-subtitle>
           <md-card-subtitle><strong>11:40 AM</strong>
-            <md-chip style="margin:0px 5px;padding:3px 6px;border-radius:30px;background-color: #00e4e6;" selected="true">AI</md-chip>
-            <md-chip style="margin:0px 5px;padding:3px 6px;border-radius:30px;background-color: yellow;" selected="true">Tensor Flow</md-chip>
+            <md-chip style="margin:0px 5px;padding:3px 6px;border-radius:30px;background-color: #00e4e6;" selected="true">Machine Learning</md-chip>
+            <md-chip style="margin:0px 5px;padding:3px 6px;border-radius:30px;background-color: grey;" selected="true">Data Science</md-chip>
           </md-card-subtitle>
           <md-card-subtitle>
-            <md-icon class="tc-blue-700" (click)="onClick1()">videocam</md-icon>
+            <md-icon class="tc-blue-700" (click)="toggle(3)">videocam</md-icon>
           </md-card-subtitle>
         </md-card-title-group>
-        <div *ngIf="isClicked" class="animate slideInDown">
+        <div *ngIf="toggleObj[3]" class="animate slideInDown">
           <md-divider></md-divider>
           <iframe width="100%" height="auto" src="https://www.youtube.com/embed/iiPk8ghxDpE" frameborder="0" allowfullscreen></iframe>
         </div>
@@ -310,10 +310,10 @@
             <md-chip style="margin:0px 5px;padding:3px 6px;border-radius:30px;background-color: yellow;" selected="true">Tensor Flow</md-chip>
           </md-card-subtitle>
           <md-card-subtitle>
-            <md-icon class="tc-blue-700" (click)="onClick1()">videocam</md-icon>
+            <md-icon class="tc-blue-700" (click)="toggle(4)">videocam</md-icon>
           </md-card-subtitle>
         </md-card-title-group>
-        <div *ngIf="isClicked" class="animate slideInDown">
+        <div *ngIf="toggleObj[4]" class="animate slideInDown">
           <md-divider></md-divider>
           <iframe width="100%" height="auto" src="https://www.youtube.com/embed/TzxCCcbcDgg" frameborder="0" allowfullscreen></iframe>
         </div>
@@ -331,10 +331,10 @@
           <md-card-subtitle><strong>2:00 PM</strong>
           </md-card-subtitle>
           <md-card-subtitle>
-            <md-icon class="tc-blue-700" (click)="onClick1()">videocam</md-icon>
+            <md-icon class="tc-blue-700" (click)="toggle(5)">videocam</md-icon>
           </md-card-subtitle>
         </md-card-title-group>
-        <div *ngIf="isClicked" class="animate slideInDown">
+        <div *ngIf="toggleObj[5]" class="animate slideInDown">
           <md-divider></md-divider>
           <iframe width="100%" height="auto" src="https://www.youtube.com/embed/uflPL4VueTM" frameborder="0" allowfullscreen></iframe>
         </div>
@@ -347,10 +347,10 @@
              <md-chip style="margin:0px 5px;padding:3px 6px;border-radius:30px;background-color: #00e4e6;" selected="true">UX</md-chip>
           </md-card-subtitle>
           <md-card-subtitle>
-            <md-icon class="tc-blue-700" (click)="onClick1()">videocam</md-icon>
+            <md-icon class="tc-blue-700" (click)="toggle(6)">videocam</md-icon>
           </md-card-subtitle>
         </md-card-title-group>
-        <div *ngIf="isClicked" class="animate slideInDown">
+        <div *ngIf="toggleObj[6]" class="animate slideInDown">
           <md-divider></md-divider>
           <iframe width="100%" height="auto" src="https://www.youtube.com/embed/FVlpCMdOeK8" frameborder="0" allowfullscreen></iframe>
         </div>
@@ -368,10 +368,10 @@
              <md-chip style="margin:0px 5px;padding:3px 6px;border-radius:30px;background-color: #00e4e6;" selected="true">Panel Discussion</md-chip>
           </md-card-subtitle>
           <md-card-subtitle>
-            <md-icon class="tc-blue-700" (click)="onClick1()">videocam</md-icon>
+            <md-icon class="tc-blue-700" (click)="toggle(7)">videocam</md-icon>
           </md-card-subtitle>
         </md-card-title-group>
-        <div *ngIf="isClicked" class="animate slideInDown">
+        <div *ngIf="toggleObj[7]" class="animate slideInDown">
           <md-divider></md-divider>
           <iframe width="100%" height="auto" src="https://www.youtube.com/embed/oMelc8RG3cI" frameborder="0" allowfullscreen></iframe>
         </div>
@@ -407,10 +407,10 @@
             <md-chip style="margin:0px 5px;padding:3px 6px;border-radius:30px;background-color: yellow;" selected="true">Bionics</md-chip>
           </md-card-subtitle>
          <md-card-subtitle>
-            <md-icon class="tc-blue-700" (click)="onClick1()">videocam</md-icon>
+            <md-icon class="tc-blue-700" (click)="toggle(8)">videocam</md-icon>
           </md-card-subtitle>
         </md-card-title-group>
-        <div *ngIf="isClicked" class="animate slideInDown">
+        <div *ngIf="toggleObj[8]" class="animate slideInDown">
           <md-divider></md-divider>
           <iframe width="100%" height="auto" src="https://www.youtube.com/embed/lrUoThXxj1Q" frameborder="0" allowfullscreen></iframe>
         </div>
@@ -423,10 +423,10 @@
             <md-chip style="margin:0px 5px;padding:3px 6px;border-radius:30px;background-color: yellow;" selected="true">VR & AR</md-chip>
           </md-card-subtitle>
          <md-card-subtitle>
-            <md-icon class="tc-blue-700" (click)="onClick1()">videocam</md-icon>
+            <md-icon class="tc-blue-700" (click)="toggle(9)">videocam</md-icon>
           </md-card-subtitle>
         </md-card-title-group>
-        <div *ngIf="isClicked" class="animate slideInDown">
+        <div *ngIf="toggleObj[9]" class="animate slideInDown">
           <md-divider></md-divider>
           <iframe width="100%" height="auto" src="https://www.youtube.com/embed/rmZmafAi1PM" frameborder="0" allowfullscreen></iframe>
         </div>
@@ -464,10 +464,10 @@
             <md-chip style="margin:0px 5px;padding:3px 6px;border-radius:30px;background-color: yellow;" selected="true">Privacy</md-chip>
           </md-card-subtitle>
          <md-card-subtitle>
-            <md-icon class="tc-blue-700" (click)="onClick1()">videocam</md-icon>
+            <md-icon class="tc-blue-700" (click)="toggle(10)">videocam</md-icon>
           </md-card-subtitle>
         </md-card-title-group>
-        <div *ngIf="isClicked" class="animate slideInDown">
+        <div *ngIf="toggleObj[10]" class="animate slideInDown">
           <md-divider></md-divider>
           <iframe width="100%" height="auto" src="https://www.youtube.com/embed/k-rsDfR7DqE" frameborder="0" allowfullscreen></iframe>
         </div>
@@ -480,10 +480,10 @@
             <md-chip style="margin:0px 5px;padding:3px 6px;border-radius:30px;background-color: #00e4e6;" selected="true">NLP</md-chip>
           </md-card-subtitle>
          <md-card-subtitle>
-            <md-icon class="tc-blue-700" (click)="onClick1()">videocam</md-icon>
+            <md-icon class="tc-blue-700" (click)="toggle(11)">videocam</md-icon>
           </md-card-subtitle>
         </md-card-title-group>
-        <div *ngIf="isClicked" class="animate slideInDown">
+        <div *ngIf="toggleObj[11]" class="animate slideInDown">
           <md-divider></md-divider>
           <iframe width="100%" height="auto" src="https://www.youtube.com/embed/wT-Y4Dm_HmI" frameborder="0" allowfullscreen></iframe>
         </div>
