@@ -204,9 +204,21 @@
   </div>
 </section>-->
 
-<md-tab-group>
-  <md-tab label="Travancore Hall (Park Center)">
+
+<md-tab-group class="animated slideInUp">
+  <md-tab>
+    <ng-template md-tab-label>
+      <span hide-xs>1</span>
+      <span hide-gt-xs>
+              <md-icon>flag</md-icon>
+              <span class="h_e_title">1</span>
+      </span>
+    </ng-template>
     <div layout-gt-xs="row">
+      <div flex-gt-sm="35" layout-gt-sm="column" layout-align="">
+        <h3 class="event-hall travancore" style="padding-top: 1em;">Travancore Hall (Park Center)</h3>
+        <img src="assets/travancore-hall.png" class="s_e_img_travancore">
+      </div>
       <md-card>
         <md-card-title-group>
           <md-card-title class="text-xxl">Registration</md-card-title>
@@ -219,14 +231,34 @@
           <md-card-subtitle><strong>9:30 AM</strong></md-card-subtitle>
         </md-card-title-group>
       </md-card>
+
+      <!--<td-expansion-panel  label="10:00 AM" sublabel="Keynote: Tech Disruption – Opportunities & Threats">
+        <h3 class="md-subhead">md-padding class</h3>
+        <div>
+          <iframe width="400" height="400" src="https://www.youtube.com/embed/LMlbRsiYgpw" frameborder="0" allowfullscreen></iframe>
+        </div>
+
+      </td-expansion-panel>-->
+      <!--<td-expansion-panel  label="10:00 AM" sublabel="Keynote: Tech Disruption – Opportunities & Threats">
+         <div>
+          <iframe width="100%"  src="https://www.youtube.com/embed/LMlbRsiYgpw" frameborder="0" allowfullscreen></iframe>
+        </div>-->
       <md-card>
         <md-card-title-group>
           <md-card-title class="text-xxl">Keynote: Tech Disruption – Opportunities & Threats</md-card-title>
           <md-card-subtitle>Mr. Michael Gord (Founder & CEO - MLG Blockchain Consulting)</md-card-subtitle>
           <md-card-subtitle><strong>10:00 AM</strong></md-card-subtitle>
+          <md-card-subtitle>
+            <md-icon class="tc-blue-700" (click)="onClick1()">videocam</md-icon>
+          </md-card-subtitle>
           <img md-card-md-image src="assets/michael.jpg">
         </md-card-title-group>
+        <div *ngIf="isClicked" class="animate slideInDown">
+          <md-divider></md-divider>
+          <iframe width="100%" height="auto" src="https://www.youtube.com/embed/LMlbRsiYgpw" frameborder="0" allowfullscreen></iframe>
+        </div>
       </md-card>
+      <!--</td-expansion-panel>-->
       <md-card>
         <md-card-title-group>
           <md-card-title class="text-xxl">Tea Break</md-card-title>
@@ -244,7 +276,8 @@
       <md-card>
         <md-card-title-group>
           <md-card-title class="text-xxl">Designing Machine Learning Systems</md-card-title>
-          <md-card-subtitle>Mr. Venkatramanan P. R. (Data Scientist - Thoughtworks) Mr. Venkatramanan P. R. (Data Scientist - Thoughtworks) </md-card-subtitle>
+          <md-card-subtitle>Mr. Venkatramanan P. R. (Data Scientist - Thoughtworks) Mr. Venkatramanan P. R. (Data Scientist - Thoughtworks)
+          </md-card-subtitle>
           <md-card-subtitle><strong>11:40 AM</strong></md-card-subtitle>
           <img md-card-md-image src="assets/venkat.png">
         </md-card-title-group>
@@ -274,7 +307,7 @@
       <md-card>
         <md-card-title-group>
           <md-card-title class="text-xxl">UX at the Age of Disruption </md-card-title>
-          <md-card-subtitle>  Mr. Rama Brahmam Aleti (Senior Lead, UX - Valorem) </md-card-subtitle>
+          <md-card-subtitle> Mr. Rama Brahmam Aleti (Senior Lead, UX - Valorem) </md-card-subtitle>
           <md-card-subtitle><strong>03:00 PM</strong></md-card-subtitle>
           <img md-card-md-image src="assets/rama-brahmam.jpg">
         </md-card-title-group>
@@ -288,7 +321,7 @@
       <md-card>
         <md-card-title-group>
           <md-card-title class="text-xxl">Panel Discussion - Staying Relevant at the Age of Disruption</md-card-title>
-          <md-card-subtitle>  Mr. Rama Brahmam Aleti (Senior Lead, UX - Valorem) </md-card-subtitle>
+          <md-card-subtitle> Mr. Rama Brahmam Aleti (Senior Lead, UX - Valorem) </md-card-subtitle>
           <md-card-subtitle><strong>03:00 PM</strong></md-card-subtitle>
           <img md-card-md-image src="assets/rama-brahmam.jpg">
         </md-card-title-group>
@@ -301,12 +334,24 @@
       </md-card>
     </div>
   </md-tab>
-  <md-tab label="Startup Mission Hall (Thejaswini)">
+
+  <md-tab label="Startup Mission Hall">
+    <div flex-gt-sm="35" layout-gt-sm="column" layout-align="center center">
+      <h3 class="event-hall travancore" style="padding-top: 1em;">Startup Mission Hall (Thejaswini)</h3>
+      <img src="assets/start-up.jpg" class="s_e_img">
+    </div>
+    <ng-template md-tab-label>
+      <span hide-xs>2</span>
+      <span hide-gt-xs>
+              <md-icon class="tc-blue-700">flag</md-icon>
+              <span class="h_e_title">2</span>
+      </span>
+    </ng-template>
     <div layout-gt-xs="row">
       <md-card>
         <md-card-title-group>
           <md-card-title class="text-xxl">Software & Hardware Breakthroughs in Bionics and IOT</md-card-title>
-          <md-card-subtitle>  Mr. Sanju Mathew (CEO - Onbyz) </md-card-subtitle>
+          <md-card-subtitle> Mr. Sanju Mathew (CEO - Onbyz) </md-card-subtitle>
           <md-card-subtitle><strong>11:00 AM</strong></md-card-subtitle>
           <img md-card-md-image src="assets/sanju-mathew.jpg">
         </md-card-title-group>
@@ -314,7 +359,7 @@
       <md-card>
         <md-card-title-group>
           <md-card-title class="text-xxl">VR, AR & MR: What’s Real, What’s Now, What’s to Come</md-card-title>
-          <md-card-subtitle>  Mr. Abhilash Ashok (Senior Lead UX Development - Valorem) </md-card-subtitle>
+          <md-card-subtitle> Mr. Abhilash Ashok (Senior Lead UX Development - Valorem) </md-card-subtitle>
           <md-card-subtitle><strong>12:00 PM </strong></md-card-subtitle>
           <img md-card-md-image src="assets/abhilash-ashok.jpg">
         </md-card-title-group>
@@ -325,14 +370,25 @@
           <md-card-subtitle><strong>02:00 PM</strong></md-card-subtitle>
         </md-card-title-group>
       </md-card>
-    </div>    
+    </div>
   </md-tab>
   <md-tab label="Malabar Hall (Park)">
+    <ng-template md-tab-label>
+      <span hide-xs>2</span>
+      <span hide-gt-xs>
+              <md-icon class="tc-red-700">flag</md-icon>
+              <span class="h_e_title">2</span>
+      </span>
+    </ng-template>
     <div layout-gt-xs="row">
+      <div flex-gt-sm="35" layout-gt-sm="column" layout-align="center center">
+        <h3 class="event-hall travancore" style="padding-top: 1em;">Malabar Hall (Park)</h3>
+        <img src="assets/malabar-hall.png" class="s_e_img">
+      </div>
       <md-card>
         <md-card-title-group>
           <md-card-title class="text-xxl">Fairness in Civic Technologies</md-card-title>
-          <md-card-subtitle>  Mr. Anivar Aravind (Founder Executive Director, Indic Project) </md-card-subtitle>
+          <md-card-subtitle> Mr. Anivar Aravind (Founder Executive Director, Indic Project) </md-card-subtitle>
           <md-card-subtitle><strong>11:00 AM</strong></md-card-subtitle>
           <img md-card-md-image src="assets/anivar.jpg">
         </md-card-title-group>
@@ -340,25 +396,36 @@
       <md-card>
         <md-card-title-group>
           <md-card-title class="text-xxl">Decoding Phantoms in the Brain Using Technology</md-card-title>
-          <md-card-subtitle>  Mr. Mohammed Rafi T. F. (Behavioural Scientist) </md-card-subtitle>
+          <md-card-subtitle> Mr. Mohammed Rafi T. F. (Behavioural Scientist) </md-card-subtitle>
           <md-card-subtitle><strong>12:00 PM </strong></md-card-subtitle>
           <img md-card-md-image src="assets/rafi.jpg">
         </md-card-title-group>
       </md-card>
       <md-card>
         <md-card-title-group>
-          <md-card-title class="text-xxl">Programming your way to Progressive Web <Apps></Apps></md-card-title>
+          <md-card-title class="text-xxl">Programming your way to Progressive Web</md-card-title>
           <md-card-subtitle><strong>02:00 PM</strong></md-card-subtitle>
         </md-card-title-group>
       </md-card>
     </div>
   </md-tab>
   <md-tab label="Floor of Madness, FAYA (Thejaswini)">
+    <ng-template md-tab-label>
+      <span hide-xs>2</span>
+      <span hide-gt-xs>
+              <md-icon class="tc-green-700">flag</md-icon>
+              <span class="h_e_title">2</span>
+      </span>
+    </ng-template>
     <div layout-gt-xs="row">
+      <div flex-gt-sm="35" layout-gt-sm="column" layout-align="center center">
+        <h3 class="event-hall travancore" style="padding-top: 1em;">Floor of Madness, FAYA (Thejaswini)</h3>
+        <img src="assets/faya.jpg" class="s_e_img">
+      </div>
       <md-card>
         <md-card-title-group>
           <md-card-title class="text-xxl"> Soft Computing and Blockchain in Bioinformatics </md-card-title>
-          <md-card-subtitle>  Mr. Manuyash Chaudhary, Mr. Rahul A. R. (Accubits Technologies) </md-card-subtitle>
+          <md-card-subtitle> Mr. Manuyash Chaudhary, Mr. Rahul A. R. (Accubits Technologies) </md-card-subtitle>
           <md-card-subtitle><strong>11:00 AM</strong></md-card-subtitle>
           <img md-card-md-image src="assets/manuyash-chaudhary.jpg">
         </md-card-title-group>
@@ -366,7 +433,7 @@
       <md-card>
         <md-card-title-group>
           <md-card-title class="text-xxl">Intelligent Computing in Bio Systems </md-card-title>
-          <md-card-subtitle> Mr. Charush S. Nair, Mr. Jithin V. G. ( Accubits Technologies)  </md-card-subtitle>
+          <md-card-subtitle> Mr. Charush S. Nair, Mr. Jithin V. G. ( Accubits Technologies) </md-card-subtitle>
           <md-card-subtitle><strong>02:00 PM </strong></md-card-subtitle>
           <img md-card-md-image src="assets/manuyash-chaudhary.jpg">
         </md-card-title-group>
@@ -374,18 +441,29 @@
     </div>
   </md-tab>
   <md-tab label="Exhibition Hall, Park Centre">
+    <ng-template md-tab-label>
+      <span hide-xs>2</span>
+      <span hide-gt-xs>
+              <md-icon class="tc-yellow-700">flag</md-icon>
+              <span class="h_e_title">2</span>
+      </span>
+    </ng-template>
     <div layout-gt-xs="row">
+      <div flex-gt-sm="35" layout-gt-sm="column" layout-align="center center">
+        <h3 class="event-hall travancore" style="padding-top: 1em;">Exhibition Hall, Park Centre</h3>
+        <img src="assets/park-centre.jpg " class="s_e_img">
+      </div>
       <md-card>
         <md-card-title-group>
           <md-card-title class="text-xxl"> Speach Enabled Kinematics - Bionic Hand Demo</md-card-title>
-          <md-card-subtitle>  (Onbyz Team) </md-card-subtitle>
+          <md-card-subtitle> (Onbyz Team) </md-card-subtitle>
           <md-card-subtitle><strong>11:00 AM</strong></md-card-subtitle>
         </md-card-title-group>
       </md-card>
       <md-card>
         <md-card-title-group>
           <md-card-title class="text-xxl">Experience VR, AR & MR, Live Demo </md-card-title>
-          <md-card-subtitle>  (Valorem Team)  </md-card-subtitle>
+          <md-card-subtitle> (Valorem Team) </md-card-subtitle>
           <md-card-subtitle><strong>02:00 PM </strong></md-card-subtitle>
         </md-card-title-group>
       </md-card>
