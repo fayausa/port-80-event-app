@@ -245,13 +245,16 @@
         </div>-->
       <md-card>
         <md-card-title-group>
-          <md-card-title class="text-xxl">Keynote: Tech Disruption – Opportunities & Threats</md-card-title>
+          <md-card-title class="text-xxl">Tech Disruption – Opportunities & Threats</md-card-title>
           <md-card-subtitle>Mr. Michael Gord (Founder & CEO - MLG Blockchain Consulting)</md-card-subtitle>
-          <md-card-subtitle><strong>10:00 AM</strong></md-card-subtitle>
+          <md-card-subtitle><strong>10:00 AM</strong>
+              <md-chip style="margin:0px 5px;padding:3px 6px;border-radius:30px;background-color: #00e4e6;" selected="true">Keynote</md-chip>
+              <md-chip style="margin:0px 5px;padding:3px 6px;border-radius:30px;background-color: yellow;" selected="true">Blockchain</md-chip>
+
+          </md-card-subtitle>
           <md-card-subtitle>
             <md-icon class="tc-blue-700" (click)="onClick1()">videocam</md-icon>
           </md-card-subtitle>
-          <img md-card-md-image src="assets/michael.jpg">
         </md-card-title-group>
         <div *ngIf="isClicked" class="animate slideInDown">
           <md-divider></md-divider>

@@ -38,6 +38,8 @@ import { CarouselModule } from 'ngx-bootstrap';
 import { ModalModule, OverlayRenderer, DOMOverlayRenderer, Overlay } from 'angular2-modal';
 import { Modal, BootstrapModalModule } from 'angular2-modal/plugins/bootstrap';
 import { CovalentExpansionPanelModule } from '@covalent/core';
+import { MdChipsModule } from '@angular/material';
+
 
 const MODAL_PROVIDERS = [
   Modal,
@@ -88,7 +90,8 @@ const MODAL_PROVIDERS = [
     CarouselModule.forRoot(),
     ModalModule,
     BootstrapModalModule,
-    CovalentExpansionPanelModule
+    CovalentExpansionPanelModule,
+    MdChipsModule
   ],
   entryComponents: [DialogComponent],
   providers: [MODAL_PROVIDERS, TdDialogService]
