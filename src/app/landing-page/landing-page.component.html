@@ -15,7 +15,7 @@
       </div>
       <div style="margin-bottom: 1.5em;font-family: 'Orbitron', sans-serif;" layout="row">
         <button class="btn animated bounceInUp" [routerLink]="['home']"><span> Details</span></button>
-        <button style="margin-left:.5em;" class="btn animated bounceInDown" onclick="location.href='https://in.explara.com/e/fayaport80/checkout';"><span> Register</span></button>
+        <button style="margin-left:.5em;" class="btn animated bounceInDown" [routerLink]="['home/register']"><span> Register</span></button>
       </div>
     </div>
     <div flex flex-gt-xs="52" flex-sm="60" flex-xs="100"  layout="column" class="animated bounceInUp date-card">
@@ -23,19 +23,19 @@
       <md-card class="card-details" layout="column" flex-xs="100">
         <div flex layout-gt-xs="row" layout-xs="row">
           <div flex-gt-xs="49" class="event-details" flex-xs="49">
-            <h1>{{time.days}}</h1>
+            <h1>{{time?.days}}</h1>
             <p>Days</p>
           </div>
           <div flex-gt-xs="49" class="event-details" flex-xs="49">
-            <h1>{{time.hours}}</h1>
+            <h1>{{time?.hours}}</h1>
             <p>Hours</p>
           </div>
           <div flex-gt-xs="49" class="event-details" flex-xs="49">
-            <h1>{{time.minutes}}</h1>
+            <h1>{{time?.minutes}}</h1>
             <p>Minutes</p>
           </div>
           <div flex-gt-xs="49" class="event-details" flex-xs="49">
-            <h1>{{time.seconds}}</h1>
+            <h1>{{time?.seconds}}</h1>
             <p>Seconds</p>
           </div>
         </div>

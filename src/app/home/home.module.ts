@@ -19,7 +19,7 @@ import { CovalentChipsModule } from '@covalent/core';
 import { CovalentMenuModule } from '@covalent/core';
 import { CovalentNotificationsModule } from '@covalent/core';
 import { CovalentLayoutModule } from '@covalent/core';
-import { CovalentMediaModule } from '@covalent/core';
+import { CovalentMediaModule, TdDialogService } from '@covalent/core';
 
 import { HomeRoutingModule } from './home-routing.module';
 import { HomeComponent } from './home.component';
@@ -37,6 +37,9 @@ import { RegisterComponent } from '../register/register.component'
 import { CarouselModule } from 'ngx-bootstrap';
 import { ModalModule, OverlayRenderer, DOMOverlayRenderer, Overlay } from 'angular2-modal';
 import { Modal, BootstrapModalModule } from 'angular2-modal/plugins/bootstrap';
+import { CovalentExpansionPanelModule } from '@covalent/core';
+import { MdChipsModule } from '@angular/material';
+
 
 const MODAL_PROVIDERS = [
   Modal,
@@ -59,7 +62,7 @@ const MODAL_PROVIDERS = [
     LoopbackComponent,
     DialogComponent,
     DialogPannelComponent,
-    RegisterComponent
+    RegisterComponent,
   ],
   imports: [
     BrowserModule,
@@ -86,9 +89,11 @@ const MODAL_PROVIDERS = [
     LeafletModule,
     CarouselModule.forRoot(),
     ModalModule,
-    BootstrapModalModule
+    BootstrapModalModule,
+    CovalentExpansionPanelModule,
+    MdChipsModule
   ],
   entryComponents: [DialogComponent],
-  providers: [MODAL_PROVIDERS]
+  providers: [MODAL_PROVIDERS, TdDialogService]
 })
 export class HomeModule { }
