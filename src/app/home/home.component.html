@@ -9,6 +9,8 @@
         <md-icon>nature_people</md-icon>
         ABOUT
       </a>
+      <a [routerLink]="['loopback']" (click)="layout.close()" md-list-item>
+        <md-icon>photo</md-icon>LOOK BACK</a>
       <a [routerLink]="['speakers']" (click)="layout.close()" md-list-item>
         <md-icon>sentiment_very_satisfied</md-icon>
         SPEAKERS
@@ -21,18 +23,14 @@
         <md-icon>schedule</md-icon>
         SCHEDULE
       </a>
-      <a [routerLink]="['coc']" (click)="layout.close()" md-list-item>
+      <a [routerLink]="['register']" (click)="layout.close()" md-list-item>
+        <md-icon>photo</md-icon>REGISTER</a>
+      <a [routerLink]="['map']" (click)="layout.close()" md-list-item>
+        <md-icon>map</md-icon>MAP</a>
+        <a [routerLink]="['coc']" (click)="layout.close()" md-list-item>
         <md-icon>chrome_reader_mode</md-icon>
         CODE OF CONDUCT
       </a>
-      <a [routerLink]="['map']" (click)="layout.close()" md-list-item>
-        <md-icon>map</md-icon>MAP</a>
-      <!--<a [routerLink]="['contact']" md-list-item>
-        <md-icon>contacts</md-icon>CONTACT</a>-->
-      <a [routerLink]="['loopback']" (click)="layout.close()" md-list-item>
-        <md-icon>photo</md-icon>LOOP BACK</a>
-      <a [routerLink]="['register']" (click)="layout.close()" md-list-item>
-        <md-icon>photo</md-icon>REGISTER</a>
     </md-nav-list>
     <md-nav-list td-navigation-drawer-menu>
       <a md-list-item>
@@ -41,7 +39,7 @@
   </td-navigation-drawer>
   <td-layout-nav color="primary">
     <div td-toolbar-content layout="row" layout-align="start center" flex>
-      <span><img src="assets/FAYA-80-logo.png" style="width: 75%;cursor: pointer;" [routerLink]="['/home']"></span>
+      <span><img src="assets/FAYA-80-logo.png" style="width: 75%;cursor: pointer;" [routerLink]="['']"></span>
       <span flex></span>
       <button md-icon-button>
         <td-notification-count color="primary" [notifications]="12">
@@ -67,7 +65,7 @@
             <span hide-xs> About Us</span>
             <span hide-gt-xs>
               <md-icon>nature_people</md-icon>
-              <span class="h_e_title">About Us</span>
+              <span class="h_e_title">About</span>
             </span>
           </ng-template>
           <pwa-aboutus></pwa-aboutus>
@@ -84,33 +82,6 @@
         </md-tab>
         <md-tab>
           <ng-template md-tab-label>
-            <span hide-xs> Partners</span>
-            <span hide-gt-xs>
-              <md-icon>work</md-icon>
-              <span class="h_e_title">Partners</span>
-            </span>
-          </ng-template>
-          <div layout-gt-sm="row" layout-padding>
-            <md-card class="sponsers-wrap" flex-gt-sm="30">
-              <img md-card-image src="assets/sponsers-icfoss.png">
-            </md-card>
-            <md-card class="sponsers-wrap" flex-gt-sm="30">
-              <img md-card-image src="assets/sponsers-startup-mission.png">
-            </md-card>
-          </div>
-        </md-tab>
-        <md-tab>
-          <ng-template md-tab-label>
-            <span hide-xs> Schedule</span>
-            <span hide-gt-xs>
-              <md-icon>watch</md-icon>
-              <span class="h_e_title">Schedule</span>
-            </span>
-          </ng-template>
-          <pwa-schedule></pwa-schedule>
-        </md-tab>
-        <md-tab>
-          <ng-template md-tab-label>
             <span hide-xs> Panellists</span>
             <span hide-gt-xs>
               <md-icon>schedule</md-icon>
@@ -124,7 +95,7 @@
     <router-outlet></router-outlet>
     <pwa-footer></pwa-footer>
   </td-layout-nav>
-  <a md-fab color="primary" mdTooltip="Schedule" mdTooltipPosition="above" class="mat-fab-position-bottom-right fixed h_e_btn_bottm">
+  <a md-fab color="primary" [routerLink]="['schedule']"  mdTooltip="Schedule" mdTooltipPosition="above" class="mat-fab-position-bottom-right fixed h_e_btn_bottm">
     <md-icon style="color:#fff">
       insert_invitation
     </md-icon>
