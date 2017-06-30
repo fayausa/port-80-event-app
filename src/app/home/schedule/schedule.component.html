@@ -250,7 +250,6 @@
           <md-card-subtitle><strong>10:00 AM</strong>
               <md-chip style="margin:0px 5px;padding:3px 6px;border-radius:30px;background-color: #00e4e6;" selected="true">Keynote</md-chip>
               <md-chip style="margin:0px 5px;padding:3px 6px;border-radius:30px;background-color: yellow;" selected="true">Blockchain</md-chip>
-
           </md-card-subtitle>
           <md-card-subtitle>
             <md-icon class="tc-blue-700" (click)="onClick1()">videocam</md-icon>
@@ -273,8 +272,14 @@
           <md-card-title class="text-xxl">FOSS - Role of communities</md-card-title>
           <md-card-subtitle>Mr. Satish Babu (Chair, APRALO - ICANN)</md-card-subtitle>
           <md-card-subtitle><strong>11:10 AM</strong></md-card-subtitle>
-          <img md-card-md-image src="assets/satish-babu.jpg">
+          <md-card-subtitle>
+            <md-icon class="tc-blue-700" (click)="onClick1()">videocam</md-icon>
+          </md-card-subtitle>
         </md-card-title-group>
+        <div *ngIf="isClicked" class="animate slideInDown">
+          <md-divider></md-divider>
+          <iframe width="100%" height="auto" src="https://www.youtube.com/embed/Vtiqj1hCH4I" frameborder="0" allowfullscreen></iframe>
+        </div>
       </md-card>
       <md-card>
         <md-card-title-group>
@@ -282,16 +287,28 @@
           <md-card-subtitle>Mr. Venkatramanan P. R. (Data Scientist - Thoughtworks) Mr. Venkatramanan P. R. (Data Scientist - Thoughtworks)
           </md-card-subtitle>
           <md-card-subtitle><strong>11:40 AM</strong></md-card-subtitle>
-          <img md-card-md-image src="assets/venkat.png">
+          <md-card-subtitle>
+            <md-icon class="tc-blue-700" (click)="onClick1()">videocam</md-icon>
+          </md-card-subtitle>
         </md-card-title-group>
+        <div *ngIf="isClicked" class="animate slideInDown">
+          <md-divider></md-divider>
+          <iframe width="100%" height="auto" src="https://www.youtube.com/embed/iiPk8ghxDpE" frameborder="0" allowfullscreen></iframe>
+        </div>
       </md-card>
       <md-card>
         <md-card-title-group>
           <md-card-title class="text-xxl">How Tensor Flow converts Data into Intelligence</md-card-title>
           <md-card-subtitle>Mr. Amrit Sanjeev (Senior Developer Advocate - Google)</md-card-subtitle>
           <md-card-subtitle><strong>12:20 PM</strong></md-card-subtitle>
-          <img md-card-md-image src="assets/amrit.jpg">
+          <md-card-subtitle>
+            <md-icon class="tc-blue-700" (click)="onClick1()">videocam</md-icon>
+          </md-card-subtitle>
         </md-card-title-group>
+        <div *ngIf="isClicked" class="animate slideInDown">
+          <md-divider></md-divider>
+          <iframe width="100%" height="auto" src="https://www.youtube.com/embed/TzxCCcbcDgg" frameborder="0" allowfullscreen></iframe>
+        </div>
       </md-card>
       <md-card>
         <md-card-title-group>
@@ -304,16 +321,28 @@
           <md-card-title class="text-xxl">How to Grow Faster & Smarter in the Age of Disruption</md-card-title>
           <md-card-subtitle> Prof. Nandini Vaidyanathan (Chairman and Managing Director - CARMa Venture Services) </md-card-subtitle>
           <md-card-subtitle><strong>2:00 PM</strong></md-card-subtitle>
-          <img md-card-md-image src="assets/nandini.jpg">
+          <md-card-subtitle>
+            <md-icon class="tc-blue-700" (click)="onClick1()">videocam</md-icon>
+          </md-card-subtitle>
         </md-card-title-group>
+        <div *ngIf="isClicked" class="animate slideInDown">
+          <md-divider></md-divider>
+          <iframe width="100%" height="auto" src="https://www.youtube.com/embed/uflPL4VueTM" frameborder="0" allowfullscreen></iframe>
+        </div>
       </md-card>
       <md-card>
         <md-card-title-group>
           <md-card-title class="text-xxl">UX at the Age of Disruption </md-card-title>
           <md-card-subtitle> Mr. Rama Brahmam Aleti (Senior Lead, UX - Valorem) </md-card-subtitle>
           <md-card-subtitle><strong>03:00 PM</strong></md-card-subtitle>
-          <img md-card-md-image src="assets/rama-brahmam.jpg">
+          <md-card-subtitle>
+            <md-icon class="tc-blue-700" (click)="onClick1()">videocam</md-icon>
+          </md-card-subtitle>
         </md-card-title-group>
+        <div *ngIf="isClicked" class="animate slideInDown">
+          <md-divider></md-divider>
+          <iframe width="100%" height="auto" src="https://www.youtube.com/embed/FVlpCMdOeK8" frameborder="0" allowfullscreen></iframe>
+        </div>
       </md-card>
       <md-card>
         <md-card-title-group>
@@ -324,10 +353,15 @@
       <md-card>
         <md-card-title-group>
           <md-card-title class="text-xxl">Panel Discussion - Staying Relevant at the Age of Disruption</md-card-title>
-          <md-card-subtitle> Mr. Rama Brahmam Aleti (Senior Lead, UX - Valorem) </md-card-subtitle>
           <md-card-subtitle><strong>03:00 PM</strong></md-card-subtitle>
-          <img md-card-md-image src="assets/rama-brahmam.jpg">
+          <md-card-subtitle>
+            <md-icon class="tc-blue-700" (click)="onClick1()">videocam</md-icon>
+          </md-card-subtitle>
         </md-card-title-group>
+        <div *ngIf="isClicked" class="animate slideInDown">
+          <md-divider></md-divider>
+          <iframe width="100%" height="auto" src="https://www.youtube.com/embed/oMelc8RG3cI" frameborder="0" allowfullscreen></iframe>
+        </div>
       </md-card>
       <md-card>
         <md-card-title-group>
