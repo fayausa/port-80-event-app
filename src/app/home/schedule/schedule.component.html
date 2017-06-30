@@ -437,11 +437,43 @@
         <md-card-title-group>
           <md-card-title class="text-xxl">Intelligent Computing in Bio Systems </md-card-title>
           <md-card-subtitle> Mr. Charush S. Nair, Mr. Jithin V. G. ( Accubits Technologies) </md-card-subtitle>
-          <md-card-subtitle><strong>02:00 PM </strong></md-card-subtitle>
-          <img md-card-md-image src="assets/manuyash-chaudhary.jpg">
+          <md-card-subtitle><strong>02:00 PM </strong>
+           <md-chip style="margin:0px 5px;padding:3px 6px;border-radius:30px;background-color: #00e4e6;" selected="true">Machine Learning</md-chip>
+              <md-chip style="margin:0px 5px;padding:3px 6px;border-radius:30px;background-color: yellow;" selected="true">Bionics</md-chip>
+          </md-card-subtitle>
         </md-card-title-group>
       </md-card>
     </div>
+
+
+
+<md-card>
+        <md-card-title-group>
+          <md-card-title class="text-xxl">Tech Disruption – Opportunities & Threats</md-card-title>
+          <md-card-subtitle>Mr. Michael Gord (Founder & CEO - MLG Blockchain Consulting)</md-card-subtitle>
+          <md-card-subtitle><strong>10:00 AM</strong>
+              <md-chip style="margin:0px 5px;padding:3px 6px;border-radius:30px;background-color: #00e4e6;" selected="true">Keynote</md-chip>
+              <md-chip style="margin:0px 5px;padding:3px 6px;border-radius:30px;background-color: yellow;" selected="true">Blockchain</md-chip>
+
+          </md-card-subtitle>
+          <md-card-subtitle>
+            <md-icon class="tc-blue-700" (click)="onClick1()">videocam</md-icon>
+          </md-card-subtitle>
+        </md-card-title-group>
+        <div *ngIf="isClicked" class="animate slideInDown">
+          <md-divider></md-divider>
+          <iframe width="100%" height="auto" src="https://www.youtube.com/embed/LMlbRsiYgpw" frameborder="0" allowfullscreen></iframe>
+        </div>
+      </md-card>
+
+
+
+
+
+
+
+
+
   </md-tab>
   <md-tab label="Exhibition Hall, Park Centre">
     <ng-template md-tab-label>
