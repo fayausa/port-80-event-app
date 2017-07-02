@@ -257,7 +257,7 @@ a {
 }
 
 .speakers-detail {
-  text-align: left;
+  text-align: center;
   float: left;
   color: #4F4F4F;
   padding: 25px 25px 0 25px;
@@ -285,6 +285,7 @@ a {
 }
 
 .speaker-info {
+  text-align: center;
   font-size: 13px;
   font-weight: 300;
   margin: 10px 11px 10px 24px;
@@ -626,6 +627,11 @@ md-nav-list h4 {
     margin-bottom: 1em;
     margin-right: 0em;
   }
+  .speakers-photo-case {
+    width: 100%;
+    height: auto;
+  }
+
 }
 
 @media (max-width: 1199px) {
