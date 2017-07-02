@@ -1,9 +1,19 @@
 import { Injectable } from '@angular/core';
+import { AngularFireDatabase } from 'angularfire2/database';
 
 
 @Injectable()
 export class AppService {
   showMenu: any;
-  constructor() {}
-
+  msgData: any;
+  constructor(public db: AngularFireDatabase) {
+    this.msgData = this.db.list('/messages');
+  }
+getMessages() {
+    return this.db.list('/messages', {
+  query: {
+    limitToLast: 1
+  }
+});
+}
 }
