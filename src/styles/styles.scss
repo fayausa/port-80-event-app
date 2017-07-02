@@ -721,3 +721,13 @@ md-nav-list h4 {
   font-weight: bold;
   border: none;
 }
+.mat-sidenav {
+    width: 240px;
+}
+.mat-nav-list .mat-list-item .mat-list-item-content {
+  font-size: 14px!important;
+  letter-spacing: 1.5px!important;
+}
+.material-icons.md-24 {
+  font-size: 31px!important;
+}
