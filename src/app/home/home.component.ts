@@ -30,7 +30,7 @@ interface PushNotification {
 })
 export class HomeComponent implements OnInit {
   location: any;
-  notificationCount: 5;
+  notificationCount: any = 5;
   private isSubscribed = false;
   private registration = undefined;
   messages: any;
