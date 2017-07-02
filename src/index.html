@@ -30,6 +30,13 @@
   if (screen.width > 600) {
     window.location = "https://fayaport80.com";
   }
+  // if (screen.width > 640) {
+  //   window.location = "https://fayaport80.com";
+  // }
+    navigator.serviceWorker.getRegistration().then(function(reg) {
+      reg.showNotification('Hello world!');
+    });
+displayNotification()
 </script>
   <pwa-root>
     <pwa-landingpage></pwa-landingpage>

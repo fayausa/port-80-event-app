@@ -29,15 +29,17 @@ import { CovalentMediaModule } from '@covalent/core';
 
 import { LandingPageComponent } from './landing-page/landing-page.component';
 import { FooterComponent } from './footer/footer.component';
-
-
+import { AngularFireModule } from 'angularfire2';
+import { environment } from '../environments/environment';
+import { MsgComponent } from './admin/msg.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     PageNotFoundComponent,
     LandingPageComponent,
-    FooterComponent],
+    FooterComponent,
+    MsgComponent],
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
@@ -61,7 +63,8 @@ import { FooterComponent } from './footer/footer.component';
     CovalentMediaModule,
     CovalentMenuModule,
     CovalentNotificationsModule,
-    HomeModule
+    HomeModule,
+     AngularFireModule.initializeApp(environment.firebase)
   ],
   providers: [],
   bootstrap: [AppComponent]

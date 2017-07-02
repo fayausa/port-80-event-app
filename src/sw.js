@@ -65,10 +65,10 @@ workboxSW.precache([]);
  * Set up a route that will match any URL requested that ends in .json.
  * Handle those requests using a network-first strategy.
  */
-// workboxSW.router.registerRoute(
-//   /\.json$/,
-//   workboxSW.strategies.networkFirst()
-// );
+workboxSW.router.registerRoute(
+  /\.js$/,
+  workboxSW.strategies.networkFirst()
+);
 
 /**
  * Set up a route that will match any URL requested that has /api/ in it.
@@ -79,14 +79,14 @@ workboxSW.precache([]);
 
 workboxSW.router.registerRoute(
   /\/api\/(.*)/,
-  // workboxSW.strategies.networkFirst({ networkTimeoutSeconds: 1 })
-  workboxSW.strategies.staleWhileRevalidate({ cacheName: 'hero-api' })
+  workboxSW.strategies.networkFirst({ networkTimeoutSeconds: 1 })
+  // workboxSW.strategies.staleWhileRevalidate({ cacheName: 'hero-api' })
 );
 
 // don't need this since we have fallback
-// const networkFirstStrategy = workboxSW.strategies.networkFirst();
-// workboxSW.router.registerRoute('/home/', networkFirstStrategy);
-// workboxSW.router.registerRoute('/heroes/', networkFirstStrategy);
+const networkFirstStrategy = workboxSW.strategies.networkFirst();
+workboxSW.router.registerRoute('/home/', networkFirstStrategy);
+workboxSW.router.registerRoute('/./', networkFirstStrategy);
 // workboxSW.router.registerRoute('/villains/', networkFirstStrategy);
 
 /**
@@ -194,10 +194,10 @@ self.addEventListener('notificationclick', event => {
   // We are calling event.waitUntil() again
   // to ensure the browser doesn't terminate
   // our service worker before our new window has been displayed.
-  event.waitUntil(clients.openWindow('https://johnpapa.net'));
+  event.waitUntil(clients.openWindow('https://m.fayaport80.com'));
 });
 
-const applicationServerPublicKey = 'BMZuj1Uek9SeT0myecw8TQxr4dB6Vl4X7c4abMzAA4KR72DsKnVcSpZr6svYgkwNSerKsz7vdZ1kfzwFc0TmH3o';
+const applicationServerPublicKey = 'BKeijbSxUQsVhRdSLmI8wP6ARS54zVCfkmLwRvcKbO4kdiyocqDRjAS4HJXTmPiyRQFc4w6lTUY9EfMYdyeCvU4';
 
 self.addEventListener('pushsubscriptionchange', event => {
   swLog(`'pushsubscriptionchange' event fired.`);
@@ -213,7 +213,6 @@ self.addEventListener('pushsubscriptionchange', event => {
       })
   );
 });
-
 
 
 // -------------------------------------------------------
