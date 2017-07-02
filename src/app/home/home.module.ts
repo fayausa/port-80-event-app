@@ -39,8 +39,9 @@ import { ModalModule, OverlayRenderer, DOMOverlayRenderer, Overlay } from 'angul
 import { Modal, BootstrapModalModule } from 'angular2-modal/plugins/bootstrap';
 import { CovalentExpansionPanelModule } from '@covalent/core';
 import { MdChipsModule } from '@angular/material';
-
-
+import { PushNotificationsModule, PushNotificationsService } from 'angular2-notifications';
+import {AngularFireDatabase, FirebaseListObservable} from 'angularfire2/database';
+import {AppService} from '../app.service'
 const MODAL_PROVIDERS = [
   Modal,
   Overlay,
@@ -91,9 +92,10 @@ const MODAL_PROVIDERS = [
     ModalModule,
     BootstrapModalModule,
     CovalentExpansionPanelModule,
-    MdChipsModule
+    MdChipsModule,
+    PushNotificationsModule
   ],
   entryComponents: [DialogComponent],
-  providers: [MODAL_PROVIDERS, TdDialogService]
+  providers: [MODAL_PROVIDERS, TdDialogService, AppService, AngularFireDatabase, PushNotificationsService]
 })
 export class HomeModule { }
