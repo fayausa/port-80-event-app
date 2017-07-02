@@ -49,5 +49,6 @@
   "theme_color": "#87C142",
   "start_url": "./?utm_source=web_app_manifest",
   "display": "fullscreen",
-  "orientation": "any"
+  "orientation": "any",
+  "gcm_sender_id": "586259488729"
 }

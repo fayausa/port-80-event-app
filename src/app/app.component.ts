@@ -1,6 +1,6 @@
-import { DomSanitizer } from '@angular/platform-browser';
-import { AfterViewInit, Component } from '@angular/core';
+import { AfterViewInit, Component, OnInit, Inject } from '@angular/core';
 import { MdIconRegistry } from '@angular/material';
+import { DomSanitizer } from '@angular/platform-browser';
 
 @Component({
   moduleId: module.id,
@@ -8,4 +8,13 @@ import { MdIconRegistry } from '@angular/material';
   templateUrl: 'app.component.html',
   styles: []
 })
-export class AppComponent {}
+export class AppComponent implements OnInit {
+
+  constructor() {
+  }
+
+  ngOnInit() {
+  }
+
+}
+
