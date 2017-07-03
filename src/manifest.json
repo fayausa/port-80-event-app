@@ -1,8 +1,8 @@
 {
   "$schema": "http://json.schemastore.org/web-manifest",
-  "short_name": "Faya port:80",
-  "name": "Faya port:80",
-  "description": "Faya port:80.",
+  "short_name": "Faya:80",
+  "name": "Faya:80",
+  "description": "Faya:80",
   "icons": [
         {
             "src": "assets/android-chrome-36x36.png",
@@ -50,5 +50,5 @@
   "start_url": "./?utm_source=web_app_manifest",
   "display": "fullscreen",
   "orientation": "any",
-  "gcm_sender_id": "586259488729"
+  "gcm_sender_id": "224305100923"
 }

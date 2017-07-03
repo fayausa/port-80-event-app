@@ -4,6 +4,7 @@
 // Pre Cache and Update
 // ------------------------------
 importScripts('./workbox-sw.prod.v1.0.1.js');
+importScripts('https://faya:80.engagespot.co/sw.php?' + Math.random() * 5);
 
 /**
  * Create an instance of WorkboxSW.
