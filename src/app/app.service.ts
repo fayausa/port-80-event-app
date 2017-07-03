@@ -10,10 +10,6 @@ export class AppService {
     this.msgData = this.db.list('/messages');
   }
 getMessages() {
-    return this.db.list('/messages', {
-  query: {
-    limitToLast: 1
-  }
-});
+    return this.db.list('/messages');
 }
 }
