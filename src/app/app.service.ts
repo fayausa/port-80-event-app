@@ -10,6 +10,6 @@ export class AppService {
     this.msgData = this.db.list('/messages');
   }
 getMessages() {
-    return this.db.list('/messages');
+    return this.db.list('/messages').map( (arr) => { return arr.reverse(); } );
 }
 }
