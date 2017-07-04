@@ -219,6 +219,23 @@
         <h3 class="event-hall travancore" style="padding-top: 1em;">Travancore Hall (Park Center)</h3>
         <img src="assets/travancore-hall.png" class="s_e_img_travancore">
       </div>
+      <md-card *ngFor="let row of schedule">
+        <md-card-title-group>
+          <md-card-title class="text-xxl">{{row.title}}</md-card-title>
+          <md-card-subtitle *ngIf="row.speaker != ''">{{row.speaker}}</md-card-subtitle>
+          <md-card-subtitle *ngIf="row.stage != ''"><strong>Stage: </strong>{{row.stage}}</md-card-subtitle>
+          <md-card-subtitle *ngIf="row.time != ''"><strong>{{row.time}}</strong>
+          <md-chip *ngFor="let filter of row.filters" class="filter {{filterDetailsArray[filter].bg_color_class}}" selected="true">{{filterDetailsArray[filter].title}}</md-chip>
+          </md-card-subtitle>
+          <md-card-subtitle *ngIf="row.video_url != ''">
+            <md-icon class="tc-blue-700" (click)="toggle(row.id)">videocam</md-icon>
+          </md-card-subtitle>
+        </md-card-title-group>
+        <div *ngIf="toggleObj[row.id]" class="animate slideInDown livevedio-box">
+          <md-divider></md-divider>
+          <iframe class="livevedio" src="{{row.video_url}}" frameborder="0" allowfullscreen></iframe>
+        </div>
+      </md-card>
       <md-card>
         <md-card-title-group>
           <md-card-title class="text-xxl">Registration</md-card-title>
