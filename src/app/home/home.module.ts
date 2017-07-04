@@ -22,7 +22,7 @@ import { CovalentLayoutModule } from '@covalent/core';
 import { CovalentMediaModule, TdDialogService } from '@covalent/core';
 
 import { HomeRoutingModule } from './home-routing.module';
-import { HomeComponent } from './home.component';
+import { HomeComponent, TimeElapsed } from './home.component';
 import { PremiseComponent } from './premise/premise.component';
 import { FooterComponent } from './footer/footer.component';
 import { AboutComponent } from './about/about.component';
@@ -42,6 +42,7 @@ import { MdChipsModule } from '@angular/material';
 import { PushNotificationsModule, PushNotificationsService } from 'angular2-notifications';
 import {AngularFireDatabase, FirebaseListObservable} from 'angularfire2/database';
 import {AppService} from '../app.service'
+
 const MODAL_PROVIDERS = [
   Modal,
   Overlay,
@@ -64,6 +65,7 @@ const MODAL_PROVIDERS = [
     DialogComponent,
     DialogPannelComponent,
     RegisterComponent,
+    TimeElapsed
   ],
   imports: [
     BrowserModule,
@@ -96,6 +98,6 @@ const MODAL_PROVIDERS = [
     PushNotificationsModule
   ],
   entryComponents: [DialogComponent],
-  providers: [MODAL_PROVIDERS, TdDialogService, AppService, AngularFireDatabase, PushNotificationsService]
+  providers: [MODAL_PROVIDERS, TdDialogService, TimeElapsed, AppService, AngularFireDatabase, PushNotificationsService]
 })
 export class HomeModule { }
