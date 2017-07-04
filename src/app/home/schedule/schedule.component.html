@@ -222,12 +222,12 @@
       <md-card *ngFor="let row of schedule">
         <md-card-title-group>
           <md-card-title class="text-xxl">{{row.title}}</md-card-title>
-          <md-card-subtitle *ngIf="row.speaker != ''">{{row.speaker}}</md-card-subtitle>
-          <md-card-subtitle *ngIf="row.stage != ''"><strong>Stage: </strong>{{row.stage}}</md-card-subtitle>
-          <md-card-subtitle *ngIf="row.time != ''"><strong>{{row.time}}</strong>
+          <md-card-subtitle *ngIf="row.speaker">{{row.speaker}}</md-card-subtitle>
+          <md-card-subtitle *ngIf="row.stage"><strong>Stage: </strong>{{row.stage}}</md-card-subtitle>
+          <md-card-subtitle *ngIf="row.time"><strong>{{row.time}}</strong>
           <md-chip *ngFor="let filter of row.filters" class="filter {{filterDetailsArray[filter].bg_color_class}}" selected="true">{{filterDetailsArray[filter].title}}</md-chip>
           </md-card-subtitle>
-          <md-card-subtitle *ngIf="row.video_url != ''">
+          <md-card-subtitle *ngIf="row.video_url">
             <md-icon class="tc-blue-700" (click)="toggle(row.id)">videocam</md-icon>
           </md-card-subtitle>
         </md-card-title-group>
@@ -236,70 +236,9 @@
           <iframe class="livevedio" src="{{row.video_url}}" frameborder="0" allowfullscreen></iframe>
         </div>
       </md-card>
-      <md-card>
-        <md-card-title-group>
-          <md-card-title class="text-xxl">Registration</md-card-title>
-          <md-card-subtitle><strong>9:00 AM</strong></md-card-subtitle>
-        </md-card-title-group>
-      </md-card>
-      <md-card>
-        <md-card-title-group>
-          <md-card-title class="text-xxl">Inauguration</md-card-title>
-          <md-card-subtitle><strong>9:30 AM</strong></md-card-subtitle>
-        </md-card-title-group>
-      </md-card>
 
-      <!--<td-expansion-panel  label="10:00 AM" sublabel="Keynote: Tech Disruption – Opportunities & Threats">
-        <h3 class="md-subhead">md-padding class</h3>
-        <div>
-          <iframe width="400" height="400" src="https://www.youtube.com/embed/LMlbRsiYgpw" frameborder="0" allowfullscreen></iframe>
-        </div>
 
-      </td-expansion-panel>-->
-      <!--<td-expansion-panel  label="10:00 AM" sublabel="Keynote: Tech Disruption – Opportunities & Threats">
-         <div>
-          <iframe width="100%"  src="https://www.youtube.com/embed/LMlbRsiYgpw" frameborder="0" allowfullscreen></iframe>
-        </div>-->
-      <md-card>
-        <md-card-title-group>
-          <md-card-title class="text-xxl">Tech Disruption – Opportunities & Threats</md-card-title>
-          <md-card-subtitle>Mr. Michael Gord (Founder & CEO - MLG Blockchain Consulting)</md-card-subtitle>
-          <md-card-subtitle><strong>10:00 AM</strong>
-              <md-chip style="margin:0px 5px;padding:3px 6px;border-radius:30px;background-color: #00e4e6;" selected="true">Keynote</md-chip>
-              <md-chip style="margin:0px 5px;padding:3px 6px;border-radius:30px;background-color: yellow;" selected="true">Blockchain</md-chip>
-          </md-card-subtitle>
-          <md-card-subtitle>
-            <md-icon class="tc-blue-700" (click)="toggle(1)">videocam</md-icon>
-          </md-card-subtitle>
-        </md-card-title-group>
-        <div *ngIf="toggleObj[1]" class="animate slideInDown livevedio-box">
-          <md-divider></md-divider>
-          <iframe class="livevedio" src="https://www.youtube.com/embed/LMlbRsiYgpw" frameborder="0" allowfullscreen></iframe>
-        </div>
-      </md-card>
-      <!--</td-expansion-panel>-->
-      <md-card>
-        <md-card-title-group>
-          <md-card-title class="text-xxl">Tea Break</md-card-title>
-          <md-card-subtitle><strong>11:00 AM</strong></md-card-subtitle>
-        </md-card-title-group>
-      </md-card>
-      <md-card>
-        <md-card-title-group>
-          <md-card-title class="text-xxl">FOSS - Role of communities</md-card-title>
-          <md-card-subtitle>Mr. Satish Babu (Chair, APRALO - ICANN)</md-card-subtitle>
-          <md-card-subtitle><strong>11:10 AM</strong>
-            <md-chip style="margin:0px 5px;padding:3px 6px;border-radius:30px;background-color: whitesmoke;" selected="true">FOSS</md-chip>
-          </md-card-subtitle>
-          <md-card-subtitle>
-            <md-icon class="tc-blue-700" (click)="toggle(2)">videocam</md-icon>
-          </md-card-subtitle>
-        </md-card-title-group>
-        <div *ngIf="toggleObj[2]" class="animate slideInDown livevedio-box">
-          <md-divider></md-divider>
-          <iframe class="livevedio" width="100%" height="200hw" src="https://www.youtube.com/embed/Vtiqj1hCH4I" frameborder="0" allowfullscreen></iframe>
-        </div>
-      </md-card>
+
       <md-card>
         <md-card-title-group>
           <md-card-title class="text-xxl">Designing Machine Learning Systems</md-card-title>
