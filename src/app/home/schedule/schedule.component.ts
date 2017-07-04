@@ -130,7 +130,17 @@ export class ScheduleComponent {
       "filters": [3],
       "video_url": "https://www.youtube.com/embed/Vtiqj1hCH4I",
     },
+     {
+      "id": 6,
+      "title": "Designing Machine Learning Systems",
+      "speaker": "Mr. Venkatramanan P. R. (Data Scientist - Thoughtworks) Mr. Venkatramanan P. R. (Data Scientist - Thoughtworks)",
+      "time": "11:40 AM",
+      "stage": "Travancore Hall (Park Center)",
+      "filters": [3],
+      "video_url": "https://www.youtube.com/embed/iiPk8ghxDpE",
+    },
   ]
+
   constructor(overlay: Overlay, vcRef: ViewContainerRef, public modal: Modal) {
     let parent = this;
     this.filters.forEach(function(col, key) {
