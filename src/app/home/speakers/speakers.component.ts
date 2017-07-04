@@ -299,6 +299,26 @@ export class SpeakersComponent {
               `)
         .open();
   }
+
+  onClick15() {
+    this.modal.alert()
+        .size('lg')
+        .showClose(true)
+        .okBtnClass('button-speaker')
+        .title('Speaker details')
+        .dialogClass('model-dialog')
+        .body(`
+              <img class="speakers-photo-case" src="assets/manuyash-chaudhary.jpg">
+                <div><h4>Mr. Manuyash Chaudhari</h4></div>
+                <div><span>AI & NLP Developer & Researcher</span></div>
+                <div><b>Accubits</b></div>
+                <text>
+                Mr. Manuyash Chaudhari works as AI & NLP Developer & Researcher, Accubits Technologies. An MS in Machine Learning & Artificial Intelligence from University College London, Manuyash has been instrumental for path-breaking research on Data Science and its implementation during his career. He is responsible for developing AI technologies and solving machine learning problems
+                for clients at Accubits. He works in Python and R, on platforms like Tensorflow, H2O.ai and tools like SPSS, WEKA and Tableau.</text>
+                <br>
+              `)
+        .open();
+  }
 }
 
 @Component({
