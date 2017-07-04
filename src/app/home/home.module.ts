@@ -97,6 +97,7 @@ const MODAL_PROVIDERS = [
     MdChipsModule,
     PushNotificationsModule
   ],
+  exports :[TimeElapsed],
   entryComponents: [DialogComponent],
   providers: [MODAL_PROVIDERS, TdDialogService, TimeElapsed, AppService, AngularFireDatabase, PushNotificationsService]
 })
