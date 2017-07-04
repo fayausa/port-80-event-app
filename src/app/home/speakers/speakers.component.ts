@@ -17,7 +17,7 @@ export class SpeakersComponent {
   openDialog() {
     this.dialog.open(DialogComponent);
   }
-   
+
   onClick1() {
     this.modal.alert()
         .size('lg')
@@ -30,8 +30,8 @@ export class SpeakersComponent {
                 <div><h4>Mr. Michael Gord</h4></div>
                 <div><span>Founder & CEO</span></div>
                 <div><b>MLG Blockchain Consulting</b></div>
-                <text>Michael is a blockchain developer at TD and the founder of 
-                Bitcoin Canada and the McGill Cryptocurrency Club. While at McGill, Michael 
+                <text>Michael is a blockchain developer at TD and the founder of
+                Bitcoin Canada and the McGill Cryptocurrency Club. While at McGill, Michael
                 organized the Bitcoin Airdrop events where he gave hundreds of students their first bitcoin.</text>
                 <div>
                   <a href="https://www.linkedin.com/in/mgord/" mdTooltip="LinkedIn" title="LinkedIn" class="social-icons linkedIn"></a>
@@ -53,7 +53,7 @@ export class SpeakersComponent {
                 <div><h4>Mr. Venkatramanan P.R</h4></div>
                 <div><span>Data Scientist</span></div>
                 <div><b>Thought Works</b></div>
-                <text>Venkat is Lead Consultant and Data Scientist at ThoughtWorks. Over the last few years, he has helped 
+                <text>Venkat is Lead Consultant and Data Scientist at ThoughtWorks. Over the last few years, he has helped
                 build the data science capability within ThoughtWorks India, and worked with clients across several industries
                 to deliver data science solutions. Before this, he used to work as a Physicist, working primarily in the field
                 of phase transitions in Soft Condensed Matter systems.</text>
@@ -79,7 +79,7 @@ export class SpeakersComponent {
                 <div><h4>Mr. Satish Babu</h4></div>
                 <div><span>Chair, APRALO</span></div>
                 <div><b>ICANN</b></div>
-                <text>Programmer, Development Professional and Internet Governance Practitioner, associated with ICANN, 
+                <text>Programmer, Development Professional and Internet Governance Practitioner, associated with ICANN,
                 ISOC, IEEE and InApp. Fellow and former President of Computer
                 Society of India. Chair, APRALO, ICANN and Member, 2017 HAC, IEEE.</text>
                 <div>
@@ -103,10 +103,10 @@ export class SpeakersComponent {
                 <div><h4>Prof. Nandini Vaidyanathan</h4></div>
                 <div><span>Chairman and Managing Director</span></div>
                 <div><b>CARMa Venture Services</b></div>
-                <text>She’s a traveling teacher who specialises in entrepreneurship, in several Ivy League business schools around the world. 
-                After 20 years in the corporate sector, working in MNC-s in all inhabited continents, she returned to India in 2005 and began teaching entrepreneurship. Realizing that the only way she could bring real time experience to her classroom was if she became an entrepreneur herself, she founded CARMa (Creating Access to Resources & Markets; www.carmaconnect.in) with a lofty ambition: to offer professional mentoring to entrepreneurs as a risk mitigating strategy. CARMa mentors start-ups, mature enterprises and family businesses. As on date, CARMa has mentored over 2000 entrepreneurs. CARMa has also been involved in mentoring women to scale from livelihood enterprises to opportunity-based and profitable organizations in Afghanistan, South and East Africa and India. Till date over 10,000 women have been mentored to build scalable and profitable enterprises. 
-                A prolific writer for mainstream newspapers, portals and blogs, her first book Entrepedia: A Step by Step Guide to Becoming an Entrepreneur in India, has been a best-seller since its launch in 2011. Its second edition, updated and contemporized, came out in 2015 and has become the Bible of the start-up community. Her second book, Start up, Stand up, was published in 2016. While Entrepedia was all about how to take an idea from your head to the marketplace, Start up, Stand up is about how to grow your business from your first paying customer to an evangelical user community. 
-                A TED speaker and regular jury member of television shows on business channels and entrepreneurship events across the world, she was named Business Woman of the Year by Business Goa in 2014. 
+                <text>She’s a traveling teacher who specialises in entrepreneurship, in several Ivy League business schools around the world.
+                After 20 years in the corporate sector, working in MNC-s in all inhabited continents, she returned to India in 2005 and began teaching entrepreneurship. Realizing that the only way she could bring real time experience to her classroom was if she became an entrepreneur herself, she founded CARMa (Creating Access to Resources & Markets; www.carmaconnect.in) with a lofty ambition: to offer professional mentoring to entrepreneurs as a risk mitigating strategy. CARMa mentors start-ups, mature enterprises and family businesses. As on date, CARMa has mentored over 2000 entrepreneurs. CARMa has also been involved in mentoring women to scale from livelihood enterprises to opportunity-based and profitable organizations in Afghanistan, South and East Africa and India. Till date over 10,000 women have been mentored to build scalable and profitable enterprises.
+                A prolific writer for mainstream newspapers, portals and blogs, her first book Entrepedia: A Step by Step Guide to Becoming an Entrepreneur in India, has been a best-seller since its launch in 2011. Its second edition, updated and contemporized, came out in 2015 and has become the Bible of the start-up community. Her second book, Start up, Stand up, was published in 2016. While Entrepedia was all about how to take an idea from your head to the marketplace, Start up, Stand up is about how to grow your business from your first paying customer to an evangelical user community.
+                A TED speaker and regular jury member of television shows on business channels and entrepreneurship events across the world, she was named Business Woman of the Year by Business Goa in 2014.
                 Passionate about cooking and entertaining people, her versatility extends to the Carnatic form of music in which she is a trained singer. She currently lives in Goa.</text>
                 <div>
                   <a href="https://www.facebook.com/nandini.vaidyanathan" title="Facebook" class="social-icons fb" target="_blank"></a>
@@ -125,16 +125,17 @@ export class SpeakersComponent {
         .title('Speaker details')
         .dialogClass('model-dialog')
         .body(`
-              <img class="speakers-photo-case" src="assets/amrit.jpg">
-                <div><h4>Mr. Amrit Sanjeev</h4></div>
-                <div><span>Senior Developer Advocate</span></div>
-                <div><b>Google</b></div>
-                <text>Amrit Sanjeev is the organizer of Blrdroid, the largest open android developer 
-                community in India and also the first Google developer expert for Android from the country.</text>
+              <img class="speakers-photo-case" src="assets/hemanth.jpg">
+                <div><h4>Mr. Hemanth H.M</h4></div>
+                <div><span>Google Developer Expert</span></div>
+                <div><b>PayPal</b></div>
+                <text>Mr. Hemanth H.M. is Senior Software Engineer at PayPal and Google
+                Developer Expert for web technologies. A computer polyglot who contributes
+                to FOSS via Github, he is also a CLI, web and unix philosophy lover.</text>
                 <div>
-                  <a href="https://www.facebook.com/amrit.sanjeev" title="Facebook" class="social-icons fb" target="_blank"></a>
-                  <a href="https://twitter.com/amsanjeev" title="Twitter" class="social-icons twitter" target="_blank"></a>
-                  <a href="https://www.linkedin.com/in/amrit-sanjeev-a4984438/?ppe=1" title="LinkedIn" class="social-icons linkedIn" target="_blank"></a>
+                  <a href="https://www.facebook.com/hemanth" title="Facebook" class="social-icons fb" target="_blank"></a>
+                  <a href="https://twitter.com/gnumanth?lang=en" title="Twitter" class="social-icons twitter" target="_blank"></a>
+                  <a href="https://www.linkedin.com/in/hemanthhm/?ppe=1" title="LinkedIn" class="social-icons linkedIn" target="_blank"></a>
                 </div>
                 <br>
               `)
@@ -154,7 +155,7 @@ export class SpeakersComponent {
                 <div><h4>Mr. Amrit Sanjeev</h4></div>
                 <div><span>Senior Developer Advocate</span></div>
                 <div><b>Google</b></div>
-                <text>Amrit Sanjeev is the organizer of Blrdroid, the largest open android developer 
+                <text>Amrit Sanjeev is the organizer of Blrdroid, the largest open android developer
                 community in India and also the first Google developer expert for Android from the country.</text><br>
               `)
         .open();
@@ -175,12 +176,12 @@ export class SpeakersComponent {
                 <div><b>Valorem</b></div>
                 <text>An Incorruptible Passionate Microsoft Technology Stack Enthusiast with rich 8+ years’ experience, well-versed with Windows 10/UWP, Xamarin, WPF, HoloLens, Windows Phone/ Store/RT, Kinect for Windows, Xbox, Unity 3D, and legacy technologies like ASP.NET, Silverlight, ExtJS, WinForms, etc. He’s a prominent speaker in Microsoft Technology Community mainly K-MUG.
                 He completed graduation in Computer Engineering from Mahatma Gandhi University in 2007. He’s working as Technical Team Lead at Identitymine – a UX Strategy expert company, working close with Microsoft, where he’s responsible for developing premium apps and services with cutting edge technologies. Besides development, he loves mentoring & building enthusiastic team. He finds himself lucky enough to work close with MVPs and Microsoft Regional Directors.
-                He also has solid experience in airline domain, telecom domain, software and services; combined with proven experience in product life cycle, product quality, envisioning features, development and implementation. He had received various awards and laurels for his proven performance. 
+                He also has solid experience in airline domain, telecom domain, software and services; combined with proven experience in product life cycle, product quality, envisioning features, development and implementation. He had received various awards and laurels for his proven performance.
                 He writes about “Nerds False Positive” in his blog – CameTooFar (http://cametoofar.com/) and tweets at https://twitter.com/abhilashca.</text>
                 <div>
                   <a href="https://www.facebook.com/abhilashca" title="Facebook" class="social-icons fb" target="_blank"></a>
                   <a href="https://twitter.com/abhilashca" title="Twitter" class="social-icons twitter" target="_blank"></a>
-                  <a href="https://www.linkedin.com/in/abhilashca/" title="LinkedIn" class="social-icons linkedIn" target="_blank"></a> 
+                  <a href="https://www.linkedin.com/in/abhilashca/" title="LinkedIn" class="social-icons linkedIn" target="_blank"></a>
                 </div>
                 <br>
               `)
@@ -249,19 +250,19 @@ export class SpeakersComponent {
                 <div><span>Behavioural Scientist</span></div>
                 <div><b>Neuro Lingusitic Programme</b></div>
                 <text>
-                A Behavioural Scientist, Life Transformation Specialist and International Master Trainer in Neuro Lingusitic Programme with more than 13 years of experience in various streams ranging from Information Technology to Education to Retail and Insurance. 
-                Have heart fully trained more than 100 thousand people ranging from CEO’s to Celebrities to Billion Dollar Entrepreneurs. Was instrumental in coaching and mentoring senior managers and CEO’s of Corporate, Government, Private Sector and NGO’s to bring out the best in them and achieve excellence in their respective fields. A creative professional who applies his heart and soul into any assignment that he takes, and transforms the lives of those he comes across in his training programs and one to one coaching sessions. 
-                He is one of the only two trainers from Asia to be directly mentored by NLP Co-Creator Dr.John Grinder. He is also the Peak performance coach for Indian Junior Girls Gymnastics team and he is the personal NLP Coach for the National Award Winning Malayalam Actor Jayasurya. Some of Rafi’s esteemed clients include Organizations like Coca Cola, Lupin Pharma, Allianz Group, Reliance Industries, E&Y, LIC and many more. Currently he is pursuing research in Behavioural Neuropsychology, NLP, Micro Expression Patterns and Provocative Coaching. 
+                A Behavioural Scientist, Life Transformation Specialist and International Master Trainer in Neuro Lingusitic Programme with more than 13 years of experience in various streams ranging from Information Technology to Education to Retail and Insurance.
+                Have heart fully trained more than 100 thousand people ranging from CEO’s to Celebrities to Billion Dollar Entrepreneurs. Was instrumental in coaching and mentoring senior managers and CEO’s of Corporate, Government, Private Sector and NGO’s to bring out the best in them and achieve excellence in their respective fields. A creative professional who applies his heart and soul into any assignment that he takes, and transforms the lives of those he comes across in his training programs and one to one coaching sessions.
+                He is one of the only two trainers from Asia to be directly mentored by NLP Co-Creator Dr.John Grinder. He is also the Peak performance coach for Indian Junior Girls Gymnastics team and he is the personal NLP Coach for the National Award Winning Malayalam Actor Jayasurya. Some of Rafi’s esteemed clients include Organizations like Coca Cola, Lupin Pharma, Allianz Group, Reliance Industries, E&Y, LIC and many more. Currently he is pursuing research in Behavioural Neuropsychology, NLP, Micro Expression Patterns and Provocative Coaching.
 
-                Educational Competency: 
-                • Master in Human Resource Management 
-                • Researcher in Behavioural Neuropsychology Certified International NLP Master Trainer. 
-                • Certified Fire Walk Trainer. 
-                • Certified Peak Performance and Behavioural Trainer. 
-                • Certified Peak Performance and Behavioural Trainer. 
+                Educational Competency:
+                • Master in Human Resource Management
+                • Researcher in Behavioural Neuropsychology Certified International NLP Master Trainer.
+                • Certified Fire Walk Trainer.
+                • Certified Peak Performance and Behavioural Trainer.
+                • Certified Peak Performance and Behavioural Trainer.
                 • Sales Mastery Expert.
                 • Certified Provocative Therapy Practitioner.
-                • Integral Eye Movement Therapy Advanced Practitioner. 
+                • Integral Eye Movement Therapy Advanced Practitioner.
                 • 1 year Management development program from School of Communication and Management Studies
                 </text>
                 <div>
@@ -285,11 +286,11 @@ export class SpeakersComponent {
                 <div><h4>Mr. Rama Brahmam Aleti</h4></div>
                 <div><span>Co-founder & Director - Experience Design</span></div>
                 <div><b>Think Design Collaborative</b></div>
-                <text>Rama has been instrumental in developing the company into a leading, world-class UX Design and Innovation Consultancy. As part of the core team, Rama helps in driving the company's strategy, business and mentor its overall growth. 
-                He heads a team of over 90 Designers and has implemented 200+ UX projects in multiple domains such as - Finance, Education, Healthcare, Telecom, E-Commerce, and Entertainment. The companies include several Fortune companies, MNCs and startups. 
-                In addition to leading the practice at Think Design, Rama also conducts workshops on Design Thinking, Experience Design & Innovation. Rama is a regular speaker for Product Conclave at NASSCOM Events; a warm association that has seen him conducts six such workshops. He has also been invited by IIM-A, Indian School of Business (ISB), Unicom and conducted numerous Design workshops within India, North America and South America. 
-                Rama recommends initiating Design through workshop/s by inviting all stakeholders who can participate and hence collaborate in the solutioning process. He believes ‘Design Driven Innovation’ is the future and is certain that most of the businesses in this connected world will use it as a tool to stay ahead in business and innovation. 
-                Rama is a Post Graduate from the prestigious National Institute of Design (NID) after doing his Graduation in Applied Arts from Jawaharlal Nehru Technological University (JNTU). An ardent Design background is what enables Rama to extend his expertise to Strategic Design, Experience Design and Design Thinking. 
+                <text>Rama has been instrumental in developing the company into a leading, world-class UX Design and Innovation Consultancy. As part of the core team, Rama helps in driving the company's strategy, business and mentor its overall growth.
+                He heads a team of over 90 Designers and has implemented 200+ UX projects in multiple domains such as - Finance, Education, Healthcare, Telecom, E-Commerce, and Entertainment. The companies include several Fortune companies, MNCs and startups.
+                In addition to leading the practice at Think Design, Rama also conducts workshops on Design Thinking, Experience Design & Innovation. Rama is a regular speaker for Product Conclave at NASSCOM Events; a warm association that has seen him conducts six such workshops. He has also been invited by IIM-A, Indian School of Business (ISB), Unicom and conducted numerous Design workshops within India, North America and South America.
+                Rama recommends initiating Design through workshop/s by inviting all stakeholders who can participate and hence collaborate in the solutioning process. He believes ‘Design Driven Innovation’ is the future and is certain that most of the businesses in this connected world will use it as a tool to stay ahead in business and innovation.
+                Rama is a Post Graduate from the prestigious National Institute of Design (NID) after doing his Graduation in Applied Arts from Jawaharlal Nehru Technological University (JNTU). An ardent Design background is what enables Rama to extend his expertise to Strategic Design, Experience Design and Design Thinking.
                 On a personal front, he loves his South Indian delicacies, is an avid movie enthusiast, a great fan of Indian films, especially his regional Telugu movies. Even whilst pursuing his geeky inclinations, he loves spending time with his family, particularly, playing with his daughter and watching her grow up.</text>
                 <div>
                   <a href="https://www.linkedin.com/in/aleti-rama-brahmam-127a835/" title="LinkedIn" class="social-icons linkedIn" target="_blank"></a>
