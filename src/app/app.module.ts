@@ -32,6 +32,7 @@ import { FooterComponent } from './footer/footer.component';
 import { AngularFireModule } from 'angularfire2';
 import { environment } from '../environments/environment';
 import { MsgComponent } from './admin/msg.component';
+import { NotificationComponent } from './notification.component';
 
 @NgModule({
   declarations: [
@@ -39,7 +40,8 @@ import { MsgComponent } from './admin/msg.component';
     PageNotFoundComponent,
     LandingPageComponent,
     FooterComponent,
-    MsgComponent],
+    MsgComponent,
+    NotificationComponent],
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
