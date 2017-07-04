@@ -9,17 +9,17 @@ import { AppComponent } from './app.component';
 import { HomeModule } from './home/home.module';
 import { PageNotFoundComponent } from './page-not-found.component';
 
-import {MdCardModule} from '@angular/material';
-import {MdMenuModule} from '@angular/material';
-import {MdInputModule} from '@angular/material';
-import {MdButtonModule} from '@angular/material';
-import {MdListModule} from '@angular/material';
-import {MdIconModule} from '@angular/material';
-import {MdSidenavModule} from '@angular/material';
-import {MdToolbarModule} from '@angular/material';
-import {MdTooltipModule} from '@angular/material';
-import {MdDialogModule} from '@angular/material';
-import {MdTabsModule} from '@angular/material';
+import { MdCardModule } from '@angular/material';
+import { MdMenuModule } from '@angular/material';
+import { MdInputModule } from '@angular/material';
+import { MdButtonModule } from '@angular/material';
+import { MdListModule } from '@angular/material';
+import { MdIconModule } from '@angular/material';
+import { MdSidenavModule } from '@angular/material';
+import { MdToolbarModule } from '@angular/material';
+import { MdTooltipModule } from '@angular/material';
+import { MdDialogModule } from '@angular/material';
+import { MdTabsModule } from '@angular/material';
 
 import { CovalentChipsModule } from '@covalent/core';
 import { CovalentMenuModule } from '@covalent/core';
