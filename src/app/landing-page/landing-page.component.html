@@ -1,4 +1,7 @@
 <div class="landing-page">
+  <div id="svg-bg">
+
+  </div>
   <div layout-gt-xs="row" class="landing-page-content">
     <div flex flex-gt-xs="48" layout="column" flex-sm="40">
       <div class="faya-logo">
@@ -10,15 +13,14 @@
       <div class="l-p-style">
         <p class="animated zoomIn">
           THE MUST ATTEND ONE-DAY CONFERENCE FOR TECHNOLOGY ENTHUSIASTS<br>
-          <b style="text-shadow:2px 2px 6px #000;">JULY 5TH WEDNESDAY</b> <br> TECHNOPARK, TRIVANDRUM
+          <b>JULY 5TH WEDNESDAY</b> <br> TECHNOPARK, TRIVANDRUM
         </p>
       </div>
-      <div style="margin-bottom: 1.5em;font-family: 'Orbitron', sans-serif;" layout="row">
-        <button class="btn animated bounceInUp" [routerLink]="['home']"><span> Details</span></button>
-        <button style="margin-left:.5em;" class="btn animated bounceInDown" [routerLink]="['home/register']"><span> Register</span></button>
+      <div layout="row">
+        <button class="btn animated bounceInUp connect-btn" [routerLink]="['home']"><span>Connet:80</span></button>
       </div>
     </div>
-    <div flex flex-gt-xs="52" flex-sm="60" flex-xs="100"  layout="column" class="animated bounceInUp date-card">
+    <div  style="display:none;" flex flex-gt-xs="52" flex-sm="60" flex-xs="100"  layout="column" class="animated bounceInUp date-card">
       <div flex flex-gt-xs="85" layout-xs="column" flex-xs="100" class="date-card">
       <md-card class="card-details" layout="column" flex-xs="100">
         <div flex layout-gt-xs="row" layout-xs="row">
@@ -50,7 +52,7 @@
 <section class="bgc-blue-grey-800 tc-blue-grey-100">
   <div layout-gt-xs="row" layout-align-gt-xs="center center" style="background: #313131">
     <div layout-gt-sm="row" flex-gt-xs="90" layout-padding>
-      <div flex class="f_r_border">
+      <div flex class="f_r_border" style="display:none">
         <h3 class="f_r_headline">Why attend? </h3>
         <div>
           - Global line-up of Experts
@@ -101,14 +103,12 @@
       </div>
     </div>
   </div>
-  <div layout-gt-xs="row" layout-align-gt-xs="center center" style="background: #2D2D2D">
-    <div layout-gt-sm="row" flex-gt-xs="90" layout-padding>
-      <div flex>
-        <p class="md-body-1 text-upper f_r_copyright">Copyright &copy;
-          <a href="http://fayausa.com"></a>FAYA Corporation 2017. 2330 S. Archibald Ave. Ontario, CA 91761</p>
-      </div>
-      <div flex>
-      </div>
+  <div layout-gt-xs="row" layout-align-gt-xs="center center">
+    <div class="footer-bg" layout-gt-sm="row" flex-gt-xs="100" layout-padding>
+
+        <p class="md-body-1 copy-right-footer">Copyright &copy;
+          <a href="http://fayausa.com">FAYA Corporation</a> 2017. 2330 S. Archibald Ave. Ontario, CA 91761</p>
+
     </div>
   </div>
 </section>

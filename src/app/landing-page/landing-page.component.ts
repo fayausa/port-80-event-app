@@ -1,11 +1,11 @@
-import { Component, ElementRef, OnInit, OnDestroy } from '@angular/core';
+import { Component, ElementRef, OnInit, OnDestroy, AfterViewInit } from '@angular/core';
 import { Observable, Subscription } from 'rxjs/Rx';
-
+declare var Trianglify;
 @Component({
   selector: 'pwa-landingpage',
   templateUrl: 'landing-page.component.html'
 })
-export class LandingPageComponent implements OnInit, OnDestroy {
+export class LandingPageComponent implements OnInit, OnDestroy, AfterViewInit {
   time: any;
   future: Date;
   futureString: string;
@@ -15,9 +15,17 @@ export class LandingPageComponent implements OnInit, OnDestroy {
   message: string;
 
     constructor(elm: ElementRef) {
-        this.futureString = 'July 5, 2017 12:00:00';
+      this.futureString = 'July 5, 2017 12:00:00';
     }
-
+     ngAfterViewInit() {
+      const something = document.getElementById('svg-bg');
+      const pattern = Trianglify({
+        height: 550,
+        width: 500,
+        cell_size: 40
+      });
+      something.appendChild(pattern.canvas());
+    }
     timer(t) {
         let days, hours, minutes, seconds;
         days = Math.floor(t / 86400);

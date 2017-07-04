@@ -54,7 +54,7 @@
         <a md-list-item *ngFor='let key of messages'>
           <md-icon md-list-avatar>message</md-icon>
           <h4 md-line><span class="text-wrap">{{key?.msg}}</span></h4>
-          <p md-line>{{key?.time }} ago</p>
+          <p md-line>{{key?.time | timeElapsed | async}} ago</p>
         </a>
         <md-divider></md-divider>
       </div>
