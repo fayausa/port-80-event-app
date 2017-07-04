@@ -20,6 +20,7 @@ export class MsgComponent implements OnInit {
   }
 sendMsg() {
   const timeId = Date.now();
-  this.service.msgData.push(this.msg)
+  // this.service.msgData.remove().then(_ => console.log('deleted!'));
+  this.service.msgData.push({'msg': this.msg, 'time': timeId})
 }
 }
