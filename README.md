@@ -2,7 +2,7 @@
 
 ![Travis](https://img.shields.io/travis/rust-lang/rust.svg)  ![David](https://img.shields.io/david/expressjs/express.svg)  ![Lience](https://img.shields.io/dub/l/vibe-d.svg)
 
-#### Demo https://my-pwa-72eab.firebaseapp.com
+#### Demo https://m.fayaport80.com
 Port-80-event-app helps to navigate through event details,If you're attending on-site or remotely.This app will:
 * Event schedule with corresponding details.
 * Save events to google calendar.
