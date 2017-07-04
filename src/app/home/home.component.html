@@ -51,10 +51,10 @@
     <div td-menu-header class="md-subhead">Notifications</div>
     <md-nav-list dense>
       <ng-template let-last="last" ngFor [ngForOf]="[0,1,2,3,4,5,6,7,8,9]">
-        <a md-list-item>
+        <a md-list-item *ngFor='let key of messages'>
           <md-icon md-list-avatar>today</md-icon>
-          <h4 md-line><span class="text-wrap">A user did an activity on an item that you've subscribed to follow actions on.</span></h4>
-          <p md-line>22 minutes ago</p>
+          <h4 md-line><span class="text-wrap">{{key.$value}}</span></h4>
+          <!--<p md-line>22 minutes ago</p>-->
         </a>
         <md-divider *ngIf="!last"></md-divider>
       </ng-template>

@@ -12,7 +12,7 @@
         "favicon.ico",
         "manifest.json",
         "sw.js",
-        "api",
+        "engagespotWorker.js",
         "offline.html",
         {
           "glob": "workbox-sw.prod.v1.0.1.js",
