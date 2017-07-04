@@ -20,9 +20,17 @@ export class LandingPageComponent implements OnInit, OnDestroy, AfterViewInit {
      ngAfterViewInit() {
       const something = document.getElementById('svg-bg');
       const pattern = Trianglify({
-        height: 550,
+        cell_size: 50,
+        variance: 0.75,
+        x_colors: 'random',
+        y_colors: 'match_x',
+        palette: Trianglify.colorbrewer,
+        color_space: 'lab',
+        color_function: false,
+        stroke_width: 1.51,
         width: 500,
-        cell_size: 40
+        height: 550,
+        seed: null
       });
       something.appendChild(pattern.canvas());
     }
